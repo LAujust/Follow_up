@@ -357,3 +357,87 @@ ts: buffer is too small for requested array
   - /home/liangrd/Follow_up/results/all_targets_timeline.csv
   - /home/liangrd/Follow_up/results/all_targets_timeline.html
 [OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+[master d6f8b21] Update data at 2026-03-03 16:05:27.737
+ 7 files changed, 153 insertions(+), 34 deletions(-)
+To github.com:LAujust/Follow_up.git
+   7b637c7..d6f8b21  master -> master
+===============================================
+Updating Data: 2026-03-03 22:00:05.012
+===============================================
+Found 17 remote files.
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251212/stack_WXTJ043559-012325_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ043559-012325/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260131a/TNOT/stack_EP260131a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251219/stack_EPJ0619.5+0606_rp_wcs.fits': 
+/home/liangrd/optical_data/EPJ0619.5+0606/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_RXSJ052540.6+425139_rp_wcs.fits': 
+/home/liangrd/optical_data/RXSJ052540.6+425139/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_WXTJ031644+08d316_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ031644+08d316/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ032216+233553_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ032216+233553/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ110746+454221_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ110746+454221/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251221a/TNOT/stack_EP251221a_rp_wcs.fits
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260209a/TNOT/stack_EP260209a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251211/stack_WXTJ2_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ2/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213_Li/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20260109/stack_WXT_J030902+581637_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251214/stack_EP20251214a_rp_wcs.fits': 
+/home/liangrd/optical_data/EP20251214a/TNOT
+🔍 Querying remote Sitian files...
+❌ Failed to list remote files
+ssh: connect to host www.xinglong-naoc.cn port 20210: Connection timed out
+
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
