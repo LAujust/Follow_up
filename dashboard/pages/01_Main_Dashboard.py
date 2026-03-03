@@ -89,12 +89,12 @@ else:
 
         out_html = Path(RESULTS_DIR) / "all_targets_timeline.html"
         fig.write_html(str(out_html), include_plotlyjs="cdn")
-        with st.expander("Raw PNG"):
-            try:
-                image_path = Path(RESULTS_DIR) / "all_targets_timeline.png"
-                st.image(str(image_path), width=600)
-            except Exception as exc:
-                st.warning(f"Could not render saved PNG inline: {exc}")
+        
+        try:
+            image_path = Path(RESULTS_DIR) / "all_targets_timeline.png"
+            st.image(str(image_path))
+        except Exception as exc:
+            st.warning(f"Could not render saved PNG inline: {exc}")
     else:
         st.warning("plotly is not installed in this environment. Using fallback timeline chart.")
         tel_list = sorted(timeline["telescope"].dropna().unique().tolist()) if "telescope" in timeline.columns else []
