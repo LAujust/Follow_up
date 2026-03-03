@@ -33,7 +33,7 @@ get_sitian_data()
 show_shift(root=str(OPTICAL_ROOT), save_dir=str(RESULTS_ROOT))
 show_shift(root=str(OPTICAL_ROOT), save_dir=str(RESULTS_ROOT), ploter='plotly')
 calculate_observation_stats()
-show_obs_pie()
+show_obs_pies()
 show_cumulative_observations()
 
 

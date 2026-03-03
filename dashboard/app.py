@@ -36,19 +36,35 @@ dist_candidates = [
     Path(RESULTS_DIR) / "observation_distribution.html",
 ]
 dist_html = next((p for p in dist_candidates if p.exists()), None)
-if dist_html is None:
-    st.info("No observation distribution HTML found in results/.")
-else:
+
+col1, col2 = st.columns(2)
+with col1:
+    if dist_html is None:
+        st.info("No observation distribution HTML found in results/.")
+    else:
+        try:
+            centered_html = f"""
+                <div style="display: flex; justify-content: center;">
+                    {dist_html.read_text(encoding="utf-8")}
+                </div>
+                """
+            components.html(centered_html, height=600)
+        except Exception as exc:
+                st.warning(f"Failed to render distribution HTML: {exc}")
+
+with col2:
+    dist_html2 = Path(RESULTS_DIR) / "observation_distribution_target.html"
     try:
-        centered_html = f"""
-            <div style="display: flex; justify-content: center;">
-                {dist_html.read_text(encoding="utf-8")}
-            </div>
-            """
+        centered_html2 = f"""
+                <div style="display: flex; justify-content: center;">
+                    {dist_html2.read_text(encoding="utf-8")}
+                </div>
+                """
         components.html(centered_html, height=600)
     except Exception as exc:
-            st.warning(f"Failed to render distribution HTML: {exc}")
+                st.warning(f"Failed to render distribution HTML: {exc}")
 
+st.write("---")
 
 col1, col2 = st.columns(2)
 

@@ -23,7 +23,7 @@ from psimage import *
 __all__ = ['read_image','generate_tnot_plan','generate_tnot_object_json','generate_sitian_plan',
            'plot_lunar_distance','get_tnot_data','get_sitian_data',
            'check_source_dirs','fits_plot','show_shift','calculate_observation_stats',
-           'show_obs_pie','show_cumulative_observations']
+           'show_obs_pies','show_cumulative_observations']
 
 
 """
@@ -1294,7 +1294,7 @@ def calculate_observation_stats(
 
             # Latest watch = interval between last two obs
             if nwatch > 1:
-                latest_watch = mjds[-1] - mjds[-2]
+                latest_watch = tnow - np.max(mjds)
             else:
                 latest_watch = 0
 
@@ -1324,23 +1324,54 @@ def calculate_observation_stats(
     return result_df
 
 
-def show_obs_pie(obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.csv',save_path='/home/liangrd/Follow_up/results'):
+def show_obs_pies(
+    obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.csv',
+    save_path='/home/liangrd/Follow_up/results'
+):
     import plotly.express as px
-    
+
     df = pd.read_csv(obs_file)
-    # Count observations per telescope
-    obs_counts = df['telescope'].value_counts().reset_index()
-    obs_counts.columns = ['telescope', 'count']
-    
-    # Plot pie chart
-    fig = px.pie(obs_counts, values='count', names='telescope',
-                 title='Observation Distribution')
-    fig.update_traces(textposition='inside', textinfo='percent+label')
-    fig.update_layout(showlegend=False,width=600, height=600)
-    
-    # Save HTML
-    fig_path = os.path.join(save_path, 'observation_distribution.html')
-    fig.write_html(fig_path)
+
+    # ===============================
+    # Pie 1: Distribution by Telescope
+    # ===============================
+    telescope_counts = df['telescope'].value_counts().reset_index()
+    telescope_counts.columns = ['telescope', 'count']
+
+    fig_tel = px.pie(
+        telescope_counts,
+        values='count',
+        names='telescope',
+        title='Observation Distribution by Telescope'
+    )
+
+    fig_tel.update_traces(textposition='inside', textinfo='percent+label')
+    fig_tel.update_layout(showlegend=False, width=600, height=600)
+
+    fig_tel_path = os.path.join(save_path, 'observation_distribution_telescope.html')
+    fig_tel.write_html(fig_tel_path)
+
+
+    # ===============================
+    # Pie 2: Distribution by Target
+    # ===============================
+    target_counts = df['target'].value_counts().reset_index()
+    target_counts.columns = ['target', 'count']
+
+    fig_target = px.pie(
+        target_counts,
+        values='count',
+        names='target',
+        title='Observation Distribution by Target'
+    )
+
+    fig_target.update_traces(textposition='inside', textinfo='percent+label')
+    fig_target.update_layout(showlegend=False, width=600, height=600)
+
+    fig_target_path = os.path.join(save_path, 'observation_distribution_target.html')
+    fig_target.write_html(fig_target_path)
+
+    return fig_tel, fig_target
     
     
 def show_cumulative_observations(
