@@ -4,7 +4,12 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
-import plotly.express as px
+import matplotlib.pyplot as plt
+
+try:
+    import plotly.express as px
+except Exception:  # pragma: no cover
+    px = None
 
 from data_access import build_target_index, load_candidates, load_lunar, load_meta, load_timeline
 from config import RESULTS_DIR
@@ -68,28 +73,58 @@ st.subheader("Observation Timeline")
 if timeline.empty:
     st.warning("Timeline file is empty or missing.")
 else:
-    fig = px.scatter(
-        timeline,
-        x="dt",
-        y="target",
-        color="telescope",
-        symbol="band",
-        hover_data=["time_iso", "file"],
-        labels={"dt": "T - T0 (days)", "target": "Target"},
-        title="Observation Timeline of All Targets",
-    )
-    fig.update_layout(height=max(420, 28 * timeline["target"].nunique()))
-    st.plotly_chart(fig, use_container_width=True)
+    if px is not None:
+        fig = px.scatter(
+            timeline,
+            x="dt",
+            y="target",
+            color="telescope",
+            symbol="band",
+            hover_data=["time_iso", "file"],
+            labels={"dt": "T - T0 (days)", "target": "Target"},
+            title="Observation Timeline of All Targets",
+        )
+        fig.update_layout(height=max(420, 28 * timeline["target"].nunique()))
+        st.plotly_chart(fig, use_container_width=True)
 
-    out_html = Path(RESULTS_DIR) / "all_targets_timeline.html"
-    fig.write_html(str(out_html), include_plotlyjs="cdn")
-    with st.expander("Saved HTML output"):
-        st.code(str(out_html))
-        try:
-            html_text = out_html.read_text(encoding="utf-8")
-            components.html(html_text, height=500, scrolling=True)
-        except Exception as exc:
-            st.warning(f"Could not render saved HTML inline: {exc}")
+        out_html = Path(RESULTS_DIR) / "all_targets_timeline.html"
+        fig.write_html(str(out_html), include_plotlyjs="cdn")
+        with st.expander("Saved HTML output"):
+            st.code(str(out_html))
+            try:
+                html_text = out_html.read_text(encoding="utf-8")
+                components.html(html_text, height=500, scrolling=True)
+            except Exception as exc:
+                st.warning(f"Could not render saved HTML inline: {exc}")
+    else:
+        st.warning("plotly is not installed in this environment. Using fallback timeline chart.")
+        tel_list = sorted(timeline["telescope"].dropna().unique().tolist()) if "telescope" in timeline.columns else []
+        band_list = sorted(timeline["band"].dropna().unique().tolist()) if "band" in timeline.columns else []
+        tel_color = {t: c for t, c in zip(tel_list, ["C0", "C1", "C2", "C3", "C4", "C5"])}
+        band_marker = {b: m for b, m in zip(band_list, ["o", "s", "^", "D", "v", "P", "X"])}
+
+        targets = list(dict.fromkeys(timeline["target"].tolist()))
+        ymap = {t: i for i, t in enumerate(targets)}
+        fig, ax = plt.subplots(figsize=(12, max(4, 0.35 * len(targets))))
+        for _, row in timeline.iterrows():
+            x = row.get("dt", None)
+            y = ymap.get(row.get("target"), None)
+            if pd.isna(x) or y is None:
+                continue
+            ax.scatter(
+                x,
+                y,
+                color=tel_color.get(row.get("telescope"), "gray"),
+                marker=band_marker.get(row.get("band"), "o"),
+                s=22,
+                alpha=0.8,
+            )
+        ax.set_yticks(range(len(targets)))
+        ax.set_yticklabels(targets)
+        ax.set_xlabel("T - T0 (days)")
+        ax.set_ylabel("Target")
+        ax.grid(alpha=0.2)
+        st.pyplot(fig, use_container_width=True)
 
 st.subheader("Per-target Detail")
 if len(filtered):

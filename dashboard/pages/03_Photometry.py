@@ -5,7 +5,15 @@ import streamlit as st
 
 from config import PHOTOMETRY_OUTPUT_DIR
 from data_access import build_fits_index, load_candidates
-from services.photometry_service import PhotometryRequest, run_photometry
+
+try:
+    from services.photometry_service import PhotometryRequest, run_photometry
+except Exception as exc:  # pragma: no cover
+    st.error(
+        "Photometry tools are unavailable because required dependencies are missing "
+        f"(details: {exc}). Install requirements.txt and redeploy."
+    )
+    st.stop()
 
 st.title("Photometry")
 

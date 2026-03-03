@@ -5,8 +5,16 @@ import streamlit as st
 
 from config import GENERATED_PLAN_DIR
 from data_access import load_candidates
-from services.lunar_service import compute_lunar_curve
 from services.plan_service import generate_sitian_plan_text, generate_tnot_plan_text, save_plan_outputs
+
+try:
+    from services.lunar_service import compute_lunar_curve
+except Exception as exc:  # pragma: no cover
+    st.error(
+        "Lunar tools are unavailable because required dependencies are missing "
+        f"(details: {exc}). Install requirements.txt and redeploy."
+    )
+    st.stop()
 
 st.title("Lunar Distance & Observation Plans")
 

@@ -3,7 +3,11 @@ from __future__ import annotations
 from pathlib import Path
 import pandas as pd
 import streamlit as st
-from astropy.io import fits
+
+try:
+    from astropy.io import fits
+except Exception:  # pragma: no cover
+    fits = None
 
 from data_access import build_repo_file_index
 
@@ -44,6 +48,9 @@ img_like = {".png", ".jpg", ".jpeg", ".gif"}
 
 if low.endswith((".fits", ".fits.fz")):
     st.subheader("FITS header preview")
+    if fits is None:
+        st.error("FITS preview requires astropy. Install requirements.txt and redeploy.")
+        st.stop()
     with fits.open(path) as hdul:
         ext = st.number_input("HDU index", min_value=0, max_value=len(hdul) - 1, value=0)
         hdr = hdul[int(ext)].header
