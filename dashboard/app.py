@@ -12,9 +12,8 @@ from data_access import (
     load_timeline,
 )
 from config import RESULTS_DIR
-menu_dict = {'Get Help':"liangrd@bao.ac.cn"}
 
-st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="wide",menu_items=menu_dict)
+st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="wide",)
 
 st.title("Follow up Dashboard")
 st.caption("Targets, observation stats, lunar distance, planning, and photometry")
