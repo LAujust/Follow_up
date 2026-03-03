@@ -35,8 +35,6 @@ dist_candidates = [
     Path(RESULTS_DIR) / "obsrvations_distribution.html",
     Path(RESULTS_DIR) / "observation_distribution.html",
 ]
-
-
 dist_html = next((p for p in dist_candidates if p.exists()), None)
 if dist_html is None:
     st.info("No observation distribution HTML found in results/.")
@@ -46,9 +44,36 @@ else:
     except Exception as exc:
             st.warning(f"Failed to render distribution HTML: {exc}")
 
-st.divider()
 
-if not cand.empty:
-    preview_cols = [c for c in ["target", "Priority", "Obs Time", "RA", "Dec", "Classification"] if c in cand.columns]
-    st.subheader("Candidate Preview")
-    st.dataframe(cand[preview_cols], use_container_width=True, height=360)
+st.subheader("Observation Distribution")
+cum_events_html = Path(RESULTS_DIR) / "cumulative_events.html"
+cum_obs_html = Path(RESULTS_DIR) / "cumulative_observations.html"
+
+
+if cum_events_html.exists():
+    try:
+        components.html(cum_events_html.read_text(encoding="utf-8"), height=400)
+    except Exception as exc:
+        st.warning(f"Failed to render cumulative events HTML: {exc}")
+else:
+        st.info("No cumulative events HTML found in results/.")
+        
+st.write("---")
+
+if cum_obs_html.exists():
+    try:
+        components.html(cum_obs_html.read_text(encoding="utf-8"), height=400)
+    except Exception as exc:
+        st.warning(f"Failed to render cumulative observations HTML: {exc}")
+        
+
+
+
+
+
+# st.divider()
+
+# if not cand.empty:
+#     preview_cols = [c for c in ["target", "Priority", "Obs Time", "RA", "Dec", "Classification"] if c in cand.columns]
+#     st.subheader("Candidate Preview")
+#     st.dataframe(cand[preview_cols], use_container_width=True, height=360)

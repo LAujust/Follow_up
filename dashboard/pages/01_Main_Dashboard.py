@@ -139,18 +139,18 @@ if len(filtered):
     detail_cols = [c for c in filtered.columns if c not in {"RA", "Dec"}]
     st.dataframe(pd.DataFrame([row[detail_cols].to_dict()]), use_container_width=True)
 
-st.subheader("Observation Distribution")
-dist_candidates = [
-    Path(RESULTS_DIR) / "obsrvations_distribution.html",
-    Path(RESULTS_DIR) / "observation_distribution.html",
-]
-dist_html = next((p for p in dist_candidates if p.exists()), None)
-if dist_html is None:
-    st.info("No observation distribution HTML found in results/.")
-else:
-    with st.expander("Show observation distribution", expanded=True):
-        st.code(str(dist_html))
-        try:
-            components.html(dist_html.read_text(encoding="utf-8"), height=700, scrolling=True)
-        except Exception as exc:
-            st.warning(f"Failed to render distribution HTML: {exc}")
+# st.subheader("Observation Distribution")
+# dist_candidates = [
+#     Path(RESULTS_DIR) / "obsrvations_distribution.html",
+#     Path(RESULTS_DIR) / "observation_distribution.html",
+# ]
+# dist_html = next((p for p in dist_candidates if p.exists()), None)
+# if dist_html is None:
+#     st.info("No observation distribution HTML found in results/.")
+# else:
+#     with st.expander("Show observation distribution", expanded=True):
+#         st.code(str(dist_html))
+#         try:
+#             components.html(dist_html.read_text(encoding="utf-8"), height=700, scrolling=True)
+#         except Exception as exc:
+#             st.warning(f"Failed to render distribution HTML: {exc}")

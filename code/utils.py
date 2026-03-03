@@ -22,7 +22,8 @@ from psimage import *
 
 __all__ = ['read_image','generate_tnot_plan','generate_tnot_object_json','generate_sitian_plan',
            'plot_lunar_distance','get_tnot_data','get_sitian_data',
-           'check_source_dirs','fits_plot','show_shift','calculate_observation_stats','show_obs_pie']
+           'check_source_dirs','fits_plot','show_shift','calculate_observation_stats',
+           'show_obs_pie','show_cumulative_observations']
 
 
 """
@@ -1333,7 +1334,7 @@ def show_obs_pie(obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.
     
     # Plot pie chart
     fig = px.pie(obs_counts, values='count', names='telescope',
-                 title='Observation Distribution by Telescope')
+                 title='Observation Distribution')
     fig.update_traces(textposition='inside', textinfo='percent+label')
     fig.update_layout(showlegend=False)
     
@@ -1341,5 +1342,43 @@ def show_obs_pie(obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.
     fig_path = os.path.join(save_path, 'observation_distribution.html')
     fig.write_html(fig_path)
     
-    # Show plot
-    fig.show()
+    
+def show_cumulative_observations(
+    candidates_file='/home/liangrd/Follow_up/Candidates.csv',
+    obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.csv',
+    save_path='/home/liangrd/Follow_up/results'
+):
+    import plotly.express as px
+
+    # ---- Cumulative number of unique events ----
+    candidates = pd.read_csv(candidates_file)
+    # Ensure Obs Time is datetime
+    candidates['Obs Time'] = pd.to_datetime(candidates['Obs Time'])
+    candidates = candidates.sort_values('Obs Time')
+    
+    # Cumulative count = number of rows so far
+    candidates['cum_events'] = range(1, len(candidates)+1)
+
+    fig1 = px.line(candidates, x='Obs Time', y='cum_events',
+                   title='Number eFXTs',
+                   labels={'Obs Time':'Obs Time (UTC)', 'cum_events':'N'})
+    fig1.update_traces(mode='lines')
+    fig1_path = os.path.join(save_path, 'cumulative_events.html')
+    fig1.write_html(fig1_path)
+    # fig1.show()
+
+    # ---- Cumulative number of observations ----
+    obs = pd.read_csv(obs_file)
+    obs['time_iso'] = pd.to_datetime(obs['time_iso'])
+    obs = obs.sort_values('time_iso')
+    
+    # Each row is one observation, so cumulative count is 1,2,3,...
+    obs['cum_obs'] = range(1, len(obs)+1)
+
+    fig2 = px.line(obs, x='time_iso', y='cum_obs',
+                   title='Number of Observations',
+                   labels={'time_iso':'Obs Time (UTC)', 'cum_obs':'Ns'})
+    fig2.update_traces(mode='lines')
+    fig2_path = os.path.join(save_path, 'cumulative_observations.html')
+    fig2.write_html(fig2_path)
+    # fig2.show()
