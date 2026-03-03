@@ -1336,7 +1336,7 @@ def show_obs_pie(obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.
     fig = px.pie(obs_counts, values='count', names='telescope',
                  title='Observation Distribution')
     fig.update_traces(textposition='inside', textinfo='percent+label')
-    fig.update_layout(showlegend=False)
+    fig.update_layout(showlegend=False,width=500, height=500)
     
     # Save HTML
     fig_path = os.path.join(save_path, 'observation_distribution.html')
@@ -1363,6 +1363,7 @@ def show_cumulative_observations(
                    title='Number eFXTs',
                    labels={'Obs Time':'Obs Time (UTC)', 'cum_events':'N'})
     fig1.update_traces(mode='lines')
+    fig1.update_layout(width=500, height=400)
     fig1_path = os.path.join(save_path, 'cumulative_events.html')
     fig1.write_html(fig1_path)
     # fig1.show()
@@ -1379,6 +1380,7 @@ def show_cumulative_observations(
                    title='Number of Observations',
                    labels={'time_iso':'Obs Time (UTC)', 'cum_obs':'Ns'})
     fig2.update_traces(mode='lines')
+    fig2.update_layout(width=500, height=400)
     fig2_path = os.path.join(save_path, 'cumulative_observations.html')
     fig2.write_html(fig2_path)
     # fig2.show()
