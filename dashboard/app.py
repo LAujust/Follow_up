@@ -10,7 +10,7 @@ from data_access import (
     load_timeline,
 )
 
-st.set_page_config(page_title="Follow_up Dashboard", page_icon="🔭", layout="wide")
+st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="centered",)
 
 st.title("Follow_up Dashboard")
 st.caption("Targets, observation stats, lunar distance, planning, and photometry")
@@ -25,7 +25,7 @@ c1, c2, c3, c4, c5, c6 = st.columns(6)
 c1.metric("Candidates", len(cand))
 c2.metric("Observed Targets", meta["target"].nunique() if "target" in meta.columns else 0)
 c3.metric("Observations", len(timeline))
-c4.metric("Priority > 0", int((cand.get("Priority", 0) > 0).sum()) if len(cand) else 0)
+c4.metric("Alive", int((cand.get("Priority", 0) > 2).sum()) if len(cand) else 0)
 c5.metric("Lunar Entries", len(lunar))
 c6.metric("Optical Targets", len(target_index))
 
