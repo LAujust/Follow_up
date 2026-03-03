@@ -32,24 +32,13 @@ c4.metric("Alive", int((cand.get("Priority", 0) > 2).sum()) if len(cand) else 0)
 c5.metric("Lunar Entries", len(lunar))
 c6.metric("Optical Targets", len(target_index))
 
-st.markdown("Use the left sidebar to open subpages:")
-st.markdown("- Main Dashboard")
-st.markdown("- Lunar Distance & Plans")
-st.markdown("- Photometry")
-st.markdown("- Data/Code Explorer")
-
-st.divider()
-
-if not cand.empty:
-    preview_cols = [c for c in ["target", "Priority", "Obs Time", "RA", "Dec", "Classification"] if c in cand.columns]
-    st.subheader("Candidate Preview")
-    st.dataframe(cand[preview_cols], use_container_width=True, height=360)
-
 st.subheader("Observation Distribution")
 dist_candidates = [
     Path(RESULTS_DIR) / "obsrvations_distribution.html",
     Path(RESULTS_DIR) / "observation_distribution.html",
 ]
+
+
 dist_html = next((p for p in dist_candidates if p.exists()), None)
 if dist_html is None:
     st.info("No observation distribution HTML found in results/.")
@@ -57,6 +46,13 @@ else:
     with st.expander("Show observation distribution", expanded=True):
         st.code(str(dist_html))
         try:
-            components.html(dist_html.read_text(encoding="utf-8"), height=700, scrolling=True)
+            components.html(dist_html.read_text(encoding="utf-8"), height=700)
         except Exception as exc:
             st.warning(f"Failed to render distribution HTML: {exc}")
+
+st.divider()
+
+if not cand.empty:
+    preview_cols = [c for c in ["target", "Priority", "Obs Time", "RA", "Dec", "Classification"] if c in cand.columns]
+    st.subheader("Candidate Preview")
+    st.dataframe(cand[preview_cols], use_container_width=True, height=360)
