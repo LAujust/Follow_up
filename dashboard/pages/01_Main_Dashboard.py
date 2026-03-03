@@ -67,7 +67,7 @@ show_cols = [
     ]
     if c in filtered.columns
 ]
-st.dataframe(filtered[show_cols], use_container_width=True, height=360)
+st.dataframe(filtered[show_cols], use_container_width=True, height=500)
 
 st.subheader("Observation Timeline")
 if timeline.empty:
