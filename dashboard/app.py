@@ -15,7 +15,7 @@ from config import RESULTS_DIR
 
 st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="centered",)
 
-st.title("Follow_up Dashboard")
+st.title("Follow up Dashboard")
 st.caption("Targets, observation stats, lunar distance, planning, and photometry")
 
 cand = load_candidates()
@@ -24,13 +24,11 @@ timeline = load_timeline()
 lunar = load_lunar()
 target_index = build_target_index()
 
-c1, c2, c3, c4, c5, c6 = st.columns(6)
+c1, c2, c3, c4 = st.columns(4)
 c1.metric("Candidates", len(cand))
 c2.metric("Observed Targets", meta["target"].nunique() if "target" in meta.columns else 0)
 c3.metric("Observations", len(timeline))
 c4.metric("Alive", int((cand.get("Priority", 0) > 2).sum()) if len(cand) else 0)
-c5.metric("Lunar Entries", len(lunar))
-c6.metric("Optical Targets", len(target_index))
 
 st.subheader("Observation Distribution")
 dist_candidates = [
@@ -43,11 +41,9 @@ dist_html = next((p for p in dist_candidates if p.exists()), None)
 if dist_html is None:
     st.info("No observation distribution HTML found in results/.")
 else:
-    components.html(dist_html.read_text(encoding="utf-8"), height=700)
-    with st.expander("Show observation distribution", expanded=True):
-        try:
-            components.html(dist_html.read_text(encoding="utf-8"), height=700)
-        except Exception as exc:
+    try:
+        components.html(dist_html.read_text(encoding="utf-8"), height=600)
+    except Exception as exc:
             st.warning(f"Failed to render distribution HTML: {exc}")
 
 st.divider()
