@@ -43,8 +43,8 @@ dist_html = next((p for p in dist_candidates if p.exists()), None)
 if dist_html is None:
     st.info("No observation distribution HTML found in results/.")
 else:
+    components.html(dist_html.read_text(encoding="utf-8"), height=700)
     with st.expander("Show observation distribution", expanded=True):
-        st.code(str(dist_html))
         try:
             components.html(dist_html.read_text(encoding="utf-8"), height=700)
         except Exception as exc:
