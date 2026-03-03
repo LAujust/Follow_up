@@ -45,7 +45,7 @@ else:
             st.warning(f"Failed to render distribution HTML: {exc}")
 
 
-st.subheader("Observation Distribution")
+st.subheader("Observation Summary")
 cum_events_html = Path(RESULTS_DIR) / "cumulative_events.html"
 cum_obs_html = Path(RESULTS_DIR) / "cumulative_observations.html"
 
