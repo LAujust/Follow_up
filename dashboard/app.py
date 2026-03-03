@@ -30,7 +30,7 @@ c2.metric("Observed Targets", len(meta[meta['nwatch']>0]) if "target" in meta.co
 c3.metric("Observations", len(timeline))
 c4.metric("Alive", int((cand.get("Priority", 0) > 2).sum()) if len(cand) else 0)
 
-st.subheader("Observation Distribution")
+st.subheader("Observation Summary")
 dist_candidates = [
     Path(RESULTS_DIR) / "obsrvations_distribution.html",
     Path(RESULTS_DIR) / "observation_distribution.html",
@@ -40,31 +40,32 @@ if dist_html is None:
     st.info("No observation distribution HTML found in results/.")
 else:
     try:
-        components.html(dist_html.read_text(encoding="utf-8"), height=600)
+        components.html(dist_html.read_text(encoding="utf-8"), height=600,)
     except Exception as exc:
             st.warning(f"Failed to render distribution HTML: {exc}")
 
 
-st.subheader("Observation Summary")
+col1, col2 = st.columns(2)
+
 cum_events_html = Path(RESULTS_DIR) / "cumulative_events.html"
 cum_obs_html = Path(RESULTS_DIR) / "cumulative_observations.html"
 
-
-if cum_events_html.exists():
-    try:
-        components.html(cum_events_html.read_text(encoding="utf-8"), height=600)
-    except Exception as exc:
-        st.warning(f"Failed to render cumulative events HTML: {exc}")
-else:
-        st.info("No cumulative events HTML found in results/.")
+with col1:
+    if cum_events_html.exists():
+        try:
+            components.html(cum_events_html.read_text(encoding="utf-8"), height=600)
+        except Exception as exc:
+            st.warning(f"Failed to render cumulative events HTML: {exc}")
+    else:
+            st.info("No cumulative events HTML found in results/.")
         
-st.write("---")
 
-if cum_obs_html.exists():
-    try:
-        components.html(cum_obs_html.read_text(encoding="utf-8"), height=600)
-    except Exception as exc:
-        st.warning(f"Failed to render cumulative observations HTML: {exc}")
+with col2:
+    if cum_obs_html.exists():
+        try:
+            components.html(cum_obs_html.read_text(encoding="utf-8"), height=600)
+        except Exception as exc:
+            st.warning(f"Failed to render cumulative observations HTML: {exc}")
         
 
 
