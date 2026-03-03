@@ -1,0 +1,105 @@
+from __future__ import annotations
+
+from pathlib import Path
+import pandas as pd
+import streamlit as st
+import streamlit.components.v1 as components
+import plotly.express as px
+
+from data_access import build_target_index, load_candidates, load_lunar, load_meta, load_timeline
+from config import RESULTS_DIR
+
+st.title("Main Dashboard")
+
+cand = load_candidates()
+meta = load_meta()
+lunar = load_lunar()
+timeline = load_timeline()
+index_df = build_target_index()
+
+merged = cand.copy()
+if not meta.empty and "target" in meta.columns:
+    merged = merged.merge(meta, on="target", how="left")
+if not lunar.empty and "target" in lunar.columns:
+    keep = [c for c in ["target", "Lunar_Mean_Distance", "Lunar_Min_Distance"] if c in lunar.columns]
+    merged = merged.merge(lunar[keep], on="target", how="left")
+if not index_df.empty:
+    merged = merged.merge(index_df, on="target", how="left")
+
+left, right = st.columns([2, 1])
+with left:
+    priorities = sorted(merged["Priority"].dropna().unique().tolist()) if "Priority" in merged.columns else []
+    prio_selected = st.multiselect("Priority", priorities, default=priorities)
+with right:
+    search = st.text_input("Target name contains", value="")
+
+filtered = merged.copy()
+if prio_selected and "Priority" in filtered.columns:
+    filtered = filtered[filtered["Priority"].isin(prio_selected)]
+if search:
+    filtered = filtered[filtered["target"].str.contains(search, case=False, na=False)]
+
+k1, k2, k3, k4 = st.columns(4)
+k1.metric("Shown targets", len(filtered))
+k2.metric("Timeline rows", len(timeline))
+k3.metric("Telescopes", timeline["telescope"].nunique() if "telescope" in timeline.columns else 0)
+k4.metric("Bands", timeline["band"].nunique() if "band" in timeline.columns else 0)
+
+show_cols = [
+    c
+    for c in [
+        "target",
+        "Priority",
+        "Obs Time",
+        "RA",
+        "Dec",
+        "Classification",
+        "nwatch",
+        "age",
+        "latest_watch",
+        "num_fits",
+        "Lunar_Mean_Distance",
+    ]
+    if c in filtered.columns
+]
+st.dataframe(filtered[show_cols], use_container_width=True, height=360)
+
+st.subheader("Observation Timeline")
+if timeline.empty:
+    st.warning("Timeline file is empty or missing.")
+else:
+    fig = px.scatter(
+        timeline,
+        x="dt",
+        y="target",
+        color="telescope",
+        symbol="band",
+        hover_data=["time_iso", "file"],
+        labels={"dt": "T - T0 (days)", "target": "Target"},
+        title="Observation Timeline of All Targets",
+    )
+    fig.update_layout(height=max(420, 28 * timeline["target"].nunique()))
+    st.plotly_chart(fig, use_container_width=True)
+
+    out_html = Path(RESULTS_DIR) / "all_targets_timeline.html"
+    fig.write_html(str(out_html), include_plotlyjs="cdn")
+    with st.expander("Saved HTML output"):
+        st.code(str(out_html))
+        try:
+            html_text = out_html.read_text(encoding="utf-8")
+            components.html(html_text, height=500, scrolling=True)
+        except Exception as exc:
+            st.warning(f"Could not render saved HTML inline: {exc}")
+
+st.subheader("Per-target Detail")
+if len(filtered):
+    selected = st.selectbox("Select target", filtered["target"].tolist(), index=0)
+    row = filtered[filtered["target"] == selected].iloc[0]
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Priority", int(row["Priority"]) if "Priority" in row and pd.notna(row["Priority"]) else "-")
+    c2.metric("RA", f"{row['RA']:.4f}" if "RA" in row and pd.notna(row["RA"]) else "-")
+    c3.metric("Dec", f"{row['Dec']:.4f}" if "Dec" in row and pd.notna(row["Dec"]) else "-")
+    c4.metric("FITS files", int(row["num_fits"]) if "num_fits" in row and pd.notna(row["num_fits"]) else 0)
+
+    detail_cols = [c for c in filtered.columns if c not in {"RA", "Dec"}]
+    st.dataframe(pd.DataFrame([row[detail_cols].to_dict()]), use_container_width=True)
