@@ -1,5 +1,7 @@
 import warnings
 warnings.filterwarnings("ignore")
+import os
+from pathlib import Path
 import numpy as np
 from astropy.table import Table
 from astropy.io import fits
@@ -7,6 +9,10 @@ from astropy.time import Time
 from utils import *
 from coadd import *
 from photometry import *
+
+FOLLOWUP_ROOT = Path(__file__).resolve().parents[1]
+OPTICAL_ROOT = Path(os.environ.get("FOLLOWUP_OPTICAL_DIR", str(Path.home() / "optical_data"))).expanduser()
+RESULTS_ROOT = FOLLOWUP_ROOT / "results"
 check_source_dirs()
 
 
@@ -23,6 +29,6 @@ get_tnot_data()
 
 get_sitian_data()
 
-show_shift(root='/home/liangrd/Follow_up/optical_data',save_dir='/home/liangrd/Follow_up/results')
-show_shift(root='/home/liangrd/Follow_up/optical_data',save_dir='/home/liangrd/Follow_up/results',ploter='plotly')
+show_shift(root=str(OPTICAL_ROOT), save_dir=str(RESULTS_ROOT))
+show_shift(root=str(OPTICAL_ROOT), save_dir=str(RESULTS_ROOT), ploter='plotly')
 calculate_observation_stats()

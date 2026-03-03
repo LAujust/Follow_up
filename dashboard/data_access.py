@@ -103,9 +103,14 @@ def build_fits_index(root_optical_data: Path = OPTICAL_DIR) -> pd.DataFrame:
 @st.cache_data(show_spinner=False)
 def build_repo_file_index(root: Path = ROOT) -> pd.DataFrame:
     rows = []
-    include_roots = ["code", "lunar_distance", "results", "wxtsource", "optical_data"]
-    for rel in include_roots:
-        top = root / rel
+    include_roots = [
+        ("code", root / "code"),
+        ("lunar_distance", root / "lunar_distance"),
+        ("results", root / "results"),
+        ("wxtsource", root / "wxtsource"),
+        ("optical_data", OPTICAL_DIR),
+    ]
+    for rel, top in include_roots:
         if not top.exists():
             continue
         for p in top.rglob("*"):

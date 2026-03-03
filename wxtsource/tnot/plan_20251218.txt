@@ -1,0 +1,7 @@
+#dir EP2025
+#Filter rp
+#Binning 1
+#Count 6
+#Interval 300
+
+WXT J101852+391545	10:18:51.84	+39:15:43.20

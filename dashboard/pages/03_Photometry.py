@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 import streamlit as st
 
-from config import PHOTOMETRY_OUTPUT_DIR
+from config import OPTICAL_DIR, PHOTOMETRY_OUTPUT_DIR
 from data_access import build_fits_index, load_candidates
 
 try:
@@ -24,7 +24,7 @@ if cand.empty:
     st.error("Candidates.csv is missing or empty.")
     st.stop()
 if fits_idx.empty:
-    st.warning("No FITS files found under optical_data/.")
+    st.warning(f"No FITS files found under {OPTICAL_DIR}.")
     st.stop()
 
 left, right = st.columns(2)

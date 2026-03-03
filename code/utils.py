@@ -52,6 +52,10 @@ PIXEL_SCALE_ARCSEC = {
 
 TNOT_SERVER = 'tnot@119.78.162.172:/home/tnot/EP/plans'
 TNOT_PASSWORD = 'nsqh.800@59726355'
+FOLLOWUP_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_OPTICAL_ROOT = Path(os.environ.get("FOLLOWUP_OPTICAL_DIR", str(Path.home() / "optical_data"))).expanduser()
+DEFAULT_CANDIDATES_FILE = FOLLOWUP_ROOT / "Candidates.csv"
+DEFAULT_RESULTS_DIR = FOLLOWUP_ROOT / "results"
 
 
 """
@@ -311,7 +315,7 @@ def generate_sitian_plan(target,ra,dec,exptime,expcount,p=6,save_path='./'):
         
 
 
-# def get_tnot_data(root_dir="/home/liangrd/Follow_up/optical_data"):
+# def get_tnot_data(root_dir="~/optical_data"):
 #     """
 #     Download and organize TNOT stacked WCS FITS files.
 #     """
@@ -430,7 +434,7 @@ def generate_sitian_plan(target,ra,dec,exptime,expcount,p=6,save_path='./'):
     
 
 
-def get_tnot_data(root_dir="/home/liangrd/Follow_up/optical_data", remote_user="tnot", remote_host="119.78.162.172",
+def get_tnot_data(root_dir=str(DEFAULT_OPTICAL_ROOT), remote_user="tnot", remote_host="119.78.162.172",
                   remote_port=5905, remote_base="/home/tnot/EP"):
     """
     Download TNOT stack FITS files from remote server, organize by target.
@@ -500,7 +504,7 @@ def get_tnot_data(root_dir="/home/liangrd/Follow_up/optical_data", remote_user="
 
 
 
-def get_sitian_data(root='/home/liangrd/Follow_up/optical_data'):
+def get_sitian_data(root=str(DEFAULT_OPTICAL_ROOT)):
     """
     Download Sitian (司天) data via SSH and organize by source name.
 
@@ -593,7 +597,7 @@ def get_sitian_data(root='/home/liangrd/Follow_up/optical_data'):
     print("✅ Sitian data download finished.")
     
     
-def check_source_dirs(root_dir='/home/liangrd/Follow_up/optical_data', meta_file='/home/liangrd/Follow_up/Candidates.csv'):
+def check_source_dirs(root_dir=str(DEFAULT_OPTICAL_ROOT), meta_file=str(DEFAULT_CANDIDATES_FILE)):
     """
     Check if source directories exist for each source in the metadata file.
 
@@ -743,7 +747,7 @@ def fits_plot(
     # ---------- 4. Pan-STARRS cutout ----------
     ps_cutout = None
     if show_ps is not None:
-        ps_dir = f'/home/liangrd/Follow_up/optical_data/{target}'
+        ps_dir = str(DEFAULT_OPTICAL_ROOT / str(target))
         ps_fits = os.path.join(ps_dir,f"ps1_{ps_filter}_ref.fits")
         if not os.path.exists(ps_fits):
             # assume ps_dir is directory

@@ -1,0 +1,7 @@
+#dir EP2025
+#Filter rp
+#Binning 1
+#Count 6
+#Interval 300
+
+4XMM J004150.1-091804	00:41:57.60	-09:19:26.40

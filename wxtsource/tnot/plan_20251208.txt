@@ -1,0 +1,7 @@
+#dir EP2025
+#Filter rp
+#Binning 1
+#Count 6
+#Interval 300
+
+1RXS J052540.6+425139	05:25:47.04	+42:53:24.00

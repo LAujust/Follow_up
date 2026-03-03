@@ -1,0 +1,4 @@
+objName	ra	dec	expTime	expCount	type	Priority
+zj_field01	23:15:00	+44:00:00	60	60	OBJECT	6
+zj_field02	03:30:00	+25:00:00	60	240	OBJECT	6
+zj_field03	07:00:00	+36:00:00	60	400	OBJECT	6

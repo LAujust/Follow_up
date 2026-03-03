@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: follow-up-dashboard
+    runtime: docker
+    repo: https://github.com/REPLACE_ME/follow_up_dashboard
+    branch: main
+    autoDeploy: true

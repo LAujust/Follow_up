@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+._*
+.vscode/
+.idea/
+
+# Project large/raw data
+optical_data/
+
+# Generated outputs
+results/agent_photometry/
+results/generated_plans/
+dashboard.log
+
+# Local auth/session artifacts
+code/ep_oauth_state.json
+
+# Streamlit local config/cache
+.streamlit/secrets.toml

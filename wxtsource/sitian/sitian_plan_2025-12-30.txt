@@ -1,0 +1,2 @@
+objName	ra	dec	expTime	expCount	type	Priority
+EP251229a	08:16:24.65	+37:12:24.48	300	10	OBJECT	6

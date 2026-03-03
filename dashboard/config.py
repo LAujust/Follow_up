@@ -1,12 +1,13 @@
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CODE_DIR = ROOT / "code"
 LUNAR_DIR = ROOT / "lunar_distance"
-OPTICAL_DIR = ROOT / "optical_data"
+OPTICAL_DIR = Path(os.environ.get("FOLLOWUP_OPTICAL_DIR", str(Path.home() / "optical_data"))).expanduser()
 RESULTS_DIR = ROOT / "results"
 WXT_DIR = ROOT / "wxtsource"
 
