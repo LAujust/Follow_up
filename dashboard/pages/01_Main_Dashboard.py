@@ -69,7 +69,7 @@ show_cols = [
 ]
 st.dataframe(filtered[show_cols], use_container_width=True, height=700)
 
-st.subheader("Observation Timeline")
+st.header("Observation Timeline")
 if timeline.empty:
     st.warning("Timeline file is empty or missing.")
 else:
@@ -125,7 +125,7 @@ else:
         ax.grid(alpha=0.2)
         st.pyplot(fig, use_container_width=True)
 
-st.subheader("Per-target Detail")
+st.header("Per-target Detail")
 if len(filtered):
     selected = st.selectbox("Select target", filtered["target"].tolist(), index=0)
     row = filtered[filtered["target"] == selected].iloc[0]
@@ -138,7 +138,7 @@ if len(filtered):
     detail_cols = [c for c in filtered.columns if c not in {"RA", "Dec"}]
     st.dataframe(pd.DataFrame([row[detail_cols].to_dict()]), use_container_width=True)
 
-# st.subheader("Observation Distribution")
+# st.header("Observation Distribution")
 # dist_candidates = [
 #     Path(RESULTS_DIR) / "obsrvations_distribution.html",
 #     Path(RESULTS_DIR) / "observation_distribution.html",

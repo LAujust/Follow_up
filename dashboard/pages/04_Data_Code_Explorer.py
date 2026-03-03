@@ -47,7 +47,7 @@ text_like = {".py", ".txt", ".md", ".csv", ".json", ".yaml", ".yml", ".log"}
 img_like = {".png", ".jpg", ".jpeg", ".gif"}
 
 if low.endswith((".fits", ".fits.fz")):
-    st.subheader("FITS header preview")
+    st.header("FITS header preview")
     if fits is None:
         st.error("FITS preview requires astropy. Install requirements.txt and redeploy.")
         st.stop()

@@ -23,7 +23,7 @@ if cand.empty:
     st.error("Candidates.csv is missing or empty.")
     st.stop()
 
-st.subheader("Lunar Distance")
+st.header("Lunar Distance")
 
 m1, m2 = st.columns([2, 1])
 with m1:
@@ -56,7 +56,7 @@ if st.button("Compute lunar curve"):
     st.dataframe(curve, use_container_width=True, height=260)
 
 st.divider()
-st.subheader("Generate Observation Plans")
+st.header("Generate Observation Plans")
 
 sel_targets = st.multiselect("Targets", cand["target"].tolist(), default=[selected_target])
 plan_df = cand[cand["target"].isin(sel_targets)][["target", "RA", "Dec"]].copy()

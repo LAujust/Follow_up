@@ -82,10 +82,10 @@ if st.button("Run photometry"):
     c4.metric("Upper limit", f"{res['upper_limit']:.4f}" if res["upper_limit"] is not None else "-")
 
     if res.get("raw_table_preview") is not None:
-        st.subheader("Result table preview")
+        st.header("Result table preview")
         st.dataframe(res["raw_table_preview"], use_container_width=True, height=280)
 
     if res.get("diagnostic_paths"):
-        st.subheader("Diagnostics")
+        st.header("Diagnostics")
         for p in res["diagnostic_paths"]:
             st.image(p, caption=p, use_container_width=True)
