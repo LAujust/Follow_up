@@ -40,7 +40,12 @@ if dist_html is None:
     st.info("No observation distribution HTML found in results/.")
 else:
     try:
-        components.html(dist_html.read_text(encoding="utf-8"), height=600,)
+        centered_html = f"""
+            <div style="display: flex; justify-content: center;">
+                {dist_html.read_text(encoding="utf-8")}
+            </div>
+            """
+        components.html(centered_html, height=600)
     except Exception as exc:
             st.warning(f"Failed to render distribution HTML: {exc}")
 
