@@ -19,6 +19,7 @@ for p in (ROOT, CODE_DIR, LUNAR_DIR):
 CANDIDATES_CSV = ROOT / "Candidates.csv"
 TIMELINE_CSV = RESULTS_DIR / "all_targets_timeline.csv"
 TIMELINE_HTML = RESULTS_DIR / "all_targets_timeline.html"
+DISTRIBUTION_HTML = RESULTS_DIR / "observation_distribution.html"
 META_CSV = RESULTS_DIR / "all_targets_meta.csv"
 LUNAR_CSV = LUNAR_DIR / "Candidates_lunar.csv"
 

@@ -22,7 +22,7 @@ from psimage import *
 
 __all__ = ['read_image','generate_tnot_plan','generate_tnot_object_json','generate_sitian_plan',
            'plot_lunar_distance','get_tnot_data','get_sitian_data',
-           'check_source_dirs','fits_plot','show_shift','calculate_observation_stats']
+           'check_source_dirs','fits_plot','show_shift','calculate_observation_stats','show_obs_pie']
 
 
 """
@@ -1321,3 +1321,25 @@ def calculate_observation_stats(
     print(f"[OK] Saved results to {output_file}")
 
     return result_df
+
+
+def show_obs_pie(obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.csv',save_path='/home/liangrd/Follow_up/results'):
+    import plotly.express as px
+    
+    df = pd.read_csv(obs_file)
+    # Count observations per telescope
+    obs_counts = df['telescope'].value_counts().reset_index()
+    obs_counts.columns = ['telescope', 'count']
+    
+    # Plot pie chart
+    fig = px.pie(obs_counts, values='count', names='telescope',
+                 title='Observation Distribution by Telescope')
+    fig.update_traces(textposition='inside', textinfo='percent+label')
+    fig.update_layout(showlegend=False)
+    
+    # Save HTML
+    fig_path = os.path.join(save_path, 'observation_distribution.html')
+    fig.write_html(fig_path)
+    
+    # Show plot
+    fig.show()

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+from pathlib import Path
 import streamlit as st
+import streamlit.components.v1 as components
 
 from data_access import (
     build_target_index,
@@ -9,6 +11,7 @@ from data_access import (
     load_meta,
     load_timeline,
 )
+from config import RESULTS_DIR
 
 st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="centered",)
 
@@ -40,4 +43,20 @@ st.divider()
 if not cand.empty:
     preview_cols = [c for c in ["target", "Priority", "Obs Time", "RA", "Dec", "Classification"] if c in cand.columns]
     st.subheader("Candidate Preview")
-    st.dataframe(cand[preview_cols], use_container_width=True, height=320)
+    st.dataframe(cand[preview_cols], use_container_width=True, height=360)
+
+st.subheader("Observation Distribution")
+dist_candidates = [
+    Path(RESULTS_DIR) / "obsrvations_distribution.html",
+    Path(RESULTS_DIR) / "observation_distribution.html",
+]
+dist_html = next((p for p in dist_candidates if p.exists()), None)
+if dist_html is None:
+    st.info("No observation distribution HTML found in results/.")
+else:
+    with st.expander("Show observation distribution", expanded=True):
+        st.code(str(dist_html))
+        try:
+            components.html(dist_html.read_text(encoding="utf-8"), height=700, scrolling=True)
+        except Exception as exc:
+            st.warning(f"Failed to render distribution HTML: {exc}")
