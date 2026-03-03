@@ -60,7 +60,7 @@ with col2:
                     {dist_html2.read_text(encoding="utf-8")}
                 </div>
                 """
-        components.html(centered_html, height=600)
+        components.html(centered_html2, height=600)
     except Exception as exc:
                 st.warning(f"Failed to render distribution HTML: {exc}")
 
