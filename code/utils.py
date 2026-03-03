@@ -1336,7 +1336,7 @@ def show_obs_pie(obs_file='/home/liangrd/Follow_up/results/all_targets_timeline.
     fig = px.pie(obs_counts, values='count', names='telescope',
                  title='Observation Distribution')
     fig.update_traces(textposition='inside', textinfo='percent+label')
-    fig.update_layout(showlegend=False,width=900, height=900)
+    fig.update_layout(showlegend=False,width=600, height=600)
     
     # Save HTML
     fig_path = os.path.join(save_path, 'observation_distribution.html')
