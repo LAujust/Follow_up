@@ -84,7 +84,7 @@ else:
             labels={"dt": "T - T0 (days)", "target": "Target"},
             title="Observation Timeline of All Targets",
         )
-        fig.update_layout(height=max(420, 28 * timeline["target"].nunique()))
+        fig.update_layout(height=max(800, 28 * timeline["target"].nunique()))
         st.plotly_chart(fig, use_container_width=True)
 
         out_html = Path(RESULTS_DIR) / "all_targets_timeline.html"
