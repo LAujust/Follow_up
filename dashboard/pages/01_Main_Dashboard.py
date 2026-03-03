@@ -92,7 +92,7 @@ else:
         with st.expander("Raw PNG"):
             try:
                 image_path = Path(RESULTS_DIR) / "all_targets_timeline.png"
-                components.image(str(image_path), width=600)
+                st.image(str(image_path), width=600)
             except Exception as exc:
                 st.warning(f"Could not render saved PNG inline: {exc}")
     else:
