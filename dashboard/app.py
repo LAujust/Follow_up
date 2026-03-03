@@ -13,7 +13,7 @@ from data_access import (
 )
 from config import RESULTS_DIR
 
-st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="centered",)
+st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="wide",)
 
 st.title("Follow up Dashboard")
 st.caption("Targets, observation stats, lunar distance, planning, and photometry")
