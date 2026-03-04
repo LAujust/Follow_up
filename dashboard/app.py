@@ -30,8 +30,6 @@ c2.metric("Observed Targets", len(meta[meta['nwatch']>0]) if "target" in meta.co
 c3.metric("Observations", len(timeline))
 c4.metric("Alive", int((cand.get("Priority", 0) > 2).sum()) if len(cand) else 0)
 
-st.dataframe(cand,height=500)
-
 st.header("Observation Summary")
 dist_candidates = [
     Path(RESULTS_DIR) / "obsrvations_distribution.html",
