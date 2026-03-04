@@ -190,6 +190,7 @@ class LS:
             )
 
         # 读取内存中的 FITS
+        print(response.text[:200])  # 打印前200字符检查响应内容
         hdul = fits.open(BytesIO(response.content))
 
         if len(hdul) < 2:
