@@ -429,6 +429,8 @@ class Photometry:
         if show:
             plt.show()
         
+        #estimage upper-limit
+        self.uplim = self.estimate_upperlimit()
         
         # =========================================================
         # 4️⃣  Aperture Setup
@@ -455,6 +457,7 @@ class Photometry:
         phot_bkgsub = phot_table['aperture_sum'][0] - total_bkg
         phot_table['total_bkg'] = total_bkg
         phot_table['aperture_sum_bkgsub'] = phot_bkgsub
+
         
         target_coord = SkyCoord(ra*u.deg, dec*u.deg)
         sep_target = target_coord.separation(det_coord)
@@ -488,9 +491,8 @@ class Photometry:
                     return phot_table  
 
             print("Target not detected → computing upper limit")
-            uplim = self.estimate_upperlimit()
-            print(f"3-sigma upper limit = {uplim:.3f}")
-            return {"upper_limit": uplim}
+            print(f"3-sigma upper limit = {self.uplim:.3f}")
+            return {"upper_limit": self.uplim}
 
 
 
@@ -703,6 +705,8 @@ class Photometry:
         if show:
             plt.show()
 
+        #estimage upper-limit
+        self.uplim = self.estimate_upperlimit()
 
         # ==========================================================
         # 5️⃣ TARGET MEASUREMENT
@@ -769,9 +773,8 @@ class Photometry:
                     pass
 
         print("Target not detected → computing upper limit")
-        uplim = self.estimate_upperlimit()
-        print(f"3-sigma upper limit = {uplim:.3f}")
-        return {"upper_limit": uplim}
+        print(f"3-sigma upper limit = {self.uplim:.3f}")
+        return {"upper_limit": self.uplim}
     
     def _radec_to_xy(self, ra, dec):
         """

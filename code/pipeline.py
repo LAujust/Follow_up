@@ -125,10 +125,14 @@ def _fits_meta(path: Path) -> tuple[Time, str]:
 
     if band == "UNKNOWN":
         low = path.name.lower()
-        for b in ["u", "g", "r", "i", "z", "w", "y"]:
+        for b in ["u", "g", "r", "i", "z", "w", "y", "rp","ip", "zs"]:
             if f"_{b}_" in low:
                 band = b
                 break
+    if band == "rp":
+        band = "r"
+    elif band == "ip":
+        band = "i"
     return t, band
 
 
@@ -413,7 +417,7 @@ def _run_photometry_target(
             mean_mjd = mean_mjd_map.get(str(coadd_file), None)
             if mean_mjd is None:
                 try:
-                    t, _ = _fits_meta(coadd_file)
+                    t, band = _fits_meta(coadd_file)
                     mean_mjd = float(t.mjd)
                 except Exception:
                     mean_mjd = np.nan
@@ -463,7 +467,7 @@ def _run_photometry_target(
                     p.read_image(str(coadd_file))
 
                     if method == "aperture":
-                        table = p.aperture_photometry(
+                        out = p.aperture_photometry(
                             ra=ra,
                             dec=dec,
                             r_ap=cfg.get("r_ap", None) if o_pos else 20.0,
@@ -487,6 +491,7 @@ def _run_photometry_target(
                                     result["mag"] = float(odf.iloc[0]["mag"])
                                 if "mag_err" in odf.columns:
                                     result["mag_err"] = float(odf.iloc[0]["mag_err"])
+                            result["upper_limit"] = p.uplim
                     else:
                         out = p.psf_photometry(
                             ra=ra,
@@ -509,6 +514,7 @@ def _run_photometry_target(
                                     result["mag"] = float(odf.iloc[0]["mag"])
                                 if "mag_err" in odf.columns:
                                     result["mag_err"] = float(odf.iloc[0]["mag_err"])
+                            result["upper_limit"] = p.uplim
 
                     result["zp"] = float(p.zp) if p.zp is not None else np.nan
                     result["zp_std"] = float(p.zp_std) if p.zp_std is not None else np.nan
@@ -564,6 +570,10 @@ def run_pipeline(
     config_redo = _as_bool(cfg.get("redo", False), default=False) if isinstance(cfg, dict) else False
     redo_flag = config_redo if redo is None else bool(redo)
     cand = _load_candidates(candidates_csv)
+    
+    if redo:
+        import subprocess
+        subprocess.run(['rm','-rf','~/optical_data/**/pipeline'], shell=True)
 
     if targets:
         cand = cand[cand["target"].isin(targets)]
