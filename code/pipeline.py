@@ -473,17 +473,20 @@ def _run_photometry_target(
                             match_radius=match_radius,
                             fwhm=fwhm,
                             fit_shape=fit_shape,
+                            forced=forced,
                             cat_dir=cat_dir,
                             path=str(out_plot_dir),
                             show=False,
                         )
-                        ap_sum = float(table["aperture_sum_bkgsub"][0])
-                        ap_err = float(table["aperture_sum_err"][0])
-                        if ap_sum > 0 and p.zp is not None:
-                            result["mag"] = float(p.zp - 2.5 * np.log10(ap_sum))
-                            result["mag_err"] = float(
-                                np.sqrt((1.0857 * ap_err / ap_sum) ** 2 + (p.zp_std or 0.0) ** 2)
-                            )
+                        if isinstance(out, dict) and "upper_limit" in out:
+                            result["upper_limit"] = float(out["upper_limit"])
+                        else:
+                            odf = out.to_pandas()
+                            if len(odf) > 0:
+                                if "mag" in odf.columns:
+                                    result["mag"] = float(odf.iloc[0]["mag"])
+                                if "mag_err" in odf.columns:
+                                    result["mag_err"] = float(odf.iloc[0]["mag_err"])
                     else:
                         out = p.psf_photometry(
                             ra=ra,
@@ -518,8 +521,34 @@ def _run_photometry_target(
                     logger.exception(f"[{target}/{telescope}] photometry failed: {coadd_file.name} method={method}")
 
                 photo_df = pd.concat([photo_df, pd.DataFrame([result])], ignore_index=True)
+    
 
-    photo_df.to_csv(photo_path, index=False)
+    # split tables
+    df_psf = photo_df[photo_df['method'] == 'psf'].copy()
+    df_ap  = photo_df[photo_df['method'] == 'aperture'].copy()
+
+    # rename columns
+    df_psf = df_psf.rename(columns={
+        'mag': 'magpsf',
+        'mag_err': 'magpsf_err'
+    })
+
+    df_ap = df_ap.rename(columns={
+        'mag': 'magap',
+        'mag_err': 'magap_err'
+    })
+
+    # columns used to match rows
+    keys = ['target','telescope','coadd_file','mean_mjd']
+
+    # merge
+    df_merge = pd.merge(
+        df_psf,
+        df_ap[keys + ['magap','magap_err']],
+        on=keys,
+        how='outer'
+    )
+    df_merge.to_csv(photo_path, index=False)
     return photo_df
 
 
@@ -547,6 +576,7 @@ def run_pipeline(
 
         try:
             ra, dec, o_pos = _target_coord(row)
+            print(f"Processing target={target} RA={ra} Dec={dec} (o_pos={o_pos})")
         except Exception:
             continue
 

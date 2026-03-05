@@ -22,6 +22,7 @@ from photutils.aperture import (
 from photutils.psf import CircularGaussianPRF, PSFPhotometry, IterativePSFPhotometry, fit_fwhm
 from photutils.background import MMMBackground, Background2D, MedianBackground, LocalBackground
 import matplotlib.pyplot as plt
+from astropy.nddata import Cutout2D
 
 __all__ = ['Photometry']
 
@@ -396,23 +397,30 @@ class Photometry:
         # ==========================================================
         # 3️⃣  PLOT RESIDUAL IMAGE
         # ==========================================================
-        resid = psfphot.make_residual_image(self.data)
-        model = psfphot.make_model_image(shape=self.data.shape)
+        pos = SkyCoord(ra*u.deg, dec*u.deg)
+        size = int(plot_scale * fwhm)
+        cutout = Cutout2D(self.data, pos, size=(size,size), wcs=self.wcs)
+        data = cutout.data
+        resid = psfphot.make_residual_image(data)
+        model = psfphot.make_model_image(shape=data.shape)
+        self.model = model
+        self.resid = resid
         
         cmap = 'viridis'
         fig, ax = plt.subplots(1,3, figsize=(15,5),sharex=True, sharey=True)
-        im0 = ax[0].imshow(self.data, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
-        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
+        im0 = ax[0].imshow(data, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
+        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
         im2 = ax[2].imshow(resid, origin='lower', cmap=cmap, vmin=np.percentile(resid,5), vmax=np.percentile(resid,99))
         ax[0].set_title('Original Image')
         ax[1].set_title('PSF Model Image')
         ax[2].set_title('Residual Image')
-        if ra is not None and dec is not None:
-            #Cutout around target
-            x, y = self._radec_to_xy(ra, dec)
-            size = int(plot_scale * fwhm)
-            ax[0].set_xlim(x - size//2, x + size//2)
-            ax[0].set_ylim(y - size//2, y + size//2)
+
+        # if ra is not None and dec is not None:
+        #     #Cutout around target
+        #     x, y = self._radec_to_xy(ra, dec)
+        #     size = int(plot_scale * fwhm)
+        #     ax[0].set_xlim(x - size//2, x + size//2)
+        #     ax[0].set_ylim(y - size//2, y + size//2)
         
         ax[0].set_xticklabels([])
         ax[0].set_yticklabels([])
@@ -663,23 +671,30 @@ class Photometry:
         # ==========================================================
         # 3️⃣  PLOT RESIDUAL IMAGE
         # ==========================================================
-        resid = psfphot.make_residual_image(self.data)
-        model = psfphot.make_model_image(shape=self.data.shape)
+        #zoom into target ra, dec
+        pos = SkyCoord(ra*u.deg, dec*u.deg)
+        size = int(plot_scale * fwhm)
+        cutout = Cutout2D(self.data, pos, size=(size,size), wcs=self.wcs)
+        data = cutout.data
+        resid = psfphot.make_residual_image(data)
+        model = psfphot.make_model_image(shape=data.shape)
+        self.model = model
+        self.resid = resid
         
         cmap = 'viridis'
         fig, ax = plt.subplots(1,3, figsize=(15,5),sharex=True, sharey=True)
-        im0 = ax[0].imshow(self.data, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
-        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
+        im0 = ax[0].imshow(data, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
+        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
         im2 = ax[2].imshow(resid, origin='lower', cmap=cmap, vmin=np.percentile(resid,5), vmax=np.percentile(resid,99))
         ax[0].set_title('Original Image')
         ax[1].set_title('PSF Model Image')
         ax[2].set_title('Residual Image')
-        if ra is not None and dec is not None:
-            #Cutout around target
-            x, y = self._radec_to_xy(ra, dec)
-            size = int(plot_scale * fwhm)
-            ax[0].set_xlim(x - size//2, x + size//2)
-            ax[0].set_ylim(y - size//2, y + size//2)
+        # if ra is not None and dec is not None:
+        #     #Cutout around target
+        #     x, y = self._radec_to_xy(ra, dec)
+        #     size = int(plot_scale * fwhm)
+        #     ax[0].set_xlim(x - size//2, x + size//2)
+        #     ax[0].set_ylim(y - size//2, y + size//2)
         
         ax[0].set_xticklabels([])
         ax[0].set_yticklabels([])
