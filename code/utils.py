@@ -1394,7 +1394,7 @@ def show_cumulative_observations(
                    title='Number eFXTs',
                    labels={'Obs Time':'Obs Time (UTC)', 'cum_events':'N'})
     fig1.update_traces(mode='lines')
-    fig1.update_layout(width=900, height=600)
+    fig1.update_layout(width=700, height=500)
     fig1_path = os.path.join(save_path, 'cumulative_events.html')
     fig1.write_html(fig1_path)
     # fig1.show()
@@ -1411,7 +1411,7 @@ def show_cumulative_observations(
                    title='Number of Observations',
                    labels={'time_iso':'Obs Time (UTC)', 'cum_obs':'Ns'})
     fig2.update_traces(mode='lines')
-    fig2.update_layout(width=900, height=600)
+    fig2.update_layout(width=700, height=500)
     fig2_path = os.path.join(save_path, 'cumulative_observations.html')
     fig2.write_html(fig2_path)
     # fig2.show()
