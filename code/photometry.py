@@ -237,6 +237,7 @@ class Photometry:
             finder=IRAFStarFinder,
             psf_model=None,
             fwhm=3.,
+            forced=False,
             fit_shape=(5, 5),
             cat_dir=None,
             plot_scale=30,
@@ -447,19 +448,43 @@ class Photometry:
         phot_table['total_bkg'] = total_bkg
         phot_table['aperture_sum_bkgsub'] = phot_bkgsub
         
-        
-        
-        #convert to magnitude
-        phot['mag'] = mag = self.zp - 2.5 * np.log10(phot_table['aperture_sum_bkgsub'][0])
-        phot['mag_err'] = mag_err = np.sqrt(
-            (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
-            self.zp_std**2
-        )
-        self.phot = phot_table
-        
-        print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
-        
-        return phot_table        
+        target_coord = SkyCoord(ra*u.deg, dec*u.deg)
+        sep_target = target_coord.separation(det_coord)
+
+        if np.min(sep_target) < match_radius * u.arcsec:
+            #convert to magnitude
+            phot['mag'] = mag = self.zp - 2.5 * np.log10(phot_table['aperture_sum_bkgsub'][0])
+            phot['mag_err'] = mag_err = np.sqrt(
+                (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
+                self.zp_std**2
+            )
+            self.phot = phot_table
+            
+            print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
+            
+            return phot_table     
+
+        else:
+            if forced:
+                if phot_bkgsub > 3.0 * total_bkg:
+                    #convert to magnitude
+                    phot['mag'] = mag = self.zp - 2.5 * np.log10(phot_table['aperture_sum_bkgsub'][0])
+                    phot['mag_err'] = mag_err = np.sqrt(
+                        (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
+                        self.zp_std**2
+                    )
+                    self.phot = phot_table
+                    
+                    print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
+                    
+                    return phot_table  
+
+            print("Target not detected → computing upper limit")
+            uplim = self.estimate_upperlimit()
+            print(f"3-sigma upper limit = {uplim:.3f}")
+            return {"upper_limit": uplim}
+
+
 
 
     

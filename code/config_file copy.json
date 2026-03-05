@@ -1,0 +1,59 @@
+{
+  "redo": false,
+  "LCO": {
+    "do_coadd": true,
+    "method": "both",
+    "size": "None",
+    "fwhm": 5.0,
+    "sigma": 5.0,
+    "match_radius": 1.0,
+    "fit_shape": [9, 9],
+    "Forced": false,
+    "r_ap": 2.0,
+    "r_in": 8.0,
+    "r_out": 12.0,
+    "precoadd_patterns": ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"]
+  },
+  "TNOT": {
+    "do_coadd": false,
+    "method": "both",
+    "size": "None",
+    "fwhm": 5.0,
+    "sigma": 5.0,
+    "match_radius": 1.0,
+    "fit_shape": [9, 9],
+    "Forced": false,
+    "r_ap": 2.0,
+    "r_in": 8.0,
+    "r_out": 12.0,
+    "precoadd_patterns": ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"]
+  },
+  "WHUT": {
+    "do_coadd": false,
+    "method": "both",
+    "size": "None",
+    "fwhm": 5.0,
+    "sigma": 5.0,
+    "match_radius": 1.0,
+    "fit_shape": [9, 9],
+    "Forced": false,
+    "r_ap": 2.0,
+    "r_in": 8.0,
+    "r_out": 12.0,
+    "precoadd_patterns": ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"]
+  },
+  "sitian": {
+    "do_coadd": false,
+    "method": "both",
+    "size": "None",
+    "fwhm": 5.0,
+    "sigma": 5.0,
+    "match_radius": 1.0,
+    "fit_shape": [9, 9],
+    "Forced": false,
+    "r_ap": 2.0,
+    "r_in": 8.0,
+    "r_out": 12.0,
+    "precoadd_patterns": ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"]
+  }
+}
