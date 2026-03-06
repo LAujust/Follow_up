@@ -6,8 +6,6 @@ import astropy.units as u
 from astropy.coordinates import SkyCoord, get_body
 from astropy.time import Time
 import sys
-sys.path.append("/home/liangrd/Follow_up/code")
-from utils import moon_phase
 
 
 def compute_lunar_curve(
