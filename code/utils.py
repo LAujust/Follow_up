@@ -23,7 +23,7 @@ from psimage import *
 __all__ = ['read_image','generate_tnot_plan','generate_tnot_object_json','generate_sitian_plan',
            'plot_lunar_distance','get_tnot_data','get_sitian_data',
            'check_source_dirs','fits_plot','show_shift','calculate_observation_stats',
-           'show_obs_pies','show_cumulative_observations']
+           'show_obs_pies','show_cumulative_observations',"moon_phase"]
 
 
 """
@@ -816,6 +816,37 @@ def fits_plot(
     return fig
     
     
+def moon_phase(time):
+    """
+    Calculate moon phase fraction (0=new, 0.5=full)
+
+    Parameters
+    ----------
+    time : str or astropy Time
+        observation time
+
+    Returns
+    -------
+    phase : float
+        phase in [0,1]
+    age : float
+        moon age in days
+    """
+
+    if not isinstance(time, Time):
+        time = Time(time)
+
+    jd = time.jd
+
+    synodic_month = 29.53058867
+
+    # reference new moon (2000 Jan 6)
+    jd_ref = 2451550.1
+
+    age = (jd - jd_ref) % synodic_month
+    phase = age / synodic_month
+
+    return phase, age
 
 
 def plot_lunar_distance(
@@ -826,7 +857,8 @@ def plot_lunar_distance(
     step_hours=6,
     name=None,
     threshold=30,
-    plot=True
+    plot=True,
+    save_dir='./lunar.png'
 ):
     """
     Calculate and plot lunar distance for a given sky position
@@ -872,20 +904,27 @@ def plot_lunar_distance(
     separation = moon.separation(target)
 
     delta_theta = separation.deg - threshold
+    
+    #Moon Phase
+    phases, age = moon_phase(times)
 
     # ---- Plot ----
     if plot:
         plt.figure(figsize=(5,3))
         plt.plot(times.datetime, separation.deg)
+        ax = plt.gca()
         plt.axhline(30,ls='--',lw=1,color='C1')
         plt.axhline(20,ls='--',lw=1,color='r')
         plt.xlabel("Date (UTC)")
         plt.ylabel("Lunar distance (deg)")
+        ax2 = ax.twinx()
+        ax2.plot(times.datetime, phases*100, color='C2', ls='--', label='Moon Phase')
         plt.title(f"Lunar Distance of {name} (RA={ra}, Dec={dec})" if name else f"Lunar Distance (RA={ra}, Dec={dec})")
         plt.tight_layout()
         plt.show()
+        plt.savefig(save_dir, dpi=200)
 
-    return times, separation
+    return times, separation, phases
     
     
     

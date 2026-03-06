@@ -5,6 +5,9 @@ import pandas as pd
 import astropy.units as u
 from astropy.coordinates import SkyCoord, get_body
 from astropy.time import Time
+import sys
+sys.path.append("/home/liangrd/Follow_up/code")
+from utils import moon_phase
 
 
 def compute_lunar_curve(
@@ -20,11 +23,14 @@ def compute_lunar_curve(
     target = SkyCoord(ra=ra, dec=dec, unit=u.deg)
     moon = get_body("moon", times)
     separation = moon.separation(target).deg
+    phases = moon_phase(times) * 100
+    
 
     return pd.DataFrame(
         {
             "time_iso": [t.isot for t in times],
             "separation_deg": separation,
+            "moon_phase": phases,
             "above_threshold": separation >= threshold,
         }
     )

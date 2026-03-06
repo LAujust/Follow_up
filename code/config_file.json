@@ -45,7 +45,7 @@
   "sitian": {
     "do_coadd": false,
     "method": "both",
-    "size": "None",
+    "size": [3000,3000],
     "fwhm": 5.0,
     "sigma": 5.0,
     "match_radius": 1.0,

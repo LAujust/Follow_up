@@ -412,6 +412,19 @@ def _run_photometry_target(
                     logger.info(
                         f"[{target}/{telescope}] using {len(coadd_candidates)} pre-coadded files from raw telescope dir"
                     )
+                else:
+                    # If no pre-coadded products are found, do direct photometry on raw non-ref frames.
+                    raw_files = _scan_raw_fits(raw_tel_dir, pipeline_name)
+                    coadd_candidates.extend(raw_files)
+                    if coadd_candidates:
+                        logger.info(
+                            f"[{target}/{telescope}] do_coadd=False and no stack/coadd files found; "
+                            f"using {len(coadd_candidates)} raw files for direct photometry"
+                        )
+
+        if not coadd_candidates:
+            logger.info(f"[{target}/{telescope}] no photometry candidate files found")
+            continue
 
         for coadd_file in coadd_candidates:
             mean_mjd = mean_mjd_map.get(str(coadd_file), None)
