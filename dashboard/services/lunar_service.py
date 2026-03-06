@@ -37,7 +37,7 @@ def compute_lunar_curve(
         {
             "time_iso": [t.isot for t in times],
             "separation_deg": separation,
-            "moon_phase": phases,
+            "moon_phase": phases*100,
             "above_threshold": separation >= threshold,
         }
     )
