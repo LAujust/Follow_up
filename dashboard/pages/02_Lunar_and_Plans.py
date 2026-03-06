@@ -46,7 +46,7 @@ threshold = c3.number_input("Threshold (deg)", min_value=0.0, max_value=180.0, v
 
 if st.button("Compute lunar curve"):
     curve = compute_lunar_curve(ra=ra, dec=dec, ndays=int(ndays), step_hours=int(step_hours), threshold=float(threshold))
-    st.line_chart(curve.set_index("time_iso")[["separation_deg","moon_phase"]])
+    st.line_chart(curve.set_index("time_iso")["separation_deg","moon_phase"])
 
     min_sep = float(curve["separation_deg"].min())
     mean_sep = float(curve["separation_deg"].mean())
