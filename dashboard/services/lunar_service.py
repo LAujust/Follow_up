@@ -21,10 +21,10 @@ def compute_lunar_curve(
     target = SkyCoord(ra=ra, dec=dec, unit=u.deg)
     moon = get_body("moon", times)
     separation = moon.separation(target).deg
-    if not isinstance(time, Time):
-        time = Time(time)
+    if not isinstance(times, Time):
+        times = Time(times)
 
-        jd = time.jd
+        jd = times.jd
 
         synodic_month = 29.53058867
 
