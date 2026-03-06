@@ -67,7 +67,7 @@ show_cols = [
     ]
     if c in filtered.columns
 ]
-st.dataframe(filtered[show_cols], use_container_width=True, height=700)
+st.dataframe(filtered[show_cols], width='strecth', height=700)
 
 st.header("Observation Timeline")
 if timeline.empty:
@@ -85,7 +85,7 @@ else:
             title="Observation Timeline of All Targets",
         )
         fig.update_layout(height=max(800, 28 * timeline["target"].nunique()))
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
 
         out_html = Path(RESULTS_DIR) / "all_targets_timeline.html"
         fig.write_html(str(out_html), include_plotlyjs="cdn")
@@ -123,7 +123,7 @@ else:
         ax.set_xlabel("T - T0 (days)")
         ax.set_ylabel("Target")
         ax.grid(alpha=0.2)
-        st.pyplot(fig, use_container_width=True)
+        st.pyplot(fig, width='stretch')
 
 st.header("Per-target Detail")
 if len(filtered):
@@ -136,7 +136,7 @@ if len(filtered):
     c4.metric("FITS files", int(row["num_fits"]) if "num_fits" in row and pd.notna(row["num_fits"]) else 0)
 
     detail_cols = [c for c in filtered.columns if c not in {"RA", "Dec"}]
-    st.dataframe(pd.DataFrame([row[detail_cols].to_dict()]), use_container_width=True)
+    st.dataframe(pd.DataFrame([row[detail_cols].to_dict()]), width='stretch')
 
 # st.header("Observation Distribution")
 # dist_candidates = [

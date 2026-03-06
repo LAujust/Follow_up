@@ -74,7 +74,7 @@ cum_obs_html = Path(RESULTS_DIR) / "cumulative_observations.html"
 with col1:
     if cum_events_html.exists():
         try:
-            components.html(cum_events_html.read_text(encoding="utf-8"), height=600)
+            components.html(cum_events_html.read_text(encoding="utf-8"), height=600, width='stretch')
         except Exception as exc:
             st.warning(f"Failed to render cumulative events HTML: {exc}")
     else:
@@ -84,7 +84,7 @@ with col1:
 with col2:
     if cum_obs_html.exists():
         try:
-            components.html(cum_obs_html.read_text(encoding="utf-8"), height=600)
+            components.html(cum_obs_html.read_text(encoding="utf-8"), height=600, width='stretch')
         except Exception as exc:
             st.warning(f"Failed to render cumulative observations HTML: {exc}")
         

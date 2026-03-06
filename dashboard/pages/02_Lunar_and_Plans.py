@@ -53,7 +53,7 @@ if st.button("Compute lunar curve"):
     x1, x2 = st.columns(2)
     x1.metric("Min separation", f"{min_sep:.2f} deg")
     x2.metric("Mean separation", f"{mean_sep:.2f} deg")
-    st.dataframe(curve, use_container_width=True, height=260)
+    st.dataframe(curve, width='stretch', height=260)
 
 st.divider()
 st.header("Generate Observation Plans")
