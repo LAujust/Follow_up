@@ -45,7 +45,7 @@
   "sitian": {
     "do_coadd": false,
     "method": "both",
-    "size": [3000,3000],
+    "size": [2000,2000],
     "fwhm": 5.0,
     "sigma": 5.0,
     "match_radius": 1.0,
@@ -59,7 +59,7 @@
   "SOAR": {
     "do_coadd": true,
     "method": "both",
-    "size": "None",
+    "size": [800,800],
     "fwhm": 5.0,
     "sigma": 5.0,
     "match_radius": 1.0,
