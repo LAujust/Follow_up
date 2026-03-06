@@ -23,7 +23,18 @@ def compute_lunar_curve(
     target = SkyCoord(ra=ra, dec=dec, unit=u.deg)
     moon = get_body("moon", times)
     separation = moon.separation(target).deg
-    phases = moon_phase(times) * 100
+    if not isinstance(time, Time):
+        time = Time(time)
+
+        jd = time.jd
+
+        synodic_month = 29.53058867
+
+        # reference new moon (2000 Jan 6)
+        jd_ref = 2451550.1
+
+        age = (jd - jd_ref) % synodic_month
+        phases = age / synodic_month
     
 
     return pd.DataFrame(
