@@ -465,6 +465,7 @@ def _run_photometry_target(
                     "telescope": telescope,
                     "coadd_file": str(coadd_file),
                     "mean_mjd": mean_mjd,
+                    "band": str(band),
                     "method": method,
                     "status": "failed",
                     "mag": np.nan,
