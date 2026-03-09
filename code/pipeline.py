@@ -393,6 +393,7 @@ def _run_photometry_target(
         # For telescopes with pre-coadded products, allow photometry without running coadd.
         if not coadd_candidates and not _as_bool(cfg.get("do_coadd", True), default=True):
             raw_tel_dir = raw_telescopes.get(telescope, None)
+            # print(raw_tel_dir)
             patterns = cfg.get(
                 "precoadd_patterns",
                 ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"],
@@ -543,6 +544,7 @@ def _run_photometry_target(
     
 
     # split tables
+    # print(photo_df)
     df_psf = photo_df[photo_df['method'] == 'psf'].copy()
     df_ap  = photo_df[photo_df['method'] == 'aperture'].copy()
 

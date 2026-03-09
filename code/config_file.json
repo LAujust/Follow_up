@@ -29,7 +29,7 @@
     "precoadd_patterns": ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"]
   },
   "WHUT": {
-    "do_coadd": false,
+    "do_coadd": true,
     "method": "both",
     "size": "None",
     "fwhm": 5.0,
