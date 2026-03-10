@@ -22,7 +22,6 @@ from photutils.aperture import (
 from photutils.psf import CircularGaussianPRF, PSFPhotometry, IterativePSFPhotometry, fit_fwhm
 from photutils.background import MMMBackground, Background2D, MedianBackground, LocalBackground
 import matplotlib.pyplot as plt
-from astropy.nddata import Cutout2D
 
 __all__ = ['Photometry']
 
@@ -111,7 +110,7 @@ class Photometry:
         """
         sigma_clip = SigmaClip(sigma=3.0, maxiters=5)
         bkg_stat = MMMBackground(sigma_clip=sigma_clip)
-        bkg = Background2D(self.data, self.data.shape, filter_size=(11, 11),
+        bkg = Background2D(self.data, self.data.shape, filter_size=(11, 11), box_size=(128,128)
                    bkg_estimator=bkg_stat)
 
         error = bkg.background_rms
@@ -238,7 +237,6 @@ class Photometry:
             finder=IRAFStarFinder,
             psf_model=None,
             fwhm=3.,
-            forced=False,
             fit_shape=(5, 5),
             cat_dir=None,
             plot_scale=30,
@@ -397,30 +395,23 @@ class Photometry:
         # ==========================================================
         # 3️⃣  PLOT RESIDUAL IMAGE
         # ==========================================================
-        pos = SkyCoord(ra*u.deg, dec*u.deg)
-        size = int(plot_scale * fwhm)
-        cutout = Cutout2D(self.data, pos, size=(size,size), wcs=self.wcs)
-        data = cutout.data
-        resid = psfphot.make_residual_image(data)
-        model = psfphot.make_model_image(shape=data.shape)
-        self.model = model
-        self.resid = resid
+        resid = psfphot.make_residual_image(self.data)
+        model = psfphot.make_model_image(shape=self.data.shape)
         
         cmap = 'viridis'
         fig, ax = plt.subplots(1,3, figsize=(15,5),sharex=True, sharey=True)
-        im0 = ax[0].imshow(data, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
-        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
+        im0 = ax[0].imshow(self.data, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
+        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
         im2 = ax[2].imshow(resid, origin='lower', cmap=cmap, vmin=np.percentile(resid,5), vmax=np.percentile(resid,99))
         ax[0].set_title('Original Image')
         ax[1].set_title('PSF Model Image')
         ax[2].set_title('Residual Image')
-
-        # if ra is not None and dec is not None:
-        #     #Cutout around target
-        #     x, y = self._radec_to_xy(ra, dec)
-        #     size = int(plot_scale * fwhm)
-        #     ax[0].set_xlim(x - size//2, x + size//2)
-        #     ax[0].set_ylim(y - size//2, y + size//2)
+        if ra is not None and dec is not None:
+            #Cutout around target
+            x, y = self._radec_to_xy(ra, dec)
+            size = int(plot_scale * fwhm)
+            ax[0].set_xlim(x - size//2, x + size//2)
+            ax[0].set_ylim(y - size//2, y + size//2)
         
         ax[0].set_xticklabels([])
         ax[0].set_yticklabels([])
@@ -429,8 +420,6 @@ class Photometry:
         if show:
             plt.show()
         
-        #estimage upper-limit
-        self.uplim = self.estimate_upperlimit()
         
         # =========================================================
         # 4️⃣  Aperture Setup
@@ -457,44 +446,25 @@ class Photometry:
         phot_bkgsub = phot_table['aperture_sum'][0] - total_bkg
         phot_table['total_bkg'] = total_bkg
         phot_table['aperture_sum_bkgsub'] = phot_bkgsub
-
         
-        target_coord = SkyCoord(ra*u.deg, dec*u.deg)
-        sep_target = target_coord.separation(det_coord)
-
-        if np.min(sep_target) < match_radius * u.arcsec:
-            #convert to magnitude
-            phot['mag'] = mag = self.zp - 2.5 * np.log10(phot_table['aperture_sum_bkgsub'][0])
-            phot['mag_err'] = mag_err = np.sqrt(
-                (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
-                self.zp_std**2
-            )
-            self.phot = phot_table
-            
-            print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
-            
-            return phot_table     
-
+        
+        
+        #convert to magnitude
+        phot['mag'] = mag = self.zp - 2.5 * np.log10(phot_table['aperture_sum_bkgsub'][0])
+        phot['mag_err'] = mag_err = np.sqrt(
+            (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
+            self.zp_std**2
+        )
+        self.phot = phot_table
+        
+        print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
+        uplim = self.estimate_upperlimit()
+        self.uplim = uplim
+        print(f"3-sigma upper limit = {uplim:.3f}")
+        if  np.isfinite(mag) and phot_bkgsub > 0 and mag / mag_err > 5:
+            return phot_table       
         else:
-            if forced:
-                if phot_bkgsub > 3.0 * total_bkg:
-                    #convert to magnitude
-                    phot['mag'] = mag = self.zp - 2.5 * np.log10(phot_table['aperture_sum_bkgsub'][0])
-                    phot['mag_err'] = mag_err = np.sqrt(
-                        (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
-                        self.zp_std**2
-                    )
-                    self.phot = phot_table
-                    
-                    print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
-                    
-                    return phot_table  
-
-            print("Target not detected → computing upper limit")
-            print(f"3-sigma upper limit = {self.uplim:.3f}")
-            return {"upper_limit": self.uplim}
-
-
+            return {"upper_limit": uplim} 
 
 
     
@@ -673,30 +643,23 @@ class Photometry:
         # ==========================================================
         # 3️⃣  PLOT RESIDUAL IMAGE
         # ==========================================================
-        #zoom into target ra, dec
-        pos = SkyCoord(ra*u.deg, dec*u.deg)
-        size = int(plot_scale * fwhm)
-        cutout = Cutout2D(self.data, pos, size=(size,size), wcs=self.wcs)
-        data = cutout.data
-        resid = psfphot.make_residual_image(data)
-        model = psfphot.make_model_image(shape=data.shape)
-        self.model = model
-        self.resid = resid
+        resid = psfphot.make_residual_image(self.data)
+        model = psfphot.make_model_image(shape=self.data.shape)
         
         cmap = 'viridis'
         fig, ax = plt.subplots(1,3, figsize=(15,5),sharex=True, sharey=True)
-        im0 = ax[0].imshow(data, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
-        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(data,5), vmax=np.percentile(data,99))
+        im0 = ax[0].imshow(self.data, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
+        im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
         im2 = ax[2].imshow(resid, origin='lower', cmap=cmap, vmin=np.percentile(resid,5), vmax=np.percentile(resid,99))
         ax[0].set_title('Original Image')
         ax[1].set_title('PSF Model Image')
         ax[2].set_title('Residual Image')
-        # if ra is not None and dec is not None:
-        #     #Cutout around target
-        #     x, y = self._radec_to_xy(ra, dec)
-        #     size = int(plot_scale * fwhm)
-        #     ax[0].set_xlim(x - size//2, x + size//2)
-        #     ax[0].set_ylim(y - size//2, y + size//2)
+        if ra is not None and dec is not None:
+            #Cutout around target
+            x, y = self._radec_to_xy(ra, dec)
+            size = int(plot_scale * fwhm)
+            ax[0].set_xlim(x - size//2, x + size//2)
+            ax[0].set_ylim(y - size//2, y + size//2)
         
         ax[0].set_xticklabels([])
         ax[0].set_yticklabels([])
@@ -705,14 +668,14 @@ class Photometry:
         if show:
             plt.show()
 
-        #estimage upper-limit
-        self.uplim = self.estimate_upperlimit()
 
         # ==========================================================
         # 5️⃣ TARGET MEASUREMENT
         # ==========================================================
         target_coord = SkyCoord(ra*u.deg, dec*u.deg)
         sep_target = target_coord.separation(det_coord)
+        uplim = self.estimate_upperlimit()
+        self.uplim = uplim
 
         if np.min(sep_target) < match_radius * u.arcsec:
 
@@ -773,8 +736,8 @@ class Photometry:
                     pass
 
         print("Target not detected → computing upper limit")
-        print(f"3-sigma upper limit = {self.uplim:.3f}")
-        return {"upper_limit": self.uplim}
+        print(f"3-sigma upper limit = {uplim:.3f}")
+        return {"upper_limit": uplim}
     
     def _radec_to_xy(self, ra, dec):
         """

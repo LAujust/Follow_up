@@ -133,6 +133,15 @@ def _fits_meta(path: Path) -> tuple[Time, str]:
         band = "r"
     elif band == "ip":
         band = "i"
+    elif band == 'gp':
+        band = 'g'
+    elif band == 'zs':
+        band = 'z'
+        
+    for b in ["u", "g", "r", "i", "z", "w", "y"]:
+        if f"{b}-" in band:
+            band = b
+            break
     return t, band
 
 
@@ -435,6 +444,9 @@ def _run_photometry_target(
             except Exception:
                     band = 'r'
                     
+            if not band in ['g','r','i','z','y']:
+                band = 'r'
+                    
             if mean_mjd is None:
                 mean_mjd = float(t.mjd)
                 
@@ -495,7 +507,7 @@ def _run_photometry_target(
                             match_radius=match_radius,
                             fwhm=fwhm,
                             fit_shape=fit_shape,
-                            forced=forced,
+                            mag_col=band,
                             cat_dir=cat_dir,
                             path=str(out_plot_dir),
                             show=False,
@@ -518,6 +530,7 @@ def _run_photometry_target(
                             sigma=sigma,
                             fit_shape=fit_shape,
                             match_radius=match_radius,
+                            mag_col=band,
                             forced=forced,
                             cat_dir=cat_dir,
                             path=str(out_plot_dir),

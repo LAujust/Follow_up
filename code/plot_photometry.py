@@ -42,16 +42,37 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     
     
     data = Table.read(data_dir)
-    #***
-    data['band'] = ['w'] * 2 + ['g'] * 8
     valid_data = data[data['status']=='ok']
-    valid_data['dt'] = valid_data['mean_mjd'] - T0.mjd
+    if len(valid_data) == 0:
+        print(f"No valid photometry data for {target}.")
+        return None
     
-    idx_obs = (valid_data['magpsf'].mask == False) | (valid_data['magap'].mask == False)
+    valid_data['dt'] = valid_data['mean_mjd'] - T0.mjd
+    # print(valid_data)
+    
+    idx_obs = (~valid_data['magpsf'].mask) | (~valid_data['magap'].mask)
     idx_uplim = ~idx_obs
     
     obs = valid_data[idx_obs]
     uplim = valid_data[idx_uplim]
+    
+    #average masked column
+    magpsf = np.ma.array(obs['magpsf'])
+    magap  = np.ma.array(obs['magap'])
+    
+    magpsf_err = np.ma.array(obs['magpsf_err'])
+    magap_err = np.ma.array(obs['magap_err'])
+    # 计算平均（masked 会自动处理）
+    mag = np.ma.mean(np.ma.vstack([magpsf, magap]), axis=0)
+    mag_err = np.ma.mean(np.ma.vstack([magpsf_err, magap_err]), axis=0)
+
+    # 只保留至少有一个值的行
+    idx = ~mag.mask
+
+    # 写入新列
+    obs = obs[idx]
+    obs['mag'] = mag[idx]
+    obs['mag_err'] = mag_err[idx]
     
     if mpl_kwargs:
         plt.rcParams.update(mpl_kwargs)
@@ -66,7 +87,7 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     for band in np.unique(obs['band']):
         for tel in np.unique(obs['telescope']):
             idx = (obs['band']==band) & (obs['telescope']==tel)
-            ax.errorbar(obs['dt'][idx], obs['magpsf'][idx], yerr=obs['sigmapsf'][idx], color=COLOR_MAP.get(band,'gray'), fmt=MARKER_MAP.get(tel,'o'), mec='k', label=f'{band} {tel}', alpha=0.7, markersize=10)
+            ax.errorbar(obs['dt'][idx], obs['mag'][idx], yerr=obs['mag_err'][idx], color=COLOR_MAP.get(band,'gray'), fmt=MARKER_MAP.get(tel,'o'), mec='k', label=f'{band} {tel}', alpha=0.7, markersize=10)
             
     ax.set_xlabel('Observer-frame Time (days)')
     ax.set_ylabel('Magnitude')
@@ -120,7 +141,8 @@ def main():
         print('=='*20)
         print(f"Plotting photometry for {target}...")
         plot_photometry(data_dir, target, SAVE_DIR)
-    
+        
 
-data_dir = '/home/liangrd/optical_data/EP260101a/pipeline/photometry.csv'
-plot_photometry(data_dir,'EP260101a')
+if __name__ == "__main__":
+    main()
+    # plot_photometry('/home/liangrd/optical_data/EP260101a/pipeline/photometry.csv','EP260101a', SAVE_DIR)
