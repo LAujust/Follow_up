@@ -145,4 +145,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # plot_photometry('/home/liangrd/optical_data/EP260101a/pipeline/photometry.csv','EP260101a', SAVE_DIR)
+    # plot_photometry('/home/liangrd/optical_data/EP260116a/pipeline/photometry.csv','EP260116a', SAVE_DIR)

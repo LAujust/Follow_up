@@ -110,8 +110,8 @@ class Photometry:
         """
         sigma_clip = SigmaClip(sigma=3.0, maxiters=5)
         bkg_stat = MMMBackground(sigma_clip=sigma_clip)
-        bkg = Background2D(self.data, self.data.shape, filter_size=(11, 11), box_size=(128,128)
-                   bkg_estimator=bkg_stat)
+        bkg = Background2D(self.data, self.data.shape, filter_size=(11, 11), box_size=(256,256),
+                   bkg_estimator=bkg_stat,exclude_percentile=50)
 
         error = bkg.background_rms
         
