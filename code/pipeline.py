@@ -334,6 +334,7 @@ def _run_photometry_target(
         "telescope",
         "coadd_file",
         "mean_mjd",
+        "band",
         "method",
         "status",
         "mag",
@@ -429,12 +430,14 @@ def _run_photometry_target(
 
         for coadd_file in coadd_candidates:
             mean_mjd = mean_mjd_map.get(str(coadd_file), None)
+            try:
+                t, band = _fits_meta(coadd_file)
+            except Exception:
+                    band = 'r'
+                    
             if mean_mjd is None:
-                try:
-                    t, band = _fits_meta(coadd_file)
-                    mean_mjd = float(t.mjd)
-                except Exception:
-                    mean_mjd = np.nan
+                mean_mjd = float(t.mjd)
+                
             forced = bool(cfg.get("Forced", cfg.get("forced", False)))
             fwhm = float(cfg.get("fwhm", 3.0))
             sigma = float(cfg.get("sigma", 5.0))

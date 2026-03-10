@@ -487,3 +487,9 @@ ts: buffer is too small for requested array
   - /home/liangrd/Follow_up/results/all_targets_timeline.csv
   - /home/liangrd/Follow_up/results/all_targets_timeline.html
 [OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+[master e713960] Update data at 2026-03-09 22:00:44.215
+ 12 files changed, 307 insertions(+), 56 deletions(-)
+ create mode 100644 code/plot_photometry.py
+ create mode 100644 results/lc_test.png
+To github.com:LAujust/Follow_up.git
+   a141eae..e713960  master -> master

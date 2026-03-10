@@ -13,7 +13,7 @@ plt.rcParams["font.size"] = 14
 CANDIDATES_DIR = '/home/liangrd/Follow_up/Candidates.csv'
 DATA_DIR = '/home/liangrd/optical_data'
 BAND_LIST = ['z','i','r','g','w']
-SAVE_DIR = '/home/liangrd/Follow_up/results'
+SAVE_DIR = '/home/liangrd/Follow_up/results/lcs'
 
 
 
@@ -105,6 +105,8 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     
     fname = f"{target}_lc.png"
     plt.savefig(os.path.join(save_dir,fname), bbox_inches='tight',dpi=300)
+    print(f"Saved photometry plot to {os.path.join(save_dir,fname)}")
+    plt.close()
     
     
 
@@ -115,6 +117,8 @@ def main():
         
     for target in targets:
         data_dir = os.path.join(DATA_DIR, target, 'pipeline', 'photometry.csv')
+        print('=='*20)
+        print(f"Plotting photometry for {target}...")
         plot_photometry(data_dir, target, SAVE_DIR)
     
 
