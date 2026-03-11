@@ -9,6 +9,7 @@ from astropy.time import Time
 from utils import *
 from coadd import *
 from photometry import *
+from plot_photometry import *
 import subprocess
 
 FOLLOWUP_ROOT = Path(__file__).resolve().parents[1]
@@ -35,7 +36,7 @@ show_shift(root=str(OPTICAL_ROOT), save_dir=str(RESULTS_ROOT), ploter='plotly')
 calculate_observation_stats()
 show_obs_pies()
 show_cumulative_observations()
-
+plot_all_lcs()
 
 #Push to GitHub
 os.chdir('/home/liangrd/Follow_up')

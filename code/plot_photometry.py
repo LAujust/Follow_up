@@ -9,8 +9,14 @@ import matplotlib.pyplot as plt
 from astropy.cosmology import Planck18
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+
+__all__ = ['plot_photometry', 'plot_photometry_plotly', 'plot_all_lcs']
+
+
 plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.size"] = 14
+
+
 
 CANDIDATES_DIR = '/home/liangrd/Follow_up/Candidates.csv'
 DATA_DIR = '/home/liangrd/optical_data'
@@ -324,7 +330,7 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
 
     
 
-def main():
+def plot_all_lcs():
     targets = candidates['EP Name'].tolist()
     if not os.path.exists(SAVE_DIR):
         os.makedirs(SAVE_DIR, exist_ok=True)
@@ -337,6 +343,6 @@ def main():
         plot_photometry_plotly(data_dir, target, SAVE_DIR)
         
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     plot_all_lcs()
     # plot_photometry('/home/liangrd/optical_data/EP260116a/pipeline/photometry.csv','EP260116a', SAVE_DIR)
