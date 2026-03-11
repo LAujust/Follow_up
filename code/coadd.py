@@ -95,8 +95,10 @@ def coadd(flist, size=None, save_dir='./', prefix='stacked'):
 
             data = cutout.data
             wcs = cutout.wcs
-            mean, median, std = sigma_clipped_stats(data,sigma=3.0)
-            data = data - median
+            
+        #bkg subtraction
+        mean, median, std = sigma_clipped_stats(data,sigma=3.0)
+        data = data - median
 
         # --- Use first valid image as reference ---
         if ref_wcs is None:

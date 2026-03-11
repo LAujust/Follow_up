@@ -65,7 +65,7 @@
     "match_radius": 1.0,
     "fit_shape": [9, 9],
     "Forced": true,
-    "r_ap": 2.0,
+    "r_ap": 1.0,
     "r_in": 8.0,
     "r_out": 12.0,
     "precoadd_patterns": ["*stack*.fits", "*stack*.fits.fz", "*coadd*.fits", "*coadd*.fits.fz"]

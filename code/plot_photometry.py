@@ -33,7 +33,8 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     #target info
     meta = candidates[candidates['EP Name'] == target]
     T0 = Time(meta['Obs Time'][0])
-    z = meta['Redshift'][0] if not candidates['Redshift'].mask[0] else None
+    z = meta['Redshift'][0] if not meta['Redshift'].mask[0] else None
+    # print(meta['Redshift'][0])
     
     #photometry data
     if not os.path.exists(data_dir):
@@ -50,7 +51,7 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     valid_data['dt'] = valid_data['mean_mjd'] - T0.mjd
     # print(valid_data)
     
-    idx_obs = (~valid_data['magpsf'].mask) | (~valid_data['magap'].mask)
+    idx_obs = ((~valid_data['magpsf'].mask) & (valid_data['magpsf_err'] < 0.5)) | ((~valid_data['magap'].mask) & (valid_data['magap_err'] < 0.5))
     idx_uplim = ~idx_obs
     
     obs = valid_data[idx_obs]
@@ -121,7 +122,7 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
         handles=handles,
         ncol=2,
         # bbox_to_anchor=(0.8, 1),
-        loc='lower right'
+        # loc='lower right'
     )
     
     fname = f"{target}_lc.png"

@@ -460,7 +460,7 @@ class Photometry:
         print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
         uplim = self.estimate_upperlimit()
         self.uplim = uplim
-        print(f"3-sigma upper limit = {uplim:.3f}")
+        print(f"3-sigma upper limit ({mag_col}) = {uplim:.3f}")
         if  np.isfinite(mag) and phot_bkgsub > 0 and mag_err < 0.3:
             return phot_table       
         else:
@@ -736,7 +736,7 @@ class Photometry:
                     pass
 
         print("Target not detected → computing upper limit")
-        print(f"3-sigma upper limit = {uplim:.3f}")
+        print(f"3-sigma upper limit ({mag_col}) = {uplim:.3f}")
         return {"upper_limit": uplim}
     
     def _radec_to_xy(self, ra, dec):

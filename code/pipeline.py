@@ -155,6 +155,8 @@ def _scan_raw_fits(telescope_dir: Path, pipeline_name: str) -> list[Path]:
             continue
         if "ref" in low:
             continue
+        if "cutout" in low or "cutout" in str(p):
+            continue
         if f"/{pipeline_name}/" in p.as_posix():
             continue
         if low.startswith("._"):
@@ -344,10 +346,11 @@ def _run_photometry_target(
         "coadd_file",
         "mean_mjd",
         "band",
-        "method",
         "status",
-        "mag",
-        "mag_err",
+        "magpsf",
+        "magpsf_err",
+        "magap",
+        "magap_err",
         "upper_limit",
         "zp",
         "zp_std",
@@ -441,6 +444,10 @@ def _run_photometry_target(
             continue
 
         for coadd_file in coadd_candidates:
+            "skip cutout files"
+            if "cutout" in coadd_file.name.lower():
+                logger.info(f"[{target}/{telescope}] skip cutout file: {coadd_file.name}")
+                continue
             mean_mjd = mean_mjd_map.get(str(coadd_file), None)
             try:
                 t, band = _fits_meta(coadd_file)
@@ -464,16 +471,13 @@ def _run_photometry_target(
                 fit_shape = tuple(fit_shape)
 
             for method in methods:
-                prev = photo_df[
-                    (photo_df.get("coadd_file") == str(coadd_file))
-                    & (photo_df.get("method").astype(str).str.lower() == method)
-                ]
-                if len(prev) > 0:
-                    logger.info(
-                        f"[{target}/{telescope}] skip photometry already recorded: "
-                        f"{coadd_file.name} method={method}"
-                    )
-                    continue
+                # prev = photo_df[photo_df.get("coadd_file") == str(coadd_file)]
+                # if len(prev) > 0:
+                #     logger.info(
+                #         f"[{target}/{telescope}] skip photometry already recorded: "
+                #         f"{coadd_file.name} method={method}"
+                #     )
+                #     continue
 
                 out_plot_dir = pipeline_dir / telescope / "photometry" / coadd_file.stem / method
                 out_plot_dir.mkdir(parents=True, exist_ok=True)
@@ -484,10 +488,11 @@ def _run_photometry_target(
                     "coadd_file": str(coadd_file),
                     "mean_mjd": mean_mjd,
                     "band": str(band),
-                    "method": method,
                     "status": "failed",
-                    "mag": np.nan,
-                    "mag_err": np.nan,
+                    "magpsf": np.nan,
+                    "magpsf_err": np.nan,
+                    "magap": np.nan,
+                    "magap_err": np.nan,
                     "upper_limit": np.nan,
                     "zp": np.nan,
                     "zp_std": np.nan,
@@ -521,9 +526,9 @@ def _run_photometry_target(
                             odf = out.to_pandas()
                             if len(odf) > 0:
                                 if "mag" in odf.columns:
-                                    result["mag"] = float(odf.iloc[0]["mag"])
+                                    result["magap"] = float(odf.iloc[0]["mag"])
                                 if "mag_err" in odf.columns:
-                                    result["mag_err"] = float(odf.iloc[0]["mag_err"])
+                                    result["magap_err"] = float(odf.iloc[0]["mag_err"])
                             result["upper_limit"] = p.uplim
                     else:
                         out = p.psf_photometry(
@@ -545,9 +550,9 @@ def _run_photometry_target(
                             odf = out.to_pandas()
                             if len(odf) > 0:
                                 if "mag" in odf.columns:
-                                    result["mag"] = float(odf.iloc[0]["mag"])
+                                    result["magpsf"] = float(odf.iloc[0]["mag"])
                                 if "mag_err" in odf.columns:
-                                    result["mag_err"] = float(odf.iloc[0]["mag_err"])
+                                    result["magpsf_err"] = float(odf.iloc[0]["mag_err"])
                             result["upper_limit"] = p.uplim
 
                     result["zp"] = float(p.zp) if p.zp is not None else np.nan
@@ -565,30 +570,31 @@ def _run_photometry_target(
 
     # split tables
     # print(photo_df)
-    df_psf = photo_df[photo_df['method'] == 'psf'].copy()
-    df_ap  = photo_df[photo_df['method'] == 'aperture'].copy()
+    # df_psf = photo_df[photo_df['method'] == 'psf'].copy()
+    # df_ap  = photo_df[photo_df['method'] == 'aperture'].copy()
 
-    # rename columns
-    df_psf = df_psf.rename(columns={
-        'mag': 'magpsf',
-        'mag_err': 'magpsf_err'
-    })
+    # # rename columns
+    # df_psf = df_psf.rename(columns={
+    #     'mag': 'magpsf',
+    #     'mag_err': 'magpsf_err'
+    # })
 
-    df_ap = df_ap.rename(columns={
-        'mag': 'magap',
-        'mag_err': 'magap_err'
-    })
+    # df_ap = df_ap.rename(columns={
+    #     'mag': 'magap',
+    #     'mag_err': 'magap_err'
+    # })
 
     # columns used to match rows
-    keys = ['target','telescope','coadd_file','mean_mjd']
+    df_merge = photo_df.copy()
+    # keys = ['target','telescope','coadd_file','mean_mjd']
 
-    # merge
-    df_merge = pd.merge(
-        df_psf,
-        df_ap[keys + ['magap','magap_err']],
-        on=keys,
-        how='outer'
-    )
+    # # merge
+    # df_merge = pd.merge(
+    #     df_psf,
+    #     df_ap[keys + ['magap','magap_err']],
+    #     on=keys,
+    #     how='outer'
+    # )
     df_merge.to_csv(photo_path, index=False)
     return photo_df
 
