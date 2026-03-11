@@ -16,7 +16,7 @@ from config import RESULTS_DIR
 st.set_page_config(page_title="EP Follow-up Dashboard", page_icon="🔭", layout="wide",)
 
 st.title("Follow up Dashboard")
-st.caption("Targets, observation stats, lunar distance, planning, and photometry")
+st.caption("Targets, observation stats, lunar distance, planning, and lightcurves")
 
 cand = load_candidates()
 meta = load_meta()
