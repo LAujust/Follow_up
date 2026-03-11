@@ -104,13 +104,13 @@ class Photometry:
 
             
             
-    def estimate_global_error(self, data, box_size=256, filter_size=3):
+    def estimate_global_error(self, data, filter_size=3):
         """
         使用 photutils Background2D 估计像素级误差图
         """
         sigma_clip = SigmaClip(sigma=3.0, maxiters=5)
         bkg_stat = MMMBackground(sigma_clip=sigma_clip)
-        bkg = Background2D(self.data, self.data.shape, filter_size=(11, 11), box_size=(256,256),
+        bkg = Background2D(self.data, self.data.shape, filter_size=(11, 11),
                    bkg_estimator=bkg_stat,exclude_percentile=50)
 
         error = bkg.background_rms
@@ -461,7 +461,7 @@ class Photometry:
         uplim = self.estimate_upperlimit()
         self.uplim = uplim
         print(f"3-sigma upper limit = {uplim:.3f}")
-        if  np.isfinite(mag) and phot_bkgsub > 0 and mag / mag_err > 5:
+        if  np.isfinite(mag) and phot_bkgsub > 0 and mag_err < 0.3:
             return phot_table       
         else:
             return {"upper_limit": uplim} 

@@ -398,6 +398,9 @@ def _run_photometry_target(
             methods = ["psf", "aperture"]
 
         pipeline_tel_dir = pipeline_dir / telescope
+        # pipeline_tel_cutout_dir = pipeline_tel_dir / "cutouts"
+        # if pipeline_tel_cutout_dir.is_dir():
+        #     pipeline_tel_dir = pipeline_tel_cutout_dir
         coadd_candidates = sorted(pipeline_tel_dir.glob("coadd_*.fits")) if pipeline_tel_dir.exists() else []
 
         # For telescopes with pre-coadded products, allow photometry without running coadd.

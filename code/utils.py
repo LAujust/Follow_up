@@ -2,13 +2,14 @@ import sys, os, subprocess
 import numpy as np
 import astropy.units as u
 from astropy.time import Time
+from astropy.table import Table
 from astropy.coordinates import SkyCoord, get_body
 import json
 from rich import print
 import matplotlib.pyplot as plt
 from pathlib import Path
 from astropy.io import fits
-import re
+import re, glob
 import shutil
 from collections import defaultdict
 import pandas as pd
@@ -23,7 +24,7 @@ from psimage import *
 __all__ = ['read_image','generate_tnot_plan','generate_tnot_object_json','generate_sitian_plan',
            'plot_lunar_distance','get_tnot_data','get_sitian_data',
            'check_source_dirs','fits_plot','show_shift','calculate_observation_stats',
-           'show_obs_pies','show_cumulative_observations',"moon_phase"]
+           'show_obs_pies','show_cumulative_observations',"moon_phase","cutout_fits"]
 
 
 """
@@ -312,126 +313,6 @@ def generate_sitian_plan(target,ra,dec,exptime,expcount,p=6,save_path='./'):
                 f.write(row)
 
             print(f"Observation list saved to {fname}")
-        
-        
-
-
-# def get_tnot_data(root_dir="~/optical_data"):
-#     """
-#     Download and organize TNOT stacked WCS FITS files.
-#     """
-#     root_dir = Path(root_dir).expanduser().resolve()
-#     tmp_dir = root_dir / "tmp_tnot"
-#     tmp_dir.mkdir(parents=True, exist_ok=True)
-
-#     REMOTE = "tnot@119.78.162.172:/home/tnot/EP"
-#     ssh_port = '5905'
-
-#     print("[1] Querying remote TNOT files ...")
-
-#     # 只列出 yyyyMMdd/stack*wcs.fits
-#     cmd_find = [
-#         "ssh",
-#         '-p',
-#         ssh_port,
-#         "tnot@119.78.162.172",
-#         "find /home/tnot/EP -maxdepth 2 -type f -name 'stack*wcs.fits'"
-#     ]
-
-#     result = subprocess.run(
-#         cmd_find, capture_output=True, text=True, check=True
-#     )
-
-#     remote_files = result.stdout.strip().splitlines()
-
-#     if not remote_files:
-#         print("No stack*wcs.fits found on remote server.")
-#         return
-
-#     print(f"Found {len(remote_files)} files")
-
-#     # 本地已有目录名（用于匹配）
-#     local_dirs = [d for d in root_dir.iterdir() if d.is_dir() and not d.name.startswith("_")]
-
-#     def match_local_dir(name):
-#         for d in local_dirs:
-#             if d.name.lower() == name.lower():
-#                 return d
-#         return None
-
-#     unmatched = []
-
-#     for rfile in remote_files:
-#         fname = os.path.basename(rfile)
-#         local_tmp = tmp_dir / fname
-
-#         print(f"[2] Downloading {fname}")
-
-#         subprocess.run(
-#             ["scp",'-P', ssh_port, f"tnot@119.78.162.172:{rfile}", str(local_tmp)],
-#             check=True
-#         )
-
-#         # 读取 FITS header
-#         try:
-#             with fits.open(local_tmp) as hdul:
-#                 hdr = hdul[0].header
-#         except Exception as e:
-#             print(f"  [ERROR] Cannot open FITS: {e}")
-#             continue
-
-#         name = hdr.get("SIMBAD_NAME") or hdr.get("OBJECT")
-#         date_obs = hdr.get("DATE-OBS", "unknown")
-
-#         if name is None:
-#             print("  [WARN] No SIMBAD_NAME or OBJECT in header")
-#             unmatched.append((fname, "NO_NAME"))
-#             continue
-
-#         # 清理名字
-#         name_clean = re.sub(r"\s+", "", str(name))
-#         date_clean = date_obs.replace(":", "").replace("-", "").replace("T", "_")
-
-#         target_dir = match_local_dir(name_clean)
-#         target_dir = target_dir / "TNOT"  if target_dir else None
-
-#         if target_dir is None:
-#             print(f"  [UNMATCHED] {name_clean} ({date_obs})")
-#             unmatched.append((fname, name_clean))
-#             continue
-#         elif not os.path.exists(target_dir):
-#             os.makedirs(target_dir, exist_ok=True)
-        
-        
-#         new_name = f"TNOT_{name_clean}_{date_clean}.fits"
-#         final_path = target_dir / new_name
-
-#         if final_path.exists():
-#             print(f"  [SKIP] File already exists: {final_path.name}")
-            
-#             # 删除临时文件
-#             if local_tmp.exists():
-#                 local_tmp.unlink()
-#                 print(f"         Removed temp file: {local_tmp.name}")
-#         else:
-#             shutil.move(local_tmp, final_path)
-
-#             # 兜底清理（理论上 move 后不会存在）
-#             if local_tmp.exists():
-#                 local_tmp.unlink()
-
-#             print(f"  [OK] Saved to {final_path}")
-
-#     # 清理临时目录
-#     try:
-#         tmp_dir.rmdir()
-#     except OSError:
-#         subprocess.run(["rm", "-rf", str(tmp_dir)])
-
-#     if unmatched:
-#         print("\n===== Unmatched Files =====")
-#         for f, n in unmatched:
-#             print(f"{f} -> {n}")
     
 
 
@@ -1454,3 +1335,49 @@ def show_cumulative_observations(
     fig2_path = os.path.join(save_path, 'cumulative_observations.html')
     fig2.write_html(fig2_path)
     # fig2.show()
+    
+    
+
+def cutout_fits(size=2000,redo=False):
+    """
+    Cutout Sitian images for all targets.
+    """
+    candidates = Table.read("/home/liangrd/Follow_up/Candidates.csv")
+
+    root = Path('/home/liangrd/optical_data')
+    targets = [d for d in root.iterdir() if d.is_dir()]
+
+    for target in targets:
+        sitian_dir = target / "sitian"
+        if not sitian_dir.exists():
+            print(f"[SKIP] No sitian dir for {target.name}")
+            continue
+
+        fits_files = glob.glob(str(sitian_dir / "*wcs.fits"))
+        cutout_dir = sitian_dir / "cutouts"
+        if len(fits_files) == 0:
+            print(f"[SKIP] No fits in {sitian_dir}")
+            continue
+        
+        if cutout_dir.is_dir():
+            cutout_fits_files = glob.glob(str(cutout_dir / "*cutout*.fits"))
+            if len(cutout_fits_files) >= len(fits_files) and not redo:
+                print(f"[SKIP] Cutouts already exist for {target.name}")
+                continue
+        else:
+            cutout_dir.mkdir(parents=True, exist_ok=True)
+
+        for f in fits_files:
+            try:
+                data, wcs, header = read_image(f)
+                ra, dec = candidates[candidates['EP Name'] == target.name]['RA'][0], candidates[candidates['EP Name'] == target.name]['Dec'][0]
+                coord = SkyCoord(ra=ra*u.deg, dec=dec*u.deg)
+                cutout = Cutout2D(data, coord, size, wcs=wcs, mode='trim')
+                fname = os.path.basename(f).replace(".fits", "_cutout.fits")
+                out_file = cutout_dir / fname
+                hdu = fits.PrimaryHDU(data=cutout.data, header=cutout.wcs.to_header())
+                hdu.writeto(out_file, overwrite=True)
+                print(f"[OK] Saved cutout to {out_file}")
+            except Exception as e:
+                print(f"[ERROR] Failed to cutout {f}: {e}")
+                continue
