@@ -257,8 +257,8 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
         distmod = Planck18.distmod(z).value
 
         fig.update_layout(
-            width=600,
-            height=350,
+            width=800,
+            height=500,
             yaxis2=dict(
                 title="Absolute Magnitude",
                 overlaying="y",
