@@ -8,6 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from astropy.cosmology import Planck18
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.size"] = 14
 
@@ -133,26 +134,22 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     
 
 
-
-
 def plot_photometry_plotly(data_dir, target, save_dir='./'):
 
-    # target info
     meta = candidates[candidates['EP Name'] == target]
     T0 = Time(meta['Obs Time'][0])
     z = meta['Redshift'][0] if not meta['Redshift'].mask[0] else None
 
-    # photometry data
     if not os.path.exists(data_dir):
         print(f"Data file {data_dir} not found.")
-        return None
+        return
 
     data = Table.read(data_dir)
     valid_data = data[data['status'] == 'ok']
 
     if len(valid_data) == 0:
         print(f"No valid photometry data for {target}.")
-        return None
+        return
 
     valid_data['dt'] = valid_data['mean_mjd'] - T0.mjd
 
@@ -161,17 +158,15 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
         ((~valid_data['magap'].mask) & (valid_data['magap_err'] < 0.5))
     )
 
-    idx_uplim = ~idx_obs
-
     obs = valid_data[idx_obs]
-    uplim = valid_data[idx_uplim]
+    uplim = valid_data[~idx_obs]
 
-    # average masked column
+    # ---- merge psf/ap photometry ----
     magpsf = np.ma.array(obs['magpsf'])
-    magap = np.ma.array(obs['magap'])
+    magap  = np.ma.array(obs['magap'])
 
     magpsf_err = np.ma.array(obs['magpsf_err'])
-    magap_err = np.ma.array(obs['magap_err'])
+    magap_err  = np.ma.array(obs['magap_err'])
 
     mag = np.ma.mean(np.ma.vstack([magpsf, magap]), axis=0)
     mag_err = np.ma.mean(np.ma.vstack([magpsf_err, magap_err]), axis=0)
@@ -182,16 +177,24 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
     obs['mag'] = mag[idx]
     obs['mag_err'] = mag_err[idx]
 
-    fig = go.Figure()
+    # ---- create figure ----
+    fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-    # plot upper limits
+    distmod = None
+    if z:
+        distmod = Planck18.distmod(z).value
+
+    # ---- upper limits ----
     for band in np.unique(uplim['band']):
+
         idx = uplim['band'] == band
+        x = uplim['dt'][idx]
+        y = uplim['upper_limit'][idx]
 
         fig.add_trace(
             go.Scatter(
-                x=uplim['dt'][idx],
-                y=uplim['upper_limit'][idx],
+                x=x,
+                y=y,
                 mode="markers",
                 marker=dict(
                     symbol="triangle-down",
@@ -200,65 +203,105 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
                 ),
                 name=f"{band} upper",
                 hovertemplate="dt=%{x:.2f} d<br>mag>%{y:.2f}<extra></extra>"
-            )
+            ),
+            secondary_y=False
         )
 
-    # plot detections
+        if distmod is not None:
+            fig.add_trace(
+                go.Scatter(
+                    x=[None],
+                    y=[None],
+                    showlegend=False
+                ),
+                secondary_y=True
+            )
+
+    # ---- detections ----
     for band in np.unique(obs['band']):
         for tel in np.unique(obs['telescope']):
 
-            idx = (obs['band'] == band) & (obs['telescope'] == tel)
+            idx = (obs['band']==band) & (obs['telescope']==tel)
             if np.sum(idx) == 0:
                 continue
 
+            x = obs['dt'][idx]
+            y = obs['mag'][idx]
+            err = obs['mag_err'][idx]
+
             fig.add_trace(
                 go.Scatter(
-                    x=obs['dt'][idx],
-                    y=obs['mag'][idx],
+                    x=x,
+                    y=y,
                     error_y=dict(
-                        type='data',
-                        array=obs['mag_err'][idx],
+                        type="data",
+                        array=err,
                         visible=True
                     ),
                     mode="markers",
                     marker=dict(
                         symbol="circle",
                         size=17,
-                        color=COLOR_MAP.get(band, "gray"),
+                        color=COLOR_MAP.get(band,"gray"),
                         line=dict(color="black", width=1)
                     ),
                     name=f"{band} {tel}",
                     hovertemplate="dt=%{x:.2f} d<br>mag=%{y:.2f}<extra></extra>"
-                )
+                ),
+                secondary_y=False
             )
 
+            # if distmod is not None:
+            #     fig.add_trace(
+            #         go.Scatter(
+            #             x=x,
+            #             y=y - distmod,
+            #             error_y=dict(
+            #                 type="data",
+            #                 array=err,
+            #                 visible=True
+            #             ),
+            #             mode="markers",
+            #             marker=dict(
+            #                 symbol="circle",
+            #                 size=17,
+            #                 color=COLOR_MAP.get(band,"gray"),
+            #                 line=dict(color="black", width=1)
+            #             ),
+            #             showlegend=False
+            #         ),
+            #         secondary_y=True
+            #     )
+
+    # ---- layout ----
     fig.update_layout(
-
         title=target,
-
-        xaxis=dict(
-            title="Observer-frame Time (days)",
-            showgrid=True
-        ),
-
-        yaxis=dict(
-            title="Magnitude",
-            autorange="reversed"
-        ),
-
+        width=1000,
+        height=600,
         template="simple_white",
-        legend=dict(
-            itemsizing='constant'
-        )
+        legend=dict(itemsizing="constant")
     )
 
-    # secondary axis (absolute magnitude)
-    if z:
-        distmod = Planck18.distmod(z).value
+    fig.update_xaxes(
+        title_text="Observer-frame Time (days)",
+        showgrid=True
+    )
+    
+    yvals = np.concatenate([obs['mag'], uplim['upper_limit']])
 
+    ymin = np.nanmin(yvals)
+    ymax = np.nanmax(yvals)
+
+    yrange = [ymax+1, ymin-1]   # reversed magnitude axis
+
+    fig.update_yaxes(
+        title_text="Magnitude",
+        range=yrange,
+        secondary_y=False
+    )
+
+    if distmod is not None:
         fig.update_layout(
-            width=1000,
-            height=600,
             yaxis2=dict(
                 title="Absolute Magnitude",
                 overlaying="y",
@@ -270,13 +313,15 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
             )
         )
 
+    # ---- save ----
     fname = f"{target}_lc.html"
     path = os.path.join(save_dir, fname)
 
     fig.write_html(path)
 
     print(f"Saved photometry plot to {path}")
-    
+
+
     
 
 def main():
