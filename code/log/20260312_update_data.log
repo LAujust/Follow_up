@@ -375,3 +375,257 @@ ts: buffer is too small for requested array
   - /home/liangrd/Follow_up/results/all_targets_timeline.csv
   - /home/liangrd/Follow_up/results/all_targets_timeline.html
 [OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+[master f0abe6d] Update data at 2026-03-12 10:00:56.259
+ 25 files changed, 310 insertions(+), 55 deletions(-)
+To github.com:LAujust/Follow_up.git
+   b0ea9cf..f0abe6d  master -> master
+========================================
+Plotting photometry for EP251212a...
+No valid photometry data for EP251212a.
+No valid photometry data for EP251212a.
+========================================
+Plotting photometry for EP251214b...
+No valid photometry data for EP251214b.
+No valid photometry data for EP251214b.
+========================================
+Plotting photometry for EP251220a...
+No valid photometry data for EP251220a.
+No valid photometry data for EP251220a.
+========================================
+Plotting photometry for EP251221a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251221a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251221a_lc.html
+========================================
+Plotting photometry for EP251222a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251222a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251222a_lc.html
+========================================
+Plotting photometry for EP251229a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251229a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251229a_lc.html
+========================================
+Plotting photometry for EP260101a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260101a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260101a_lc.html
+========================================
+Plotting photometry for EP260104a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260104a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260104a_lc.html
+========================================
+Plotting photometry for EP260105a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105a_lc.html
+========================================
+Plotting photometry for EP260105b...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105b_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105b_lc.html
+========================================
+Plotting photometry for EP260110a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260110a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260110a_lc.html
+========================================
+Plotting photometry for EP260116a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260116a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260116a_lc.html
+========================================
+Plotting photometry for EP260119a...
+No valid photometry data for EP260119a.
+No valid photometry data for EP260119a.
+========================================
+Plotting photometry for EP260126a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260126a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260126a_lc.html
+========================================
+Plotting photometry for EP260128a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260128a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260128a_lc.html
+========================================
+Plotting photometry for WXT J031644+08316...
+No valid photometry data for WXT J031644+08316.
+No valid photometry data for WXT J031644+08316.
+========================================
+Plotting photometry for 1RXSJ052540.6+425139...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/1RXSJ052540.6+425139_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/1RXSJ052540.6+425139_lc.html
+========================================
+Plotting photometry for WXT J001838+115903...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J001838+115903_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J001838+115903_lc.html
+========================================
+Plotting photometry for WXT J030902+581637...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J030902+581637_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J030902+581637_lc.html
+========================================
+Plotting photometry for EP J0619.5+0602...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP J0619.5+0602_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP J0619.5+0602_lc.html
+========================================
+Plotting photometry for EP260131a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260131a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260131a_lc.html
+========================================
+Plotting photometry for EP260209a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260209a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260209a_lc.html
+========================================
+Plotting photometry for EP260210a...
+No valid photometry data for EP260210a.
+No valid photometry data for EP260210a.
+========================================
+Plotting photometry for EP260213a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260213a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260213a_lc.html
+========================================
+Plotting photometry for EP260214a...
+No valid photometry data for EP260214a.
+No valid photometry data for EP260214a.
+========================================
+Plotting photometry for EP260214b...
+No valid photometry data for EP260214b.
+No valid photometry data for EP260214b.
+========================================
+Plotting photometry for EP260221a...
+No valid photometry data for EP260221a.
+No valid photometry data for EP260221a.
+========================================
+Plotting photometry for EP260223a...
+No valid photometry data for EP260223a.
+No valid photometry data for EP260223a.
+========================================
+Plotting photometry for EP260224a...
+No valid photometry data for EP260224a.
+No valid photometry data for EP260224a.
+========================================
+Plotting photometry for EP260227a...
+No valid photometry data for EP260227a.
+No valid photometry data for EP260227a.
+========================================
+Plotting photometry for EP260302a...
+No valid photometry data for EP260302a.
+No valid photometry data for EP260302a.
+========================================
+Plotting photometry for EP260306a...
+No valid photometry data for EP260306a.
+No valid photometry data for EP260306a.
+===============================================
+Updating Data: 2026-03-12 16:00:04.063
+===============================================
+Found 17 remote files.
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251212/stack_WXTJ043559-012325_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ043559-012325/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260131a/TNOT/stack_EP260131a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251219/stack_EPJ0619.5+0606_rp_wcs.fits': 
+/home/liangrd/optical_data/EPJ0619.5+0606/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_RXSJ052540.6+425139_rp_wcs.fits': 
+/home/liangrd/optical_data/RXSJ052540.6+425139/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_WXTJ031644+08d316_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ031644+08d316/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ032216+233553_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ032216+233553/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ110746+454221_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ110746+454221/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251221a/TNOT/stack_EP251221a_rp_wcs.fits
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260209a/TNOT/stack_EP260209a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251211/stack_WXTJ2_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ2/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213_Li/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20260109/stack_WXT_J030902+581637_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251214/stack_EP20251214a_rp_wcs.fits': 
+/home/liangrd/optical_data/EP20251214a/TNOT
+🔍 Querying remote Sitian files...
+📦 Found 43 files on server
+⏭️ Skip existing: 2025-12-27_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-28_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-29_EP251222a_g_com_5.wcs.fits
+⏭️ Skip existing: 2025-12-30_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-31_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-03_EP260101a_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260104a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260105a_g_com_1.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-07_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-08_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-10_EP260105b_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-11_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-13_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-15_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-16_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-17_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-20_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP260101a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP251229a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260105b_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-26_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-27_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-08_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-10_EP260213a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260223a_g_com_9.wcs.fits
+✅ Sitian data download finished.
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
