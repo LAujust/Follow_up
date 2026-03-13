@@ -455,6 +455,8 @@ class Photometry:
             (1.0857 * phot_table['aperture_sum_err'][0] / phot_bkgsub)**2 +
             self.zp_std**2
         )
+        phot_table['mag'] = mag
+        phot_table['mag_err'] = mag_err
         self.phot = phot_table
         
         print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )

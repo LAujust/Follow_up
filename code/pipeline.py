@@ -564,7 +564,6 @@ def _run_photometry_target(
                     result["status"] = "failed"
                     result["message"] = str(exc)
                     logger.exception(f"[{target}/{telescope}] photometry failed: {coadd_file.name} method={method}")
-
                 photo_df = pd.concat([photo_df, pd.DataFrame([result])], ignore_index=True)
     
 
