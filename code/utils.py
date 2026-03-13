@@ -850,7 +850,7 @@ def show_shift(root, save_dir='./', source_dir='/home/liangrd/Follow_up/Candidat
 
         fits_files = glob.glob(os.path.join(target_dir, '**', '*.fits'), recursive=True)
         fits_files += glob.glob(os.path.join(target_dir, '**', '*.fits.fz'), recursive=True)
-        fits_files = [f for f in fits_files if 'ref' not in f.lower()]  # 排除参考图
+        fits_files = [f for f in fits_files if 'ref' not in f.lower() and 'pipeline' not in f.lower()]  # 排除参考图
         # print(target)
         # print(fits_files)
 
@@ -1338,7 +1338,7 @@ def show_cumulative_observations(
     
     
 
-def cutout_fits(size=2000,redo=False):
+def cutout_fits(size=2000,telescope:str='sitian',redo=False):
     """
     Cutout Sitian images for all targets.
     """
@@ -1348,15 +1348,29 @@ def cutout_fits(size=2000,redo=False):
     targets = [d for d in root.iterdir() if d.is_dir()]
 
     for target in targets:
-        sitian_dir = target / "sitian"
-        if not sitian_dir.exists():
-            print(f"[SKIP] No sitian dir for {target.name}")
+        tel_dir = target / "pipeline" / telescope
+        if not tel_dir.exists():
+            print(f"[SKIP] No {telescope} dir for {target.name}")
             continue
 
-        fits_files = glob.glob(str(sitian_dir / "*wcs.fits"))
-        cutout_dir = sitian_dir / "cutouts"
+        fits_files = (
+            glob.glob(str(tel_dir / "*.fits")) +
+            glob.glob(str(tel_dir / "*.fits.fz"))
+        )
         if len(fits_files) == 0:
-            print(f"[SKIP] No fits in {sitian_dir}")
+            #search raw dir
+            tel_dir_backup = target / telescope
+            fits_files = (
+                glob.glob(str(tel_dir_backup / "*.fits")) +
+                glob.glob(str(tel_dir_backup / "*.fits.fz"))
+            )
+            if len(fits_files) == 0:
+                print(f"[SKIP] No fits in {tel_dir} or {tel_dir_backup}")
+                continue
+
+        cutout_dir = tel_dir / "cutouts"
+        if len(fits_files) == 0:
+            print(f"[SKIP] No fits in {tel_dir}")
             continue
         
         if cutout_dir.is_dir():

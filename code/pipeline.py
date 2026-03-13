@@ -346,7 +346,8 @@ def _run_photometry_target(
         "coadd_file",
         "mean_mjd",
         "band",
-        "status",
+        "status_psf",
+        "status_ap",
         "magpsf",
         "magpsf_err",
         "magap",
@@ -470,6 +471,25 @@ def _run_photometry_target(
             elif isinstance(fit_shape, list):
                 fit_shape = tuple(fit_shape)
 
+            result = {
+                    "target": target,
+                    "telescope": telescope,
+                    "coadd_file": str(coadd_file),
+                    "mean_mjd": mean_mjd,
+                    "band": str(band),
+                    "status_psf": "failed",
+                    "status_ap": "failed",
+                    "magpsf": np.nan,
+                    "magpsf_err": np.nan,
+                    "magap": np.nan,
+                    "magap_err": np.nan,
+                    "upper_limit": np.nan,
+                    "zp": np.nan,
+                    "zp_std": np.nan,
+                    "message": "",
+                    "created_utc": _utc_now_str(),
+                }
+
             for method in methods:
                 # prev = photo_df[photo_df.get("coadd_file") == str(coadd_file)]
                 # if len(prev) > 0:
@@ -482,23 +502,23 @@ def _run_photometry_target(
                 out_plot_dir = pipeline_dir / telescope / "photometry" / coadd_file.stem / method
                 out_plot_dir.mkdir(parents=True, exist_ok=True)
 
-                result = {
-                    "target": target,
-                    "telescope": telescope,
-                    "coadd_file": str(coadd_file),
-                    "mean_mjd": mean_mjd,
-                    "band": str(band),
-                    "status": "failed",
-                    "magpsf": np.nan,
-                    "magpsf_err": np.nan,
-                    "magap": np.nan,
-                    "magap_err": np.nan,
-                    "upper_limit": np.nan,
-                    "zp": np.nan,
-                    "zp_std": np.nan,
-                    "message": "",
-                    "created_utc": _utc_now_str(),
-                }
+                # result = {
+                #     "target": target,
+                #     "telescope": telescope,
+                #     "coadd_file": str(coadd_file),
+                #     "mean_mjd": mean_mjd,
+                #     "band": str(band),
+                #     "status": "failed",
+                #     "magpsf": np.nan,
+                #     "magpsf_err": np.nan,
+                #     "magap": np.nan,
+                #     "magap_err": np.nan,
+                #     "upper_limit": np.nan,
+                #     "zp": np.nan,
+                #     "zp_std": np.nan,
+                #     "message": "",
+                #     "created_utc": _utc_now_str(),
+                # }
 
                 try:
                     p = Photometry(cat_dir=cat_dir, path=str(out_plot_dir))
@@ -530,6 +550,7 @@ def _run_photometry_target(
                                 if "mag_err" in odf.columns:
                                     result["magap_err"] = float(odf.iloc[0]["mag_err"])
                             result["upper_limit"] = p.uplim
+                        result["status_ap"] = "ok"
                     else:
                         out = p.psf_photometry(
                             ra=ra,
@@ -554,17 +575,17 @@ def _run_photometry_target(
                                 if "mag_err" in odf.columns:
                                     result["magpsf_err"] = float(odf.iloc[0]["mag_err"])
                             result["upper_limit"] = p.uplim
+                        result["status_psf"] = "ok"
 
                     result["zp"] = float(p.zp) if p.zp is not None else np.nan
                     result["zp_std"] = float(p.zp_std) if p.zp_std is not None else np.nan
-                    result["status"] = "ok"
                     result["message"] = "ok"
                     logger.info(f"[{target}/{telescope}] photometry ok: {coadd_file.name} method={method}")
                 except Exception as exc:
                     result["status"] = "failed"
                     result["message"] = str(exc)
                     logger.exception(f"[{target}/{telescope}] photometry failed: {coadd_file.name} method={method}")
-                photo_df = pd.concat([photo_df, pd.DataFrame([result])], ignore_index=True)
+            photo_df = pd.concat([photo_df, pd.DataFrame([result])], ignore_index=True)
     
 
     # split tables
