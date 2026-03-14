@@ -887,3 +887,135 @@ ts: buffer is too small for requested array
   - /home/liangrd/Follow_up/results/all_targets_timeline.csv
   - /home/liangrd/Follow_up/results/all_targets_timeline.html
 [OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+[master 2b1b655] Update data at 2026-03-13 22:02:57.610
+ 24 files changed, 309 insertions(+), 54 deletions(-)
+To github.com:LAujust/Follow_up.git
+   1727a10..2b1b655  master -> master
+========================================
+Plotting photometry for EP251212a...
+No valid photometry data for EP251212a.
+No valid photometry data for EP251212a.
+========================================
+Plotting photometry for EP251214b...
+No valid photometry data for EP251214b.
+No valid photometry data for EP251214b.
+========================================
+Plotting photometry for EP251220a...
+No valid photometry data for EP251220a.
+No valid photometry data for EP251220a.
+========================================
+Plotting photometry for EP251221a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251221a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251221a_lc.html
+========================================
+Plotting photometry for EP251222a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251222a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251222a_lc.html
+========================================
+Plotting photometry for EP251229a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251229a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP251229a_lc.html
+========================================
+Plotting photometry for EP260101a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260101a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260101a_lc.html
+========================================
+Plotting photometry for EP260104a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260104a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260104a_lc.html
+========================================
+Plotting photometry for EP260105a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105a_lc.html
+========================================
+Plotting photometry for EP260105b...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105b_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260105b_lc.html
+========================================
+Plotting photometry for EP260110a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260110a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260110a_lc.html
+========================================
+Plotting photometry for EP260116a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260116a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260116a_lc.html
+========================================
+Plotting photometry for EP260119a...
+No valid photometry data for EP260119a.
+No valid photometry data for EP260119a.
+========================================
+Plotting photometry for EP260126a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260126a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260126a_lc.html
+========================================
+Plotting photometry for EP260128a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260128a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260128a_lc.html
+========================================
+Plotting photometry for WXT J031644+08316...
+No valid photometry data for WXT J031644+08316.
+No valid photometry data for WXT J031644+08316.
+========================================
+Plotting photometry for 1RXSJ052540.6+425139...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/1RXSJ052540.6+425139_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/1RXSJ052540.6+425139_lc.html
+========================================
+Plotting photometry for WXT J001838+115903...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J001838+115903_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J001838+115903_lc.html
+========================================
+Plotting photometry for WXT J030902+581637...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J030902+581637_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/WXT J030902+581637_lc.html
+========================================
+Plotting photometry for EP J0619.5+0602...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP J0619.5+0602_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP J0619.5+0602_lc.html
+========================================
+Plotting photometry for EP260131a...
+No valid photometry data for EP260131a.
+No valid photometry data for EP260131a.
+========================================
+Plotting photometry for EP260209a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260209a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260209a_lc.html
+========================================
+Plotting photometry for EP260210a...
+No valid photometry data for EP260210a.
+No valid photometry data for EP260210a.
+========================================
+Plotting photometry for EP260213a...
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260213a_lc.png
+Saved photometry plot to /home/liangrd/Follow_up/results/lcs/EP260213a_lc.html
+========================================
+Plotting photometry for EP260214a...
+No valid photometry data for EP260214a.
+No valid photometry data for EP260214a.
+========================================
+Plotting photometry for EP260214b...
+No valid photometry data for EP260214b.
+No valid photometry data for EP260214b.
+========================================
+Plotting photometry for EP260221a...
+No valid photometry data for EP260221a.
+No valid photometry data for EP260221a.
+========================================
+Plotting photometry for EP260223a...
+No valid photometry data for EP260223a.
+No valid photometry data for EP260223a.
+========================================
+Plotting photometry for EP260224a...
+No valid photometry data for EP260224a.
+No valid photometry data for EP260224a.
+========================================
+Plotting photometry for EP260227a...
+No valid photometry data for EP260227a.
+No valid photometry data for EP260227a.
+========================================
+Plotting photometry for EP260302a...
+No valid photometry data for EP260302a.
+No valid photometry data for EP260302a.
+========================================
+Plotting photometry for EP260306a...
+No valid photometry data for EP260306a.
+No valid photometry data for EP260306a.
