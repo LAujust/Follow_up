@@ -41,5 +41,5 @@ plot_all_lcs()
 #Push to GitHub
 os.chdir('/home/liangrd/Follow_up')
 subprocess.run(['git', 'add', '.'])
-subprocess.run(['git', 'commit', '-m', f'Update data at {Time.now().iso}'])
+subprocess.run(['git', 'commit', '-m', f'Auto update data at {Time.now().iso}'])
 subprocess.run(['git', 'push'])

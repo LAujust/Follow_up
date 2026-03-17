@@ -8,25 +8,11 @@ This repository contains code and resources for the Follow_up project. The purpo
 - Automatic photometry for data from different facilities;
 - Schedule and generate/send observation plans for telescopes;
 - Quick view of targets and observation stats;
-- 
 
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Commit your changes:
-    ```bash
-    git commit -m "Description of changes"
-    ```
-4. Push to your fork:
-    ```bash
-    git push origin feature-name
-    ```
-5. Open a pull request.
+## Dashboard
+
+Dashboard can be seen [here](https://ep-follow-up.streamlit.app/).
 
 ## License
 This project is licensed under the [License Name]. See the [LICENSE](./LICENSE) file for details.
