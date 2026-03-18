@@ -115,23 +115,32 @@ def upload_transient_image(tid, password, event_id, fits_path, type='reduced', t
     except Exception:
         return r.text
     
-
-
     
-events = get_events()
+def get_files(event_id):
+    url = f"{BASE_URL}/events/{event_id}/files"
+    r = requests.get(url)
+    files_dictlist =r.json()['files']
+    flist = [item['key'] for item in files_dictlist]
+    return flist
+    
 
-tel = 'XL100'
-event_id = 'EP260116a'
-if event_id not in events['event_id'].values:
-    cand = CANDIDATES[CANDIDATES['EP Name']==event_id][0]
-    ra, dec = cand['RA'], cand['Dec']
-    print(f"Creating event {event_id} at RA={ra}, Dec={dec}")
-    create_event(event_id, ra, dec, priority=1)
-fpaths = glob.glob(f"/home/liangrd/optical_data/{event_id}/pipeline/sitian/cutouts/*.fits")
-for fpath in fpaths:
-    print('=='*40)
-    print("Uploading", fpath)
-    tstart = time.time()
-    upload_transient_image(tel,tel_json[tel]["password"],event_id,fpath)
-    tend = time.time()
-    print(f"Upload completed in {tend-tstart:.1f} seconds")
+
+get_files('EP260105a')
+    
+# events = get_events()
+
+# tel = 'XL100'
+# event_id = 'EP251222a'
+# if event_id not in events['event_id'].values:
+#     cand = CANDIDATES[CANDIDATES['EP Name']==event_id][0]
+#     ra, dec = cand['RA'], cand['Dec']
+#     print(f"Creating event {event_id} at RA={ra}, Dec={dec}")
+#     create_event(event_id, ra, dec, priority=1)
+# fpaths = glob.glob(f"/home/liangrd/optical_data/{event_id}/pipeline/sitian/cutouts/*.fits")
+# for fpath in fpaths:
+#     print('=='*40)
+#     print("Uploading", fpath)
+#     tstart = time.time()
+#     upload_transient_image(tel,tel_json[tel]["password"],event_id,fpath)
+#     tend = time.time()
+#     print(f"Upload completed in {tend-tstart:.1f} seconds")
