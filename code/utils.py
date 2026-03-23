@@ -335,7 +335,7 @@ def get_tnot_data(root_dir=str(DEFAULT_OPTICAL_ROOT), remote_user="tnot", remote
 
     # 列出远程服务器所有 stack*_wcs.fits 文件
     remote_cmd = f'ssh -p {remote_port} {remote_user}@{remote_host} "find {remote_base} -type f -name \'*stack*_wcs.fits\'"'
-    result = subprocess.run(remote_cmd, shell=True, capture_output=True, text=True)
+    result = subprocess.run(remote_cmd, shell=True, capture_output=True, text=True, timeout=60)
     if result.returncode != 0:
         print("Failed to list remote files:", result.stderr)
         return local_files

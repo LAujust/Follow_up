@@ -51,7 +51,7 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     
     
     data = Table.read(data_dir)
-    valid_data = data[data['status']=='ok']
+    valid_data = data[data['message']=='ok']
     if len(valid_data) == 0:
         print(f"No valid photometry data for {target}.")
         return None

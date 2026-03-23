@@ -67,7 +67,7 @@ class TransientHub:
     # -----------------------------
     def upload_image(
         self,
-        tel_name,
+        tid,
         event_id,
         fits_path,
         filter=None,
@@ -75,20 +75,23 @@ class TransientHub:
         photometry_results=None,
         timeout=60
     ):
+        """Upload image file
+
+        Args:
+            tid (str): Telesciope ID
+            event_id (str): Event ID
+            fits_path (str): File path
+            filter (str, optional): Band name. Defaults to None.
+            obs_type (str, optional): Data type (reduced or None). Defaults to "reduced".
+            photometry_results (dict, optional): Photometry results, containing (mag, mag_err) or lim_mag keywords. Defaults to None.
+            timeout (int, optional): Atempt timout seconds. Defaults to 60.
         """
-        Upload FITS image
 
-        Parameters
-        ----------
-        tel_name : str
-            key in tel_json
-        """
+        if tid not in self.tel_json:
+            raise ValueError(f"{tid} not found in telescope config")
 
-        if tel_name not in self.tel_json:
-            raise ValueError(f"{tel_name} not found in telescope config")
-
-        tid = self.tel_json[tel_name]["tid"]
-        password = self.tel_json[tel_name]["password"]
+        tel_name = self.tel_json[tid]["name"]
+        password = self.tel_json[tid]["password"]
 
         if obs_type == "reduced":
             url = f"{self.base_url}/upload/reduced"
@@ -136,7 +139,14 @@ class TransientHub:
     # Files
     # -----------------------------
     def get_files(self, event_id):
-        """Get file list for a given event"""
+        """Get uploaded files
+
+        Args:
+            event_id (str): Event ID
+
+        Returns:
+            list: file names
+        """
         url = f"{self.base_url}/events/{event_id}/files"
 
         r = self.session.get(url)

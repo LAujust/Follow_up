@@ -1,0 +1,401 @@
+===============================================
+Updating Data: 2026-03-19 16:00:03.240
+===============================================
+Failed to list remote files: kex_exchange_identification: read: Connection reset
+by peer
+Connection reset by 119.78.162.172 port 5905
+
+🔍 Querying remote Sitian files...
+📦 Found 46 files on server
+⏭️ Skip existing: 2025-12-27_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-28_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-29_EP251222a_g_com_5.wcs.fits
+⏭️ Skip existing: 2025-12-30_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-31_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-03_EP260101a_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260104a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260105a_g_com_1.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-07_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-08_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-10_EP260105b_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-11_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-13_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-15_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-16_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-17_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-20_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP260101a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP251229a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260105b_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-26_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-27_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-08_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-10_EP260213a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260223a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-03-12_EP260210a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-18_EP260223a_g_com_10.wcs.fits
+⬇️ Downloading 2026-03-20_EP260223a_g_com_10.fits → 
+/home/liangrd/optical_data/EP260223a/sitian
+✅ Sitian data download finished.
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+========================================
+Plotting photometry for EP251212a...
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 39, in <module>
+    plot_all_lcs()
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 342, in plot_all_lcs
+    plot_photometry(data_dir, target, SAVE_DIR)
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 54, in plot_photometry
+    valid_data = data[data['status']=='ok']
+                      ~~~~^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 2105, in __getitem__
+    return self.columns[item]
+           ~~~~~~~~~~~~^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 267, in __getitem__
+    return OrderedDict.__getitem__(self, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'status'
+===============================================
+Updating Data: 2026-03-19 10:00:05.325
+===============================================
+Failed to list remote files: kex_exchange_identification: read: Connection reset
+by peer
+Connection reset by 119.78.162.172 port 5905
+
+🔍 Querying remote Sitian files...
+📦 Found 46 files on server
+⏭️ Skip existing: 2025-12-27_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-28_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-29_EP251222a_g_com_5.wcs.fits
+⏭️ Skip existing: 2025-12-30_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-31_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-03_EP260101a_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260104a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260105a_g_com_1.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-07_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-08_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-10_EP260105b_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-11_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-13_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-15_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-16_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-17_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-20_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP260101a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP251229a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260105b_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-26_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-27_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-08_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-10_EP260213a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260223a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-03-12_EP260210a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-18_EP260223a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-20_EP260223a_g_com_10.wcs.fits
+✅ Sitian data download finished.
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+========================================
+Plotting photometry for EP251212a...
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 39, in <module>
+    plot_all_lcs()
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 342, in plot_all_lcs
+    plot_photometry(data_dir, target, SAVE_DIR)
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 54, in plot_photometry
+    valid_data = data[data['status']=='ok']
+                      ~~~~^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 2105, in __getitem__
+    return self.columns[item]
+           ~~~~~~~~~~~~^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 267, in __getitem__
+    return OrderedDict.__getitem__(self, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'status'
+===============================================
+Updating Data: 2026-03-19 04:00:04.139
+===============================================
+Failed to list remote files: kex_exchange_identification: read: Connection reset
+by peer
+Connection reset by 119.78.162.172 port 5905
+
+🔍 Querying remote Sitian files...
+📦 Found 46 files on server
+⏭️ Skip existing: 2025-12-27_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-28_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-29_EP251222a_g_com_5.wcs.fits
+⏭️ Skip existing: 2025-12-30_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-31_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-03_EP260101a_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260104a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260105a_g_com_1.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-07_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-08_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-10_EP260105b_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-11_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-13_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-15_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-16_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-17_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-20_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP260101a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP251229a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260105b_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-26_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-27_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-08_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-10_EP260213a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260223a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-03-12_EP260210a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-18_EP260223a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-20_EP260223a_g_com_10.wcs.fits
+✅ Sitian data download finished.
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+========================================
+Plotting photometry for EP251212a...
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 39, in <module>
+    plot_all_lcs()
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 342, in plot_all_lcs
+    plot_photometry(data_dir, target, SAVE_DIR)
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 54, in plot_photometry
+    valid_data = data[data['status']=='ok']
+                      ~~~~^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 2105, in __getitem__
+    return self.columns[item]
+           ~~~~~~~~~~~~^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 267, in __getitem__
+    return OrderedDict.__getitem__(self, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'status'
+===============================================
+Updating Data: 2026-03-19 22:00:02.677
+===============================================
+Failed to list remote files: kex_exchange_identification: read: Connection reset
+by peer
+Connection reset by 119.78.162.172 port 5905
+
+🔍 Querying remote Sitian files...
+📦 Found 46 files on server
+⏭️ Skip existing: 2025-12-27_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-28_EP251222a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-29_EP251222a_g_com_5.wcs.fits
+⏭️ Skip existing: 2025-12-30_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2025-12-31_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-03_EP260101a_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260104a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-05_EP260105a_g_com_1.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-06_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-07_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-08_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-10_EP260105b_g_com_3.wcs.fits
+⏭️ Skip existing: 2026-01-11_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260104a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-12_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-13_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-15_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-16_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-17_EP251221a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-20_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP251229a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-21_EP260101a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP251229a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260101a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260105a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-22_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260105b_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-23_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-26_EP260110a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-01-27_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-08_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260110a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-02-10_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-11_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260116a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260126a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-02-15_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-10_EP260213a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260209a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-11_EP260223a_g_com_9.wcs.fits
+⏭️ Skip existing: 2026-03-12_EP260210a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-18_EP260223a_g_com_10.wcs.fits
+⏭️ Skip existing: 2026-03-20_EP260223a_g_com_10.wcs.fits
+✅ Sitian data download finished.
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+========================================
+Plotting photometry for EP251212a...
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 39, in <module>
+    plot_all_lcs()
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 342, in plot_all_lcs
+    plot_photometry(data_dir, target, SAVE_DIR)
+  File "/home/liangrd/Follow_up/code/plot_photometry.py", line 54, in plot_photometry
+    valid_data = data[data['status']=='ok']
+                      ~~~~^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 2105, in __getitem__
+    return self.columns[item]
+           ~~~~~~~~~~~~^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/astropy/table/table.py", line 267, in __getitem__
+    return OrderedDict.__getitem__(self, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'status'

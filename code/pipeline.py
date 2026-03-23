@@ -121,6 +121,10 @@ def _fits_meta(path: Path) -> tuple[Time, str]:
     if not date_obs:
         t = Time(path.stat().st_mtime / 86400.0 + 40587.0, format="mjd")
     else:
+        if "T" in date_obs:
+            date_obs = date_obs.replace("T"," ")
+        if "+" in date_obs:
+            date_obs = date_obs.split("+")[0]
         t = Time(date_obs)
 
     if band == "UNKNOWN":
@@ -170,7 +174,8 @@ def _group_files_by_band_time(files: list[Path], window_hours: float = 12.0) -> 
     for f in files:
         try:
             t, band = _fits_meta(f)
-        except Exception:
+        except Exception as e:
+            print(f"Error in reading fits meta: {e}")
             continue
         records.append({"file": f, "mjd": float(t.mjd), "band": str(band)})
 
@@ -261,6 +266,7 @@ def _coadd_target(
     for tel_dir in _list_telescopes(target_dir, pipeline_name):
         telescope = tel_dir.name
         files = _scan_raw_fits(tel_dir, pipeline_name)
+        # logger.info(f"{telescope}: {files}")
         if not files:
             logger.info(f"[{target}/{telescope}] no raw fits found")
             continue
@@ -272,6 +278,7 @@ def _coadd_target(
             continue
         window_hours = float(coadd_params.get("coadd_window_hours", 12.0))
         groups = _group_files_by_band_time(files, window_hours=window_hours)
+        # logger.info(groups)
         size = coadd_params.get("size", None)
         if size == 'None':
             size = None
@@ -279,6 +286,7 @@ def _coadd_target(
         for g in groups:
             band = str(g["band"])
             flist = list(g["files"])
+            # logger.info(flist)
             mean_mjd = float(g["mean_mjd"])
             day_mjd = int(np.floor(mean_mjd))
             time_tag = Time(mean_mjd, format="mjd").isot.replace(":", "").replace("-", "")
