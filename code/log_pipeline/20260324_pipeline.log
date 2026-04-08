@@ -1,0 +1,3990 @@
+Processing target=EP251212a RA=134.049 Dec=-23.2997 (o_pos=False)
+Processing target=EP251214b RA=144.388 Dec=-22.872 (o_pos=False)
+Processing target=EP251220a RA=17.31915 Dec=19.09231 (o_pos=True)
+Processing target=EP251221a RA=104.531 Dec=23.374 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 2
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 2
+Image and WCS loaded successfully.
+Matched stars before filtering: 168
+After saturation filtering: 157
+
+Zeropoint = 28.078 ± 0.054  (N=140)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.609
+Image and WCS loaded successfully.
+Matched stars before filtering: 168
+After saturation filtering: 157
+
+Zeropoint = 28.073 ± 0.039  (N=115)
+Aperture magnitude = nan ± 0.572
+3-sigma upper limit (g) = 17.603
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 14
+
+Zeropoint = 27.684 ± 0.514  (N=14)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.108
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 14
+
+Zeropoint = 27.495 ± 0.195  (N=9)
+Aperture magnitude = nan ± 1.645
+3-sigma upper limit (g) = 16.919
+Processing target=EP251222a RA=62.5025 Dec=-1.4792 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 105
+After saturation filtering: 98
+
+Zeropoint = 28.839 ± 0.127  (N=85)
+Target mag = 21.276 ± 0.153
+Image and WCS loaded successfully.
+Matched stars before filtering: 105
+After saturation filtering: 98
+
+Zeropoint = 28.834 ± 0.055  (N=58)
+Aperture magnitude = 21.841 ± 0.121
+3-sigma upper limit (r) = 22.433
+Image and WCS loaded successfully.
+Matched stars before filtering: 65
+After saturation filtering: 62
+
+Zeropoint = 29.321 ± 0.153  (N=57)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.671
+Image and WCS loaded successfully.
+Matched stars before filtering: 65
+After saturation filtering: 62
+
+Zeropoint = 29.322 ± 0.067  (N=39)
+Aperture magnitude = nan ± 210.469
+3-sigma upper limit (g) = 17.671
+Image and WCS loaded successfully.
+Matched stars before filtering: 29
+After saturation filtering: 25
+
+Zeropoint = 28.477 ± 0.240  (N=24)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.106
+Image and WCS loaded successfully.
+Matched stars before filtering: 29
+After saturation filtering: 25
+
+Zeropoint = 28.416 ± 0.218  (N=23)
+Aperture magnitude = nan ± 198.844
+3-sigma upper limit (g) = 16.045
+Image and WCS loaded successfully.
+Matched stars before filtering: 5
+After saturation filtering: 5
+
+Zeropoint = 28.091 ± 0.778  (N=5)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.566
+Image and WCS loaded successfully.
+Matched stars before filtering: 5
+After saturation filtering: 5
+
+Zeropoint = 28.091 ± 0.778  (N=5)
+Aperture magnitude = nan ± 25.141
+3-sigma upper limit (g) = 15.566
+Processing target=EP251229a RA=124.1027 Dec=37.2068 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 1696
+After saturation filtering: 1578
+
+Zeropoint = 30.129 ± 0.197  (N=1505)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.425
+Image and WCS loaded successfully.
+Matched stars before filtering: 1696
+After saturation filtering: 1578
+
+Zeropoint = 30.105 ± 0.137  (N=1258)
+Aperture magnitude = 16.285 ± 0.137
+3-sigma upper limit (r) = 22.401
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 37
+
+Zeropoint = 27.315 ± 2.891  (N=37)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.771
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 37
+
+Zeropoint = 27.350 ± 1.296  (N=27)
+Aperture magnitude = 13.983 ± 1.296
+3-sigma upper limit (r) = 19.806
+Image and WCS loaded successfully.
+Matched stars before filtering: 39
+After saturation filtering: 32
+
+Zeropoint = 26.854 ± 2.560  (N=32)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.596
+Image and WCS loaded successfully.
+Matched stars before filtering: 39
+After saturation filtering: 32
+
+Zeropoint = 26.830 ± 2.101  (N=28)
+Aperture magnitude = nan ± 2.508
+3-sigma upper limit (r) = 19.573
+Image and WCS loaded successfully.
+Matched stars before filtering: 1295
+After saturation filtering: 1225
+
+Zeropoint = 29.551 ± 0.200  (N=1143)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.886
+Image and WCS loaded successfully.
+Matched stars before filtering: 1295
+After saturation filtering: 1225
+
+Zeropoint = 29.521 ± 0.112  (N=889)
+Aperture magnitude = 15.864 ± 0.113
+3-sigma upper limit (r) = 21.856
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 34
+
+Zeropoint = 25.698 ± 2.600  (N=33)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 13.947
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 34
+
+Zeropoint = 25.181 ± 1.021  (N=20)
+Aperture magnitude = nan ± 5.703
+3-sigma upper limit (r) = 13.430
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 3070
+After saturation filtering: 2804
+
+Zeropoint = 29.647 ± 0.153  (N=2681)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.212
+Image and WCS loaded successfully.
+Matched stars before filtering: 3070
+After saturation filtering: 2804
+
+Zeropoint = 29.638 ± 0.067  (N=1904)
+Aperture magnitude = 16.945 ± 0.491
+3-sigma upper limit (g) = 19.203
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Processing target=EP260101a RA=46.0605 Dec=39.438 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 427
+After saturation filtering: 402
+
+Zeropoint = 29.334 ± 0.104  (N=350)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.003
+Image and WCS loaded successfully.
+Matched stars before filtering: 427
+After saturation filtering: 402
+
+Zeropoint = 29.323 ± 0.035  (N=243)
+Aperture magnitude = nan ± 0.248
+3-sigma upper limit (r) = 20.992
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 27.183 ± 3.178  (N=10)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 15.104
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 26.498 ± 1.402  (N=8)
+Aperture magnitude = nan ± 1.409
+3-sigma upper limit (r) = 14.419
+Image and WCS loaded successfully.
+Matched stars before filtering: 103
+After saturation filtering: 99
+
+Zeropoint = 29.766 ± 0.107  (N=89)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.099
+Image and WCS loaded successfully.
+Matched stars before filtering: 103
+After saturation filtering: 99
+
+Zeropoint = 29.759 ± 0.065  (N=75)
+Aperture magnitude = nan ± 53.705
+3-sigma upper limit (g) = 15.092
+Image and WCS loaded successfully.
+Matched stars before filtering: 183
+After saturation filtering: 172
+
+Zeropoint = 29.337 ± 0.064  (N=169)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.851
+Image and WCS loaded successfully.
+Matched stars before filtering: 183
+After saturation filtering: 172
+
+Zeropoint = 29.335 ± 0.046  (N=148)
+Aperture magnitude = nan ± 1.035
+3-sigma upper limit (g) = 17.849
+Image and WCS loaded successfully.
+Matched stars before filtering: 246
+After saturation filtering: 238
+
+Zeropoint = 29.085 ± 0.063  (N=217)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.355
+Image and WCS loaded successfully.
+Matched stars before filtering: 246
+After saturation filtering: 238
+
+Zeropoint = 29.080 ± 0.044  (N=188)
+Aperture magnitude = nan ± 1.478
+3-sigma upper limit (g) = 18.349
+Image and WCS loaded successfully.
+Matched stars before filtering: 177
+After saturation filtering: 162
+
+Zeropoint = 27.965 ± 0.044  (N=149)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.507
+Image and WCS loaded successfully.
+Matched stars before filtering: 177
+After saturation filtering: 162
+
+Zeropoint = 27.964 ± 0.032  (N=130)
+Aperture magnitude = nan ± 1.694
+3-sigma upper limit (g) = 17.506
+Image and WCS loaded successfully.
+Matched stars before filtering: 339
+After saturation filtering: 316
+
+Zeropoint = 29.795 ± 0.066  (N=285)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.378
+Image and WCS loaded successfully.
+Matched stars before filtering: 339
+After saturation filtering: 316
+
+Zeropoint = 29.791 ± 0.040  (N=239)
+Aperture magnitude = nan ± 2.116
+3-sigma upper limit (g) = 18.375
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 361
+After saturation filtering: 332
+
+Zeropoint = 29.828 ± 0.061  (N=302)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.810
+Image and WCS loaded successfully.
+Matched stars before filtering: 361
+After saturation filtering: 332
+
+Zeropoint = 29.820 ± 0.038  (N=246)
+Aperture magnitude = nan ± 1.480
+3-sigma upper limit (g) = 18.802
+Processing target=EP260104a RA=178.531 Dec=16.486 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 225
+
+Zeropoint = 30.687 ± 0.225  (N=219)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.073
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 225
+
+Zeropoint = 30.702 ± 0.137  (N=171)
+Aperture magnitude = nan ± 0.141
+3-sigma upper limit (r) = 23.088
+Image and WCS loaded successfully.
+Matched stars before filtering: 159
+After saturation filtering: 148
+
+Zeropoint = 30.470 ± 0.239  (N=144)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.125
+Image and WCS loaded successfully.
+Matched stars before filtering: 159
+After saturation filtering: 148
+
+Zeropoint = 30.467 ± 0.132  (N=114)
+Aperture magnitude = nan ± 0.216
+3-sigma upper limit (r) = 23.123
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 215
+
+Zeropoint = 30.667 ± 0.234  (N=212)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.259
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 215
+
+Zeropoint = 30.689 ± 0.131  (N=166)
+Aperture magnitude = nan ± 0.155
+3-sigma upper limit (r) = 23.281
+Image and WCS loaded successfully.
+Matched stars before filtering: 130
+After saturation filtering: 121
+
+Zeropoint = 30.531 ± 0.205  (N=119)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.238
+Image and WCS loaded successfully.
+Matched stars before filtering: 130
+After saturation filtering: 121
+
+Zeropoint = 30.543 ± 0.168  (N=111)
+Aperture magnitude = 19.125 ± 0.188
+3-sigma upper limit (r) = 23.250
+Image and WCS loaded successfully.
+Matched stars before filtering: 102
+After saturation filtering: 94
+
+Zeropoint = 30.410 ± 0.215  (N=93)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.120
+Image and WCS loaded successfully.
+Matched stars before filtering: 102
+After saturation filtering: 94
+
+Zeropoint = 30.415 ± 0.161  (N=81)
+Aperture magnitude = 18.234 ± 0.191
+3-sigma upper limit (r) = 22.125
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 4
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 4
+Image and WCS loaded successfully.
+Matched stars before filtering: 24
+After saturation filtering: 20
+
+Zeropoint = 29.390 ± 0.291  (N=19)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.949
+Image and WCS loaded successfully.
+Matched stars before filtering: 24
+After saturation filtering: 20
+
+Zeropoint = 29.377 ± 0.026  (N=13)
+Aperture magnitude = nan ± 32.830
+3-sigma upper limit (g) = 15.935
+Image and WCS loaded successfully.
+Matched stars before filtering: 16
+After saturation filtering: 14
+
+Zeropoint = 30.425 ± 0.634  (N=14)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.692
+Image and WCS loaded successfully.
+Matched stars before filtering: 16
+After saturation filtering: 14
+
+Zeropoint = 30.398 ± 0.196  (N=11)
+Aperture magnitude = nan ± 92.456
+3-sigma upper limit (g) = 16.664
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 39
+
+Zeropoint = 28.963 ± 0.250  (N=37)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.594
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 39
+
+Zeropoint = 28.960 ± 0.120  (N=26)
+Aperture magnitude = nan ± 8.039
+3-sigma upper limit (g) = 18.591
+Processing target=EP260105a RA=181.0158 Dec=22.7089 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 48
+After saturation filtering: 44
+
+Zeropoint = 29.520 ± 2.539  (N=44)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 17.856
+Image and WCS loaded successfully.
+Matched stars before filtering: 48
+After saturation filtering: 44
+
+Zeropoint = 29.563 ± 0.162  (N=21)
+Aperture magnitude = nan ± 1.269
+3-sigma upper limit (r) = 17.899
+Image and WCS loaded successfully.
+Matched stars before filtering: 266
+After saturation filtering: 256
+
+Zeropoint = 30.644 ± 0.184  (N=249)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.842
+Image and WCS loaded successfully.
+Matched stars before filtering: 266
+After saturation filtering: 256
+
+Zeropoint = 30.639 ± 0.123  (N=214)
+Aperture magnitude = nan ± 0.379
+3-sigma upper limit (r) = 22.837
+Image and WCS loaded successfully.
+Matched stars before filtering: 18
+After saturation filtering: 18
+
+Zeropoint = 25.095 ± 0.064  (N=17)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 21.655
+Image and WCS loaded successfully.
+Matched stars before filtering: 18
+After saturation filtering: 18
+
+Zeropoint = 25.116 ± 0.044  (N=14)
+Aperture magnitude = nan ± 0.923
+3-sigma upper limit (i) = 21.676
+Image and WCS loaded successfully.
+Matched stars before filtering: 12
+After saturation filtering: 7
+
+Zeropoint = 30.600 ± 0.951  (N=7)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.846
+Image and WCS loaded successfully.
+Matched stars before filtering: 12
+After saturation filtering: 7
+
+Zeropoint = 30.600 ± 0.951  (N=7)
+Aperture magnitude = 17.563 ± 1.063
+3-sigma upper limit (g) = 19.846
+Image and WCS loaded successfully.
+Matched stars before filtering: 23
+After saturation filtering: 20
+
+Zeropoint = 29.560 ± 0.048  (N=16)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.893
+Image and WCS loaded successfully.
+Matched stars before filtering: 23
+After saturation filtering: 20
+
+Zeropoint = 29.560 ± 0.033  (N=14)
+Aperture magnitude = 18.636 ± 48.693
+3-sigma upper limit (g) = 15.893
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 50
+
+Zeropoint = 29.126 ± 0.273  (N=50)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.860
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 50
+
+Zeropoint = 29.070 ± 0.179  (N=35)
+Aperture magnitude = 21.893 ± 66.972
+3-sigma upper limit (g) = 18.804
+Image and WCS loaded successfully.
+Matched stars before filtering: 120
+After saturation filtering: 109
+
+Zeropoint = 29.830 ± 0.196  (N=104)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.446
+Image and WCS loaded successfully.
+Matched stars before filtering: 120
+After saturation filtering: 109
+
+Zeropoint = 29.824 ± 0.118  (N=79)
+Aperture magnitude = 22.019 ± 41.831
+3-sigma upper limit (g) = 19.440
+Processing target=EP260105b RA=158.3695 Dec=17.6123 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 215
+After saturation filtering: 203
+
+Zeropoint = 30.493 ± 0.136  (N=197)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.607
+Image and WCS loaded successfully.
+Matched stars before filtering: 215
+After saturation filtering: 203
+
+Zeropoint = 30.492 ± 0.102  (N=174)
+Aperture magnitude = nan ± 0.102
+3-sigma upper limit (r) = 22.607
+Image and WCS loaded successfully.
+Matched stars before filtering: 205
+After saturation filtering: 196
+
+Zeropoint = 30.503 ± 0.158  (N=188)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.323
+Image and WCS loaded successfully.
+Matched stars before filtering: 205
+After saturation filtering: 196
+
+Zeropoint = 30.503 ± 0.103  (N=154)
+Aperture magnitude = nan ± 0.103
+3-sigma upper limit (r) = 23.324
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 230
+
+Zeropoint = 30.425 ± 0.172  (N=227)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.208
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 230
+
+Zeropoint = 30.423 ± 0.131  (N=199)
+Aperture magnitude = nan ± 0.131
+3-sigma upper limit (r) = 23.206
+Image and WCS loaded successfully.
+Matched stars before filtering: 7
+After saturation filtering: 7
+
+Zeropoint = 25.094 ± 1.599  (N=7)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 17.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 7
+After saturation filtering: 7
+
+Zeropoint = 25.094 ± 1.599  (N=7)
+Aperture magnitude = nan ± 1.599
+3-sigma upper limit (r) = 17.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 85
+After saturation filtering: 80
+
+Zeropoint = 30.178 ± 0.225  (N=79)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.653
+Image and WCS loaded successfully.
+Matched stars before filtering: 85
+After saturation filtering: 80
+
+Zeropoint = 30.180 ± 0.192  (N=74)
+Aperture magnitude = nan ± 0.192
+3-sigma upper limit (r) = 21.655
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 8
+
+Zeropoint = 28.584 ± 1.101  (N=8)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 14.796
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 8
+
+Zeropoint = 28.310 ± 0.560  (N=6)
+Aperture magnitude = nan ± 7.927
+3-sigma upper limit (g) = 14.522
+Image and WCS loaded successfully.
+Matched stars before filtering: 62
+After saturation filtering: 58
+
+Zeropoint = 29.858 ± 0.214  (N=52)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.216
+Image and WCS loaded successfully.
+Matched stars before filtering: 62
+After saturation filtering: 58
+
+Zeropoint = 29.883 ± 0.157  (N=45)
+Aperture magnitude = nan ± 0.238
+3-sigma upper limit (g) = 19.241
+Processing target=EP260110a RA=199.4371 Dec=65.8476 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 190
+After saturation filtering: 179
+
+Zeropoint = 30.303 ± 0.167  (N=167)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.564
+Image and WCS loaded successfully.
+Matched stars before filtering: 190
+After saturation filtering: 179
+
+Zeropoint = 30.294 ± 0.106  (N=130)
+Aperture magnitude = nan ± 0.178
+3-sigma upper limit (r) = 22.555
+Image and WCS loaded successfully.
+Matched stars before filtering: 169
+After saturation filtering: 156
+
+Zeropoint = 30.373 ± 0.206  (N=153)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.825
+Image and WCS loaded successfully.
+Matched stars before filtering: 169
+After saturation filtering: 156
+
+Zeropoint = 30.340 ± 0.115  (N=118)
+Aperture magnitude = nan ± 0.160
+3-sigma upper limit (r) = 22.792
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 222
+
+Zeropoint = 30.764 ± 0.244  (N=219)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.463
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 222
+
+Zeropoint = 30.767 ± 0.078  (N=134)
+Aperture magnitude = nan ± 0.100
+3-sigma upper limit (r) = 23.465
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 124
+
+Zeropoint = 30.425 ± 0.202  (N=115)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.909
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 124
+
+Zeropoint = 30.397 ± 0.106  (N=87)
+Aperture magnitude = nan ± 0.134
+3-sigma upper limit (r) = 21.882
+Image and WCS loaded successfully.
+Matched stars before filtering: 13
+After saturation filtering: 13
+
+Zeropoint = 25.746 ± 0.257  (N=12)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 21.323
+Image and WCS loaded successfully.
+Matched stars before filtering: 13
+After saturation filtering: 13
+
+Zeropoint = 25.786 ± 0.162  (N=10)
+Aperture magnitude = nan ± 12.380
+3-sigma upper limit (i) = 21.364
+Image and WCS loaded successfully.
+Matched stars before filtering: 75
+After saturation filtering: 67
+
+Zeropoint = 29.881 ± 0.081  (N=60)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.580
+Image and WCS loaded successfully.
+Matched stars before filtering: 75
+After saturation filtering: 67
+
+Zeropoint = 29.880 ± 0.029  (N=43)
+Aperture magnitude = nan ± 7.307
+3-sigma upper limit (g) = 18.579
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 77
+
+Zeropoint = 29.413 ± 0.119  (N=74)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.196
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 77
+
+Zeropoint = 29.404 ± 0.051  (N=51)
+Aperture magnitude = 23.026 ± 133.469
+3-sigma upper limit (g) = 19.188
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 17
+
+Zeropoint = 28.752 ± 0.061  (N=16)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.687
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 17
+
+Zeropoint = 28.758 ± 0.027  (N=11)
+Aperture magnitude = nan ± 18.235
+3-sigma upper limit (g) = 17.692
+Image and WCS loaded successfully.
+Matched stars before filtering: 114
+After saturation filtering: 102
+
+Zeropoint = 29.945 ± 0.107  (N=93)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.575
+Image and WCS loaded successfully.
+Matched stars before filtering: 114
+After saturation filtering: 102
+
+Zeropoint = 29.942 ± 0.069  (N=73)
+Aperture magnitude = nan ± 5.917
+3-sigma upper limit (g) = 19.572
+Image and WCS loaded successfully.
+Matched stars before filtering: 92
+After saturation filtering: 83
+
+Zeropoint = 29.669 ± 0.132  (N=78)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.215
+Image and WCS loaded successfully.
+Matched stars before filtering: 92
+After saturation filtering: 83
+
+Zeropoint = 29.658 ± 0.063  (N=57)
+Aperture magnitude = nan ± 4.539
+3-sigma upper limit (g) = 19.204
+Image and WCS loaded successfully.
+Matched stars before filtering: 63
+After saturation filtering: 58
+
+Zeropoint = 29.221 ± 0.219  (N=57)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.235
+Image and WCS loaded successfully.
+Matched stars before filtering: 63
+After saturation filtering: 58
+
+Zeropoint = 29.198 ± 0.054  (N=39)
+Aperture magnitude = nan ± 178.027
+3-sigma upper limit (g) = 18.213
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 53
+
+Zeropoint = 29.657 ± 0.130  (N=50)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.755
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 53
+
+Zeropoint = 29.655 ± 0.089  (N=42)
+Aperture magnitude = nan ± 4.106
+3-sigma upper limit (g) = 18.753
+Processing target=EP260116a RA=113.7617 Dec=6.3244 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 644
+After saturation filtering: 502
+
+Zeropoint = 30.751 ± 0.076  (N=407)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 24.828
+Image and WCS loaded successfully.
+Matched stars before filtering: 644
+After saturation filtering: 502
+
+Zeropoint = 30.758 ± 0.028  (N=302)
+Aperture magnitude = nan ± 0.028
+3-sigma upper limit (g) = 24.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 273
+After saturation filtering: 263
+
+Zeropoint = 29.324 ± 0.058  (N=232)
+Target mag = 25.308 ± 1.152
+Image and WCS loaded successfully.
+Matched stars before filtering: 273
+After saturation filtering: 263
+
+Zeropoint = 29.325 ± 0.029  (N=182)
+Aperture magnitude = nan ± 0.029
+3-sigma upper limit (i) = 23.657
+Image and WCS loaded successfully.
+Matched stars before filtering: 554
+After saturation filtering: 460
+
+Zeropoint = 30.559 ± 0.076  (N=403)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 24.468
+Image and WCS loaded successfully.
+Matched stars before filtering: 554
+After saturation filtering: 460
+
+Zeropoint = 30.571 ± 0.032  (N=288)
+Aperture magnitude = nan ± 0.032
+3-sigma upper limit (r) = 24.480
+Image and WCS loaded successfully.
+Matched stars before filtering: 733
+After saturation filtering: 671
+
+Zeropoint = 30.053 ± 0.124  (N=601)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.282
+Image and WCS loaded successfully.
+Matched stars before filtering: 733
+After saturation filtering: 671
+
+Zeropoint = 30.037 ± 0.041  (N=398)
+Aperture magnitude = nan ± 0.041
+3-sigma upper limit (r) = 22.266
+Image and WCS loaded successfully.
+Matched stars before filtering: 704
+After saturation filtering: 650
+
+Zeropoint = 30.440 ± 0.061  (N=571)
+Target not detected → computing upper limit
+3-sigma upper limit (z) = 23.638
+Image and WCS loaded successfully.
+Matched stars before filtering: 704
+After saturation filtering: 650
+
+Zeropoint = 30.447 ± 0.035  (N=456)
+Aperture magnitude = nan ± 0.035
+3-sigma upper limit (z) = 23.645
+Image and WCS loaded successfully.
+Matched stars before filtering: 93
+After saturation filtering: 87
+
+Zeropoint = 29.309 ± 0.215  (N=86)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.453
+Image and WCS loaded successfully.
+Matched stars before filtering: 93
+After saturation filtering: 87
+
+Zeropoint = 29.267 ± 0.111  (N=65)
+Aperture magnitude = nan ± 0.292
+3-sigma upper limit (g) = 18.411
+Image and WCS loaded successfully.
+Matched stars before filtering: 72
+After saturation filtering: 69
+
+Zeropoint = 29.181 ± 0.302  (N=67)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.949
+Image and WCS loaded successfully.
+Matched stars before filtering: 72
+After saturation filtering: 69
+
+Zeropoint = 29.149 ± 0.128  (N=49)
+Aperture magnitude = nan ± 1.313
+3-sigma upper limit (g) = 16.917
+Image and WCS loaded successfully.
+Matched stars before filtering: 335
+After saturation filtering: 325
+
+Zeropoint = 29.048 ± 0.053  (N=287)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.058
+Image and WCS loaded successfully.
+Matched stars before filtering: 335
+After saturation filtering: 325
+
+Zeropoint = 29.044 ± 0.029  (N=228)
+Aperture magnitude = nan ± 0.371
+3-sigma upper limit (g) = 18.053
+Image and WCS loaded successfully.
+Matched stars before filtering: 358
+After saturation filtering: 340
+
+Zeropoint = 29.251 ± 0.053  (N=306)
+Target mag = 23.378 ± 38.279
+Image and WCS loaded successfully.
+Matched stars before filtering: 358
+After saturation filtering: 340
+
+Zeropoint = 29.251 ± 0.040  (N=260)
+Aperture magnitude = nan ± 0.330
+3-sigma upper limit (g) = 18.165
+Processing target=EP260119a RA=158.1018 Dec=65.4956 (o_pos=True)
+Processing target=EP260126a RA=103.7542083 Dec=37.70518889 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 322
+After saturation filtering: 291
+
+Zeropoint = 30.550 ± 2.409  (N=291)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 18.560
+Image and WCS loaded successfully.
+Matched stars before filtering: 322
+After saturation filtering: 291
+
+Zeropoint = 30.564 ± 0.044  (N=162)
+Aperture magnitude = 23.296 ± 28.738
+3-sigma upper limit (r) = 18.574
+Image and WCS loaded successfully.
+Matched stars before filtering: 522
+After saturation filtering: 520
+
+Zeropoint = 26.271 ± 0.067  (N=500)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 22.461
+Image and WCS loaded successfully.
+Matched stars before filtering: 522
+After saturation filtering: 520
+
+Zeropoint = 26.282 ± 0.035  (N=354)
+Aperture magnitude = 23.697 ± 2.018
+3-sigma upper limit (i) = 22.472
+Image and WCS loaded successfully.
+Matched stars before filtering: 292
+After saturation filtering: 277
+
+Zeropoint = 29.355 ± 0.051  (N=250)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.660
+Image and WCS loaded successfully.
+Matched stars before filtering: 292
+After saturation filtering: 277
+
+Zeropoint = 29.354 ± 0.031  (N=209)
+Aperture magnitude = nan ± 180.828
+3-sigma upper limit (g) = 18.658
+Image and WCS loaded successfully.
+Matched stars before filtering: 256
+After saturation filtering: 243
+
+Zeropoint = 29.288 ± 0.053  (N=221)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.516
+Image and WCS loaded successfully.
+Matched stars before filtering: 256
+After saturation filtering: 243
+
+Zeropoint = 29.287 ± 0.034  (N=191)
+Aperture magnitude = nan ± 52.607
+3-sigma upper limit (g) = 18.515
+Image and WCS loaded successfully.
+Matched stars before filtering: 222
+After saturation filtering: 213
+
+Zeropoint = 29.327 ± 0.048  (N=190)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.544
+Image and WCS loaded successfully.
+Matched stars before filtering: 222
+After saturation filtering: 213
+
+Zeropoint = 29.326 ± 0.036  (N=166)
+Aperture magnitude = 26.860 ± 825.770
+3-sigma upper limit (g) = 18.544
+Processing target=EP260128a RA=128.3233 Dec=-10.2767 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 423
+After saturation filtering: 367
+
+Zeropoint = 30.518 ± 0.107  (N=331)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.048
+Image and WCS loaded successfully.
+Matched stars before filtering: 423
+After saturation filtering: 367
+
+Zeropoint = 30.507 ± 0.049  (N=246)
+Aperture magnitude = nan ± 0.049
+3-sigma upper limit (r) = 22.036
+Image and WCS loaded successfully.
+Matched stars before filtering: 206
+After saturation filtering: 181
+
+Zeropoint = 30.158 ± 3.695  (N=181)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 16.807
+Image and WCS loaded successfully.
+Matched stars before filtering: 206
+After saturation filtering: 181
+
+Zeropoint = 30.217 ± 0.048  (N=83)
+Aperture magnitude = nan ± 0.104
+3-sigma upper limit (r) = 16.866
+Processing target=WXT J031644+08316 RA=172.543 Dec=-39.765 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 37
+After saturation filtering: 37
+
+Zeropoint = 26.487 ± 0.062  (N=32)
+Image and WCS loaded successfully.
+Matched stars before filtering: 37
+After saturation filtering: 37
+
+Zeropoint = 26.487 ± 0.015  (N=23)
+Processing target=1RXSJ052540.6+425139 RA=81.419 Dec=42.861 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 555
+After saturation filtering: 551
+
+Zeropoint = 27.218 ± 0.049  (N=503)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.628
+Image and WCS loaded successfully.
+Matched stars before filtering: 555
+After saturation filtering: 551
+
+Zeropoint = 27.218 ± 0.021  (N=379)
+Aperture magnitude = 12.647 ± 0.021
+Processing target=EP251212a RA=134.049 Dec=-23.2997 (o_pos=False)
+Processing target=EP251214b RA=144.388 Dec=-22.872 (o_pos=False)
+Processing target=EP251220a RA=17.31915 Dec=19.09231 (o_pos=True)
+Processing target=EP251221a RA=104.531 Dec=23.374 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 2
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 2
+Image and WCS loaded successfully.
+Matched stars before filtering: 168
+After saturation filtering: 157
+
+Zeropoint = 28.078 ± 0.054  (N=140)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.609
+Image and WCS loaded successfully.
+Matched stars before filtering: 168
+After saturation filtering: 157
+
+Zeropoint = 28.073 ± 0.039  (N=115)
+Aperture magnitude = nan ± 0.572
+3-sigma upper limit (g) = 17.603
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 14
+
+Zeropoint = 27.684 ± 0.514  (N=14)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.108
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 14
+
+Zeropoint = 27.495 ± 0.195  (N=9)
+Aperture magnitude = nan ± 1.645
+3-sigma upper limit (g) = 16.919
+Processing target=EP251222a RA=62.5025 Dec=-1.4792 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 105
+After saturation filtering: 98
+
+Zeropoint = 28.839 ± 0.127  (N=85)
+Target mag = 21.276 ± 0.153
+Image and WCS loaded successfully.
+Matched stars before filtering: 105
+After saturation filtering: 98
+
+Zeropoint = 28.834 ± 0.055  (N=58)
+Aperture magnitude = 21.841 ± 0.121
+3-sigma upper limit (r) = 22.433
+Image and WCS loaded successfully.
+Matched stars before filtering: 65
+After saturation filtering: 62
+
+Zeropoint = 29.321 ± 0.153  (N=57)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.671
+Image and WCS loaded successfully.
+Matched stars before filtering: 65
+After saturation filtering: 62
+
+Zeropoint = 29.322 ± 0.067  (N=39)
+Aperture magnitude = nan ± 210.469
+3-sigma upper limit (g) = 17.671
+Image and WCS loaded successfully.
+Matched stars before filtering: 29
+After saturation filtering: 25
+
+Zeropoint = 28.477 ± 0.240  (N=24)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.106
+Image and WCS loaded successfully.
+Matched stars before filtering: 29
+After saturation filtering: 25
+
+Zeropoint = 28.416 ± 0.218  (N=23)
+Aperture magnitude = nan ± 198.844
+3-sigma upper limit (g) = 16.045
+Image and WCS loaded successfully.
+Matched stars before filtering: 5
+After saturation filtering: 5
+
+Zeropoint = 28.091 ± 0.778  (N=5)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.566
+Image and WCS loaded successfully.
+Matched stars before filtering: 5
+After saturation filtering: 5
+
+Zeropoint = 28.091 ± 0.778  (N=5)
+Aperture magnitude = nan ± 25.141
+3-sigma upper limit (g) = 15.566
+Processing target=EP251229a RA=124.1027 Dec=37.2068 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 1696
+After saturation filtering: 1578
+
+Zeropoint = 30.129 ± 0.197  (N=1505)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.425
+Image and WCS loaded successfully.
+Matched stars before filtering: 1696
+After saturation filtering: 1578
+
+Zeropoint = 30.105 ± 0.137  (N=1258)
+Aperture magnitude = 16.285 ± 0.137
+3-sigma upper limit (r) = 22.401
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 37
+
+Zeropoint = 27.315 ± 2.891  (N=37)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.771
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 37
+
+Zeropoint = 27.350 ± 1.296  (N=27)
+Aperture magnitude = 13.983 ± 1.296
+3-sigma upper limit (r) = 19.806
+Image and WCS loaded successfully.
+Matched stars before filtering: 39
+After saturation filtering: 32
+
+Zeropoint = 26.854 ± 2.560  (N=32)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.596
+Image and WCS loaded successfully.
+Matched stars before filtering: 39
+After saturation filtering: 32
+
+Zeropoint = 26.830 ± 2.101  (N=28)
+Aperture magnitude = nan ± 2.508
+3-sigma upper limit (r) = 19.573
+Image and WCS loaded successfully.
+Matched stars before filtering: 1295
+After saturation filtering: 1225
+
+Zeropoint = 29.551 ± 0.200  (N=1143)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.886
+Image and WCS loaded successfully.
+Matched stars before filtering: 1295
+After saturation filtering: 1225
+
+Zeropoint = 29.521 ± 0.112  (N=889)
+Aperture magnitude = 15.864 ± 0.113
+3-sigma upper limit (r) = 21.856
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 34
+
+Zeropoint = 25.698 ± 2.600  (N=33)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 13.947
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 34
+
+Zeropoint = 25.181 ± 1.021  (N=20)
+Aperture magnitude = nan ± 5.703
+3-sigma upper limit (r) = 13.430
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 3070
+After saturation filtering: 2804
+
+Zeropoint = 29.647 ± 0.153  (N=2681)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.212
+Image and WCS loaded successfully.
+Matched stars before filtering: 3070
+After saturation filtering: 2804
+
+Zeropoint = 29.638 ± 0.067  (N=1904)
+Aperture magnitude = 16.945 ± 0.491
+3-sigma upper limit (g) = 19.203
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Processing target=EP260101a RA=46.0605 Dec=39.438 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 427
+After saturation filtering: 402
+
+Zeropoint = 29.334 ± 0.104  (N=350)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.003
+Image and WCS loaded successfully.
+Matched stars before filtering: 427
+After saturation filtering: 402
+
+Zeropoint = 29.323 ± 0.035  (N=243)
+Aperture magnitude = nan ± 0.248
+3-sigma upper limit (r) = 20.992
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 27.183 ± 3.178  (N=10)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 15.104
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 26.498 ± 1.402  (N=8)
+Aperture magnitude = nan ± 1.409
+3-sigma upper limit (r) = 14.419
+Image and WCS loaded successfully.
+Matched stars before filtering: 103
+After saturation filtering: 99
+
+Zeropoint = 29.766 ± 0.107  (N=89)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.099
+Image and WCS loaded successfully.
+Matched stars before filtering: 103
+After saturation filtering: 99
+
+Zeropoint = 29.759 ± 0.065  (N=75)
+Aperture magnitude = nan ± 53.705
+3-sigma upper limit (g) = 15.092
+Image and WCS loaded successfully.
+Matched stars before filtering: 183
+After saturation filtering: 172
+
+Zeropoint = 29.337 ± 0.064  (N=169)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.851
+Image and WCS loaded successfully.
+Matched stars before filtering: 183
+After saturation filtering: 172
+
+Zeropoint = 29.335 ± 0.046  (N=148)
+Aperture magnitude = nan ± 1.035
+3-sigma upper limit (g) = 17.849
+Image and WCS loaded successfully.
+Matched stars before filtering: 246
+After saturation filtering: 238
+
+Zeropoint = 29.085 ± 0.063  (N=217)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.355
+Image and WCS loaded successfully.
+Matched stars before filtering: 246
+After saturation filtering: 238
+
+Zeropoint = 29.080 ± 0.044  (N=188)
+3-sigma upper limit (r) = 19.628
+Processing target=WXT J001838+115903 RA=4.658 Dec=11.984 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 26
+After saturation filtering: 26
+
+Zeropoint = 27.912 ± 0.318  (N=26)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 20.775
+Image and WCS loaded successfully.
+Matched stars before filtering: 26
+After saturation filtering: 26
+
+Zeropoint = 27.849 ± 0.063  (N=14)
+Aperture magnitude = nan ± 0.260
+3-sigma upper limit (r) = 20.712
+Processing target=WXT J030902+581637 RA=47.261 Dec=58.258 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 95
+After saturation filtering: 92
+
+Zeropoint = 28.872 ± 0.097  (N=76)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.251
+Image and WCS loaded successfully.
+Matched stars before filtering: 95
+After saturation filtering: 92
+
+Zeropoint = 28.873 ± 0.054  (N=61)
+Aperture magnitude = nan ± 0.059
+3-sigma upper limit (r) = 22.251
+Processing target=EP J0619.5+0602 RA=94.916 Dec=6.028 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 28.484 ± 1.654  (N=10)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.308
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 28.822 ± 1.327  (N=9)
+Aperture magnitude = nan ± 1.327
+3-sigma upper limit (r) = 21.646
+Processing target=EP260131a RA=149.9025 Dec=-3.3073 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 58
+After saturation filtering: 58
+
+Zeropoint = 31.647 ± 0.091  (N=52)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 23.782
+Image and WCS loaded successfully.
+Matched stars before filtering: 58
+After saturation filtering: 58
+
+Zeropoint = 31.649 ± 0.068  (N=47)
+Aperture magnitude = 23.673 ± 0.236
+3-sigma upper limit (i) = 23.784
+Image and WCS loaded successfully.
+Matched stars before filtering: 64
+After saturation filtering: 63
+
+Zeropoint = 31.753 ± 0.080  (N=56)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 23.845
+Image and WCS loaded successfully.
+Matched stars before filtering: 64
+After saturation filtering: 63
+
+Zeropoint = 31.755 ± 0.053  (N=47)
+Aperture magnitude = 23.603 ± 0.207
+3-sigma upper limit (i) = 23.847
+Image and WCS loaded successfully.
+Matched stars before filtering: 57
+After saturation filtering: 53
+
+Zeropoint = 31.526 ± 0.135  (N=42)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.864
+Image and WCS loaded successfully.
+Matched stars before filtering: 57
+After saturation filtering: 53
+
+Zeropoint = 31.533 ± 0.109  (N=38)
+Aperture magnitude = 23.682 ± 0.237
+3-sigma upper limit (r) = 23.872
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 1
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 1
+Processing target=EP260209a RA=159.6858 Dec=28.3113 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 49
+After saturation filtering: 49
+
+Zeropoint = 28.345 ± 0.250  (N=46)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.737
+Image and WCS loaded successfully.
+Matched stars before filtering: 49
+After saturation filtering: 49
+
+Zeropoint = 28.287 ± 0.139  (N=32)
+Aperture magnitude = nan ± 0.185
+3-sigma upper limit (r) = 21.679
+Image and WCS loaded successfully.
+Matched stars before filtering: 76
+After saturation filtering: 68
+
+Zeropoint = 29.578 ± 0.260  (N=68)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.758
+Image and WCS loaded successfully.
+Matched stars before filtering: 76
+After saturation filtering: 68
+
+Zeropoint = 29.531 ± 0.116  (N=50)
+Aperture magnitude = nan ± 2.065
+3-sigma upper limit (g) = 18.712
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 40
+
+Zeropoint = 29.047 ± 0.087  (N=33)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.678
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 40
+
+Zeropoint = 29.043 ± 0.035  (N=26)
+Aperture magnitude = nan ± 1.170
+3-sigma upper limit (g) = 18.675
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Processing target=EP260210a RA=169.8297 Dec=45.3929 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 94
+After saturation filtering: 94
+
+Zeropoint = 25.904 ± 0.134  (N=85)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 20.640
+Image and WCS loaded successfully.
+Matched stars before filtering: 94
+After saturation filtering: 94
+
+Zeropoint = 25.904 ± 0.078  (N=67)
+Aperture magnitude = 16.396 ± 0.152
+3-sigma upper limit (i) = 20.640
+Image and WCS loaded successfully.
+Matched stars before filtering: 66
+After saturation filtering: 63
+
+Zeropoint = 29.233 ± 0.218  (N=63)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.992
+Image and WCS loaded successfully.
+Matched stars before filtering: 66
+After saturation filtering: 63
+
+Zeropoint = 29.170 ± 0.054  (N=36)
+Aperture magnitude = 20.304 ± 13.818
+3-sigma upper limit (g) = 18.929
+Processing target=EP260213a RA=167.0083 Dec=3.9451 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 111
+After saturation filtering: 111
+
+Zeropoint = 25.876 ± 0.067  (N=108)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 22.175
+Image and WCS loaded successfully.
+Matched stars before filtering: 111
+After saturation filtering: 111
+
+Zeropoint = 25.893 ± 0.040  (N=83)
+Aperture magnitude = nan ± 0.040
+3-sigma upper limit (i) = 22.191
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 82
+
+Zeropoint = 29.240 ± 0.091  (N=72)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.777
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 82
+
+Zeropoint = 29.246 ± 0.045  (N=55)
+Aperture magnitude = nan ± 0.050
+3-sigma upper limit (g) = 18.783
+Image and WCS loaded successfully.
+Matched stars before filtering: 88
+After saturation filtering: 81
+
+Zeropoint = 29.241 ± 0.177  (N=81)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.759
+Image and WCS loaded successfully.
+Matched stars before filtering: 88
+After saturation filtering: 81
+
+Zeropoint = 29.238 ± 0.031  (N=49)
+Aperture magnitude = nan ± 0.038
+3-sigma upper limit (g) = 18.756
+Processing target=EP260214a RA=201.2305 Dec=-29.0431 (o_pos=False)
+Processing target=EP260214b RA=191.2582 Dec=23.8536 (o_pos=True)
+Processing target=EP260221a RA=178.7551 Dec=-20.9827 (o_pos=True)
+Processing target=EP260223a RA=92.774 Dec=56.577 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 270
+After saturation filtering: 255
+
+Zeropoint = 29.702 ± 0.077  (N=233)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.669
+Image and WCS loaded successfully.
+Matched stars before filtering: 270
+After saturation filtering: 255
+
+Zeropoint = 29.695 ± 0.040  (N=175)
+Aperture magnitude = nan ± 0.256
+3-sigma upper limit (g) = 18.663
+Image and WCS loaded successfully.
+Matched stars before filtering: 86
+After saturation filtering: 81
+
+Zeropoint = 27.928 ± 0.124  (N=79)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.196
+Image and WCS loaded successfully.
+Matched stars before filtering: 86
+After saturation filtering: 81
+
+Zeropoint = 27.907 ± 0.054  (N=54)
+Aperture magnitude = nan ± 1.417
+3-sigma upper limit (g) = 16.174
+Processing target=EP260224a RA=175.2 Dec=-41.415 (o_pos=False)
+Processing target=EP260227a RA=223.08309 Dec=-11.40664 (o_pos=True)
+Processing target=EP260302a RA=132.9739 Dec=-65.9837 (o_pos=True)
+Processing target=EP260306a RA=145.949 Dec=15.6937 (o_pos=True)
+Processing target=EP260314a RA=211.842259 Dec=-23.457728 (o_pos=True)
+Processing target=EP260316a RA=226.98176 Dec=27.4483 (o_pos=True)
+Processing target=EP260308a RA=170.742 Dec=44.283 (o_pos=False)
+Processing target=EP260321a RA=149.928704 Dec=0.418445 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 15
+
+Zeropoint = 27.666 ± 0.116  (N=13)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.087
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 15
+
+Zeropoint = 27.673 ± 0.094  (N=12)
+Aperture magnitude = 17.977 ± 0.362
+3-sigma upper limit (g) = 18.094
+Processing target=EP260322a RA=255.5573 Dec=17.2089 (o_pos=False)
+Aperture magnitude = nan ± 1.478
+3-sigma upper limit (g) = 18.349
+Image and WCS loaded successfully.
+Matched stars before filtering: 177
+After saturation filtering: 162
+
+Zeropoint = 27.965 ± 0.044  (N=149)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.507
+Image and WCS loaded successfully.
+Matched stars before filtering: 177
+After saturation filtering: 162
+
+Zeropoint = 27.964 ± 0.032  (N=130)
+Aperture magnitude = nan ± 1.694
+3-sigma upper limit (g) = 17.506
+Image and WCS loaded successfully.
+Matched stars before filtering: 339
+After saturation filtering: 316
+
+Zeropoint = 29.795 ± 0.066  (N=285)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.378
+Image and WCS loaded successfully.
+Matched stars before filtering: 339
+After saturation filtering: 316
+
+Zeropoint = 29.791 ± 0.040  (N=239)
+Aperture magnitude = nan ± 2.116
+3-sigma upper limit (g) = 18.375
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 361
+After saturation filtering: 332
+
+Zeropoint = 29.828 ± 0.061  (N=302)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.810
+Image and WCS loaded successfully.
+Matched stars before filtering: 361
+After saturation filtering: 332
+
+Zeropoint = 29.820 ± 0.038  (N=246)
+Aperture magnitude = nan ± 1.480
+3-sigma upper limit (g) = 18.802
+Processing target=EP260104a RA=178.531 Dec=16.486 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 225
+
+Zeropoint = 30.687 ± 0.225  (N=219)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.073
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 225
+
+Zeropoint = 30.702 ± 0.137  (N=171)
+Aperture magnitude = nan ± 0.141
+3-sigma upper limit (r) = 23.088
+Image and WCS loaded successfully.
+Matched stars before filtering: 159
+After saturation filtering: 148
+
+Zeropoint = 30.470 ± 0.239  (N=144)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.125
+Image and WCS loaded successfully.
+Matched stars before filtering: 159
+After saturation filtering: 148
+
+Zeropoint = 30.467 ± 0.132  (N=114)
+Aperture magnitude = nan ± 0.216
+3-sigma upper limit (r) = 23.123
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 215
+
+Zeropoint = 30.667 ± 0.234  (N=212)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.259
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 215
+
+Zeropoint = 30.689 ± 0.131  (N=166)
+Aperture magnitude = nan ± 0.155
+3-sigma upper limit (r) = 23.281
+Image and WCS loaded successfully.
+Matched stars before filtering: 130
+After saturation filtering: 121
+
+Zeropoint = 30.531 ± 0.205  (N=119)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.238
+Image and WCS loaded successfully.
+Matched stars before filtering: 130
+After saturation filtering: 121
+
+Zeropoint = 30.543 ± 0.168  (N=111)
+Aperture magnitude = 19.125 ± 0.188
+3-sigma upper limit (r) = 23.250
+Image and WCS loaded successfully.
+Matched stars before filtering: 102
+After saturation filtering: 94
+
+Zeropoint = 30.410 ± 0.215  (N=93)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.120
+Image and WCS loaded successfully.
+Matched stars before filtering: 102
+After saturation filtering: 94
+
+Zeropoint = 30.415 ± 0.161  (N=81)
+Aperture magnitude = 18.234 ± 0.191
+3-sigma upper limit (r) = 22.125
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 4
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 4
+Image and WCS loaded successfully.
+Matched stars before filtering: 24
+After saturation filtering: 20
+
+Zeropoint = 29.390 ± 0.291  (N=19)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.949
+Image and WCS loaded successfully.
+Matched stars before filtering: 24
+After saturation filtering: 20
+
+Zeropoint = 29.377 ± 0.026  (N=13)
+Aperture magnitude = nan ± 32.830
+3-sigma upper limit (g) = 15.935
+Image and WCS loaded successfully.
+Matched stars before filtering: 16
+After saturation filtering: 14
+
+Zeropoint = 30.425 ± 0.634  (N=14)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.692
+Image and WCS loaded successfully.
+Matched stars before filtering: 16
+After saturation filtering: 14
+
+Zeropoint = 30.398 ± 0.196  (N=11)
+Aperture magnitude = nan ± 92.456
+3-sigma upper limit (g) = 16.664
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 39
+
+Zeropoint = 28.963 ± 0.250  (N=37)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.594
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 39
+
+Zeropoint = 28.960 ± 0.120  (N=26)
+Aperture magnitude = nan ± 8.039
+3-sigma upper limit (g) = 18.591
+Processing target=EP260105a RA=181.0158 Dec=22.7089 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 48
+After saturation filtering: 44
+
+Zeropoint = 29.520 ± 2.539  (N=44)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 17.856
+Image and WCS loaded successfully.
+Matched stars before filtering: 48
+After saturation filtering: 44
+
+Zeropoint = 29.563 ± 0.162  (N=21)
+Aperture magnitude = nan ± 1.269
+3-sigma upper limit (r) = 17.899
+Image and WCS loaded successfully.
+Matched stars before filtering: 266
+After saturation filtering: 256
+
+Zeropoint = 30.644 ± 0.184  (N=249)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.842
+Image and WCS loaded successfully.
+Matched stars before filtering: 266
+After saturation filtering: 256
+
+Zeropoint = 30.639 ± 0.123  (N=214)
+Aperture magnitude = nan ± 0.379
+3-sigma upper limit (r) = 22.837
+Image and WCS loaded successfully.
+Matched stars before filtering: 18
+After saturation filtering: 18
+
+Zeropoint = 25.095 ± 0.064  (N=17)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 21.655
+Image and WCS loaded successfully.
+Matched stars before filtering: 18
+After saturation filtering: 18
+
+Zeropoint = 25.116 ± 0.044  (N=14)
+Aperture magnitude = nan ± 0.923
+3-sigma upper limit (i) = 21.676
+Image and WCS loaded successfully.
+Matched stars before filtering: 12
+After saturation filtering: 7
+
+Zeropoint = 30.600 ± 0.951  (N=7)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.846
+Image and WCS loaded successfully.
+Matched stars before filtering: 12
+After saturation filtering: 7
+
+Zeropoint = 30.600 ± 0.951  (N=7)
+Aperture magnitude = 17.563 ± 1.063
+3-sigma upper limit (g) = 19.846
+Image and WCS loaded successfully.
+Matched stars before filtering: 23
+After saturation filtering: 20
+
+Zeropoint = 29.560 ± 0.048  (N=16)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.893
+Image and WCS loaded successfully.
+Matched stars before filtering: 23
+After saturation filtering: 20
+
+Zeropoint = 29.560 ± 0.033  (N=14)
+Aperture magnitude = 18.636 ± 48.693
+3-sigma upper limit (g) = 15.893
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 50
+
+Zeropoint = 29.126 ± 0.273  (N=50)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.860
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 50
+
+Zeropoint = 29.070 ± 0.179  (N=35)
+Aperture magnitude = 21.893 ± 66.972
+3-sigma upper limit (g) = 18.804
+Image and WCS loaded successfully.
+Matched stars before filtering: 120
+After saturation filtering: 109
+
+Zeropoint = 29.830 ± 0.196  (N=104)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.446
+Image and WCS loaded successfully.
+Matched stars before filtering: 120
+After saturation filtering: 109
+
+Zeropoint = 29.824 ± 0.118  (N=79)
+Aperture magnitude = 22.019 ± 41.831
+3-sigma upper limit (g) = 19.440
+Processing target=EP260105b RA=158.3695 Dec=17.6123 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 215
+After saturation filtering: 203
+
+Zeropoint = 30.493 ± 0.136  (N=197)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.607
+Image and WCS loaded successfully.
+Matched stars before filtering: 215
+After saturation filtering: 203
+
+Zeropoint = 30.492 ± 0.102  (N=174)
+Aperture magnitude = nan ± 0.102
+3-sigma upper limit (r) = 22.607
+Image and WCS loaded successfully.
+Matched stars before filtering: 205
+After saturation filtering: 196
+
+Zeropoint = 30.503 ± 0.158  (N=188)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.323
+Image and WCS loaded successfully.
+Matched stars before filtering: 205
+After saturation filtering: 196
+
+Zeropoint = 30.503 ± 0.103  (N=154)
+Aperture magnitude = nan ± 0.103
+3-sigma upper limit (r) = 23.324
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 230
+
+Zeropoint = 30.425 ± 0.172  (N=227)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.208
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 230
+
+Zeropoint = 30.423 ± 0.131  (N=199)
+Aperture magnitude = nan ± 0.131
+3-sigma upper limit (r) = 23.206
+Image and WCS loaded successfully.
+Matched stars before filtering: 7
+After saturation filtering: 7
+
+Zeropoint = 25.094 ± 1.599  (N=7)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 17.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 7
+After saturation filtering: 7
+
+Zeropoint = 25.094 ± 1.599  (N=7)
+Aperture magnitude = nan ± 1.599
+3-sigma upper limit (r) = 17.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 85
+After saturation filtering: 80
+
+Zeropoint = 30.178 ± 0.225  (N=79)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.653
+Image and WCS loaded successfully.
+Matched stars before filtering: 85
+After saturation filtering: 80
+
+Zeropoint = 30.180 ± 0.192  (N=74)
+Aperture magnitude = nan ± 0.192
+3-sigma upper limit (r) = 21.655
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 8
+
+Zeropoint = 28.584 ± 1.101  (N=8)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 14.796
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 8
+
+Zeropoint = 28.310 ± 0.560  (N=6)
+Aperture magnitude = nan ± 7.927
+3-sigma upper limit (g) = 14.522
+Image and WCS loaded successfully.
+Matched stars before filtering: 62
+After saturation filtering: 58
+
+Zeropoint = 29.858 ± 0.214  (N=52)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.216
+Image and WCS loaded successfully.
+Matched stars before filtering: 62
+After saturation filtering: 58
+
+Zeropoint = 29.883 ± 0.157  (N=45)
+Aperture magnitude = nan ± 0.238
+3-sigma upper limit (g) = 19.241
+Processing target=EP260110a RA=199.4371 Dec=65.8476 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 190
+After saturation filtering: 179
+
+Zeropoint = 30.303 ± 0.167  (N=167)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.564
+Image and WCS loaded successfully.
+Matched stars before filtering: 190
+After saturation filtering: 179
+
+Zeropoint = 30.294 ± 0.106  (N=130)
+Aperture magnitude = nan ± 0.178
+3-sigma upper limit (r) = 22.555
+Image and WCS loaded successfully.
+Matched stars before filtering: 169
+After saturation filtering: 156
+
+Zeropoint = 30.373 ± 0.206  (N=153)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.825
+Image and WCS loaded successfully.
+Matched stars before filtering: 169
+After saturation filtering: 156
+
+Zeropoint = 30.340 ± 0.115  (N=118)
+Aperture magnitude = nan ± 0.160
+3-sigma upper limit (r) = 22.792
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 222
+
+Zeropoint = 30.764 ± 0.244  (N=219)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.463
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 222
+
+Zeropoint = 30.767 ± 0.078  (N=134)
+Aperture magnitude = nan ± 0.100
+3-sigma upper limit (r) = 23.465
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 124
+
+Zeropoint = 30.425 ± 0.202  (N=115)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.909
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 124
+
+Zeropoint = 30.397 ± 0.106  (N=87)
+Aperture magnitude = nan ± 0.134
+3-sigma upper limit (r) = 21.882
+Image and WCS loaded successfully.
+Matched stars before filtering: 13
+After saturation filtering: 13
+
+Zeropoint = 25.746 ± 0.257  (N=12)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 21.323
+Image and WCS loaded successfully.
+Matched stars before filtering: 13
+After saturation filtering: 13
+
+Zeropoint = 25.786 ± 0.162  (N=10)
+Aperture magnitude = nan ± 12.380
+3-sigma upper limit (i) = 21.364
+Image and WCS loaded successfully.
+Matched stars before filtering: 75
+After saturation filtering: 67
+
+Zeropoint = 29.881 ± 0.081  (N=60)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.580
+Image and WCS loaded successfully.
+Matched stars before filtering: 75
+After saturation filtering: 67
+
+Zeropoint = 29.880 ± 0.029  (N=43)
+Aperture magnitude = nan ± 7.307
+3-sigma upper limit (g) = 18.579
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 77
+
+Zeropoint = 29.413 ± 0.119  (N=74)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.196
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 77
+
+Zeropoint = 29.404 ± 0.051  (N=51)
+Aperture magnitude = 23.026 ± 133.469
+3-sigma upper limit (g) = 19.188
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 17
+
+Zeropoint = 28.752 ± 0.061  (N=16)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.687
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 17
+
+Zeropoint = 28.758 ± 0.027  (N=11)
+Aperture magnitude = nan ± 18.235
+3-sigma upper limit (g) = 17.692
+Image and WCS loaded successfully.
+Matched stars before filtering: 114
+After saturation filtering: 102
+
+Zeropoint = 29.945 ± 0.107  (N=93)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.575
+Image and WCS loaded successfully.
+Matched stars before filtering: 114
+After saturation filtering: 102
+
+Zeropoint = 29.942 ± 0.069  (N=73)
+Aperture magnitude = nan ± 5.917
+3-sigma upper limit (g) = 19.572
+Image and WCS loaded successfully.
+Matched stars before filtering: 92
+After saturation filtering: 83
+
+Zeropoint = 29.669 ± 0.132  (N=78)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.215
+Image and WCS loaded successfully.
+Matched stars before filtering: 92
+After saturation filtering: 83
+
+Zeropoint = 29.658 ± 0.063  (N=57)
+Aperture magnitude = nan ± 4.539
+3-sigma upper limit (g) = 19.204
+Image and WCS loaded successfully.
+Matched stars before filtering: 63
+After saturation filtering: 58
+
+Zeropoint = 29.221 ± 0.219  (N=57)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.235
+Image and WCS loaded successfully.
+Matched stars before filtering: 63
+After saturation filtering: 58
+
+Zeropoint = 29.198 ± 0.054  (N=39)
+Aperture magnitude = nan ± 178.027
+3-sigma upper limit (g) = 18.213
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 53
+
+Zeropoint = 29.657 ± 0.130  (N=50)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.755
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 53
+
+Zeropoint = 29.655 ± 0.089  (N=42)
+Aperture magnitude = nan ± 4.106
+3-sigma upper limit (g) = 18.753
+Processing target=EP260116a RA=113.7617 Dec=6.3244 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 644
+After saturation filtering: 502
+
+Zeropoint = 30.751 ± 0.076  (N=407)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 24.828
+Image and WCS loaded successfully.
+Matched stars before filtering: 644
+After saturation filtering: 502
+
+Zeropoint = 30.758 ± 0.028  (N=302)
+Aperture magnitude = nan ± 0.028
+3-sigma upper limit (g) = 24.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 273
+After saturation filtering: 263
+
+Zeropoint = 29.324 ± 0.058  (N=232)
+Target mag = 25.308 ± 1.152
+Image and WCS loaded successfully.
+Matched stars before filtering: 273
+After saturation filtering: 263
+
+Zeropoint = 29.325 ± 0.029  (N=182)
+Aperture magnitude = nan ± 0.029
+3-sigma upper limit (i) = 23.657
+Image and WCS loaded successfully.
+Matched stars before filtering: 554
+After saturation filtering: 460
+
+Zeropoint = 30.559 ± 0.076  (N=403)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 24.468
+Image and WCS loaded successfully.
+Matched stars before filtering: 554
+After saturation filtering: 460
+
+Zeropoint = 30.571 ± 0.032  (N=288)
+Aperture magnitude = nan ± 0.032
+3-sigma upper limit (r) = 24.480
+Image and WCS loaded successfully.
+Matched stars before filtering: 733
+After saturation filtering: 671
+
+Zeropoint = 30.053 ± 0.124  (N=601)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.282
+Image and WCS loaded successfully.
+Matched stars before filtering: 733
+After saturation filtering: 671
+
+Zeropoint = 30.037 ± 0.041  (N=398)
+Aperture magnitude = nan ± 0.041
+3-sigma upper limit (r) = 22.266
+Image and WCS loaded successfully.
+Matched stars before filtering: 704
+After saturation filtering: 650
+
+Zeropoint = 30.440 ± 0.061  (N=571)
+Target not detected → computing upper limit
+3-sigma upper limit (z) = 23.638
+Image and WCS loaded successfully.
+Matched stars before filtering: 704
+After saturation filtering: 650
+
+Zeropoint = 30.447 ± 0.035  (N=456)
+Aperture magnitude = nan ± 0.035
+3-sigma upper limit (z) = 23.645
+Image and WCS loaded successfully.
+Matched stars before filtering: 93
+After saturation filtering: 87
+
+Zeropoint = 29.309 ± 0.215  (N=86)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.453
+Image and WCS loaded successfully.
+Matched stars before filtering: 93
+After saturation filtering: 87
+
+Zeropoint = 29.267 ± 0.111  (N=65)
+Aperture magnitude = nan ± 0.292
+3-sigma upper limit (g) = 18.411
+Image and WCS loaded successfully.
+Matched stars before filtering: 72
+After saturation filtering: 69
+
+Zeropoint = 29.181 ± 0.302  (N=67)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.949
+Image and WCS loaded successfully.
+Matched stars before filtering: 72
+After saturation filtering: 69
+
+Zeropoint = 29.149 ± 0.128  (N=49)
+Aperture magnitude = nan ± 1.313
+3-sigma upper limit (g) = 16.917
+Image and WCS loaded successfully.
+Matched stars before filtering: 335
+After saturation filtering: 325
+
+Zeropoint = 29.048 ± 0.053  (N=287)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.058
+Image and WCS loaded successfully.
+Matched stars before filtering: 335
+After saturation filtering: 325
+
+Zeropoint = 29.044 ± 0.029  (N=228)
+Aperture magnitude = nan ± 0.371
+3-sigma upper limit (g) = 18.053
+Image and WCS loaded successfully.
+Matched stars before filtering: 358
+After saturation filtering: 340
+
+Zeropoint = 29.251 ± 0.053  (N=306)
+Target mag = 23.378 ± 38.279
+Image and WCS loaded successfully.
+Matched stars before filtering: 358
+After saturation filtering: 340
+
+Zeropoint = 29.251 ± 0.040  (N=260)
+Aperture magnitude = nan ± 0.330
+3-sigma upper limit (g) = 18.165
+Processing target=EP260119a RA=158.1018 Dec=65.4956 (o_pos=True)
+Processing target=EP260126a RA=103.7542083 Dec=37.70518889 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 322
+After saturation filtering: 291
+
+Zeropoint = 30.550 ± 2.409  (N=291)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 18.560
+Image and WCS loaded successfully.
+Matched stars before filtering: 322
+After saturation filtering: 291
+
+Zeropoint = 30.564 ± 0.044  (N=162)
+Aperture magnitude = 23.296 ± 28.738
+3-sigma upper limit (r) = 18.574
+Image and WCS loaded successfully.
+Matched stars before filtering: 522
+After saturation filtering: 520
+
+Zeropoint = 26.271 ± 0.067  (N=500)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 22.461
+Image and WCS loaded successfully.
+Matched stars before filtering: 522
+After saturation filtering: 520
+
+Zeropoint = 26.282 ± 0.035  (N=354)
+Aperture magnitude = 23.697 ± 2.018
+3-sigma upper limit (i) = 22.472
+Image and WCS loaded successfully.
+Matched stars before filtering: 292
+After saturation filtering: 277
+
+Zeropoint = 29.355 ± 0.051  (N=250)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.660
+Image and WCS loaded successfully.
+Matched stars before filtering: 292
+After saturation filtering: 277
+
+Zeropoint = 29.354 ± 0.031  (N=209)
+Aperture magnitude = nan ± 180.828
+3-sigma upper limit (g) = 18.658
+Image and WCS loaded successfully.
+Matched stars before filtering: 256
+After saturation filtering: 243
+
+Zeropoint = 29.288 ± 0.053  (N=221)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.516
+Image and WCS loaded successfully.
+Matched stars before filtering: 256
+After saturation filtering: 243
+
+Zeropoint = 29.287 ± 0.034  (N=191)
+Aperture magnitude = nan ± 52.607
+3-sigma upper limit (g) = 18.515
+Image and WCS loaded successfully.
+Matched stars before filtering: 222
+After saturation filtering: 213
+
+Zeropoint = 29.327 ± 0.048  (N=190)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.544
+Image and WCS loaded successfully.
+Matched stars before filtering: 222
+After saturation filtering: 213
+
+Zeropoint = 29.326 ± 0.036  (N=166)
+Aperture magnitude = 26.860 ± 825.770
+3-sigma upper limit (g) = 18.544
+Processing target=EP260128a RA=128.3233 Dec=-10.2767 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 423
+After saturation filtering: 367
+
+Zeropoint = 30.518 ± 0.107  (N=331)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.048
+Image and WCS loaded successfully.
+Matched stars before filtering: 423
+After saturation filtering: 367
+
+Zeropoint = 30.507 ± 0.049  (N=246)
+Aperture magnitude = nan ± 0.049
+3-sigma upper limit (r) = 22.036
+Image and WCS loaded successfully.
+Matched stars before filtering: 206
+After saturation filtering: 181
+
+Zeropoint = 30.158 ± 3.695  (N=181)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 16.807
+Image and WCS loaded successfully.
+Matched stars before filtering: 206
+After saturation filtering: 181
+
+Zeropoint = 30.217 ± 0.048  (N=83)
+Aperture magnitude = nan ± 0.104
+3-sigma upper limit (r) = 16.866
+Processing target=WXT J031644+08316 RA=172.543 Dec=-39.765 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 37
+After saturation filtering: 37
+
+Zeropoint = 26.487 ± 0.062  (N=32)
+Image and WCS loaded successfully.
+Matched stars before filtering: 37
+After saturation filtering: 37
+
+Zeropoint = 26.487 ± 0.015  (N=23)
+Processing target=1RXSJ052540.6+425139 RA=81.419 Dec=42.861 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 555
+After saturation filtering: 551
+
+Zeropoint = 27.218 ± 0.049  (N=503)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.628
+Image and WCS loaded successfully.
+Matched stars before filtering: 555
+After saturation filtering: 551
+
+Zeropoint = 27.218 ± 0.021  (N=379)
+Aperture magnitude = 12.647 ± 0.021
+Processing target=EP251212a RA=134.049 Dec=-23.2997 (o_pos=False)
+Processing target=EP251214b RA=144.388 Dec=-22.872 (o_pos=False)
+Processing target=EP251220a RA=17.31915 Dec=19.09231 (o_pos=True)
+Processing target=EP251221a RA=104.531 Dec=23.374 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 2
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 2
+Image and WCS loaded successfully.
+Matched stars before filtering: 168
+After saturation filtering: 157
+
+Zeropoint = 28.078 ± 0.054  (N=140)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.609
+Image and WCS loaded successfully.
+Matched stars before filtering: 168
+After saturation filtering: 157
+
+Zeropoint = 28.073 ± 0.039  (N=115)
+Aperture magnitude = nan ± 0.572
+3-sigma upper limit (g) = 17.603
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 14
+
+Zeropoint = 27.684 ± 0.514  (N=14)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.108
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 14
+
+Zeropoint = 27.495 ± 0.195  (N=9)
+Aperture magnitude = nan ± 1.645
+3-sigma upper limit (g) = 16.919
+Processing target=EP251222a RA=62.5025 Dec=-1.4792 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 105
+After saturation filtering: 98
+
+Zeropoint = 28.839 ± 0.127  (N=85)
+Target mag = 21.276 ± 0.153
+Image and WCS loaded successfully.
+Matched stars before filtering: 105
+After saturation filtering: 98
+
+Zeropoint = 28.834 ± 0.055  (N=58)
+Aperture magnitude = 21.841 ± 0.121
+3-sigma upper limit (r) = 22.433
+Image and WCS loaded successfully.
+Matched stars before filtering: 65
+After saturation filtering: 62
+
+Zeropoint = 29.321 ± 0.153  (N=57)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.671
+Image and WCS loaded successfully.
+Matched stars before filtering: 65
+After saturation filtering: 62
+
+Zeropoint = 29.322 ± 0.067  (N=39)
+Aperture magnitude = nan ± 210.469
+3-sigma upper limit (g) = 17.671
+Image and WCS loaded successfully.
+Matched stars before filtering: 29
+After saturation filtering: 25
+
+Zeropoint = 28.477 ± 0.240  (N=24)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.106
+Image and WCS loaded successfully.
+Matched stars before filtering: 29
+After saturation filtering: 25
+
+Zeropoint = 28.416 ± 0.218  (N=23)
+Aperture magnitude = nan ± 198.844
+3-sigma upper limit (g) = 16.045
+Image and WCS loaded successfully.
+Matched stars before filtering: 5
+After saturation filtering: 5
+
+Zeropoint = 28.091 ± 0.778  (N=5)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.566
+Image and WCS loaded successfully.
+Matched stars before filtering: 5
+After saturation filtering: 5
+
+Zeropoint = 28.091 ± 0.778  (N=5)
+Aperture magnitude = nan ± 25.141
+3-sigma upper limit (g) = 15.566
+Processing target=EP251229a RA=124.1027 Dec=37.2068 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 1696
+After saturation filtering: 1578
+
+Zeropoint = 30.129 ± 0.197  (N=1505)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.425
+Image and WCS loaded successfully.
+Matched stars before filtering: 1696
+After saturation filtering: 1578
+
+Zeropoint = 30.105 ± 0.137  (N=1258)
+Aperture magnitude = 16.285 ± 0.137
+3-sigma upper limit (r) = 22.401
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 37
+
+Zeropoint = 27.315 ± 2.891  (N=37)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.771
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 37
+
+Zeropoint = 27.350 ± 1.296  (N=27)
+Aperture magnitude = 13.983 ± 1.296
+3-sigma upper limit (r) = 19.806
+Image and WCS loaded successfully.
+Matched stars before filtering: 39
+After saturation filtering: 32
+
+Zeropoint = 26.854 ± 2.560  (N=32)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.596
+Image and WCS loaded successfully.
+Matched stars before filtering: 39
+After saturation filtering: 32
+
+Zeropoint = 26.830 ± 2.101  (N=28)
+Aperture magnitude = nan ± 2.508
+3-sigma upper limit (r) = 19.573
+Image and WCS loaded successfully.
+Matched stars before filtering: 1295
+After saturation filtering: 1225
+
+Zeropoint = 29.551 ± 0.200  (N=1143)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.886
+Image and WCS loaded successfully.
+Matched stars before filtering: 1295
+After saturation filtering: 1225
+
+Zeropoint = 29.521 ± 0.112  (N=889)
+Aperture magnitude = 15.864 ± 0.113
+3-sigma upper limit (r) = 21.856
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 34
+
+Zeropoint = 25.698 ± 2.600  (N=33)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 13.947
+Image and WCS loaded successfully.
+Matched stars before filtering: 44
+After saturation filtering: 34
+
+Zeropoint = 25.181 ± 1.021  (N=20)
+Aperture magnitude = nan ± 5.703
+3-sigma upper limit (r) = 13.430
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 3070
+After saturation filtering: 2804
+
+Zeropoint = 29.647 ± 0.153  (N=2681)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.212
+Image and WCS loaded successfully.
+Matched stars before filtering: 3070
+After saturation filtering: 2804
+
+Zeropoint = 29.638 ± 0.067  (N=1904)
+Aperture magnitude = 16.945 ± 0.491
+3-sigma upper limit (g) = 19.203
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Processing target=EP260101a RA=46.0605 Dec=39.438 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 427
+After saturation filtering: 402
+
+Zeropoint = 29.334 ± 0.104  (N=350)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.003
+Image and WCS loaded successfully.
+Matched stars before filtering: 427
+After saturation filtering: 402
+
+Zeropoint = 29.323 ± 0.035  (N=243)
+Aperture magnitude = nan ± 0.248
+3-sigma upper limit (r) = 20.992
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 27.183 ± 3.178  (N=10)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 15.104
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 26.498 ± 1.402  (N=8)
+Aperture magnitude = nan ± 1.409
+3-sigma upper limit (r) = 14.419
+Image and WCS loaded successfully.
+Matched stars before filtering: 103
+After saturation filtering: 99
+
+Zeropoint = 29.766 ± 0.107  (N=89)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.099
+Image and WCS loaded successfully.
+Matched stars before filtering: 103
+After saturation filtering: 99
+
+Zeropoint = 29.759 ± 0.065  (N=75)
+Aperture magnitude = nan ± 53.705
+3-sigma upper limit (g) = 15.092
+Image and WCS loaded successfully.
+Matched stars before filtering: 183
+After saturation filtering: 172
+
+Zeropoint = 29.337 ± 0.064  (N=169)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.851
+Image and WCS loaded successfully.
+Matched stars before filtering: 183
+After saturation filtering: 172
+
+Zeropoint = 29.335 ± 0.046  (N=148)
+Aperture magnitude = nan ± 1.035
+3-sigma upper limit (g) = 17.849
+Image and WCS loaded successfully.
+Matched stars before filtering: 246
+After saturation filtering: 238
+
+Zeropoint = 29.085 ± 0.063  (N=217)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.355
+Image and WCS loaded successfully.
+Matched stars before filtering: 246
+After saturation filtering: 238
+
+Zeropoint = 29.080 ± 0.044  (N=188)
+3-sigma upper limit (r) = 19.628
+Processing target=WXT J001838+115903 RA=4.658 Dec=11.984 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 26
+After saturation filtering: 26
+
+Zeropoint = 27.912 ± 0.318  (N=26)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 20.775
+Image and WCS loaded successfully.
+Matched stars before filtering: 26
+After saturation filtering: 26
+
+Zeropoint = 27.849 ± 0.063  (N=14)
+Aperture magnitude = nan ± 0.260
+3-sigma upper limit (r) = 20.712
+Processing target=WXT J030902+581637 RA=47.261 Dec=58.258 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 95
+After saturation filtering: 92
+
+Zeropoint = 28.872 ± 0.097  (N=76)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.251
+Image and WCS loaded successfully.
+Matched stars before filtering: 95
+After saturation filtering: 92
+
+Zeropoint = 28.873 ± 0.054  (N=61)
+Aperture magnitude = nan ± 0.059
+3-sigma upper limit (r) = 22.251
+Processing target=EP J0619.5+0602 RA=94.916 Dec=6.028 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 28.484 ± 1.654  (N=10)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.308
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 28.822 ± 1.327  (N=9)
+Aperture magnitude = nan ± 1.327
+3-sigma upper limit (r) = 21.646
+Processing target=EP260131a RA=149.9025 Dec=-3.3073 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 58
+After saturation filtering: 58
+
+Zeropoint = 31.647 ± 0.091  (N=52)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 23.782
+Image and WCS loaded successfully.
+Matched stars before filtering: 58
+After saturation filtering: 58
+
+Zeropoint = 31.649 ± 0.068  (N=47)
+Aperture magnitude = 23.673 ± 0.236
+3-sigma upper limit (i) = 23.784
+Image and WCS loaded successfully.
+Matched stars before filtering: 64
+After saturation filtering: 63
+
+Zeropoint = 31.753 ± 0.080  (N=56)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 23.845
+Image and WCS loaded successfully.
+Matched stars before filtering: 64
+After saturation filtering: 63
+
+Zeropoint = 31.755 ± 0.053  (N=47)
+Aperture magnitude = 23.603 ± 0.207
+3-sigma upper limit (i) = 23.847
+Image and WCS loaded successfully.
+Matched stars before filtering: 57
+After saturation filtering: 53
+
+Zeropoint = 31.526 ± 0.135  (N=42)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.864
+Image and WCS loaded successfully.
+Matched stars before filtering: 57
+After saturation filtering: 53
+
+Zeropoint = 31.533 ± 0.109  (N=38)
+Aperture magnitude = 23.682 ± 0.237
+3-sigma upper limit (r) = 23.872
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 1
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 1
+Processing target=EP260209a RA=159.6858 Dec=28.3113 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 49
+After saturation filtering: 49
+
+Zeropoint = 28.345 ± 0.250  (N=46)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.737
+Image and WCS loaded successfully.
+Matched stars before filtering: 49
+After saturation filtering: 49
+
+Zeropoint = 28.287 ± 0.139  (N=32)
+Aperture magnitude = nan ± 0.185
+3-sigma upper limit (r) = 21.679
+Image and WCS loaded successfully.
+Matched stars before filtering: 76
+After saturation filtering: 68
+
+Zeropoint = 29.578 ± 0.260  (N=68)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.758
+Image and WCS loaded successfully.
+Matched stars before filtering: 76
+After saturation filtering: 68
+
+Zeropoint = 29.531 ± 0.116  (N=50)
+Aperture magnitude = nan ± 2.065
+3-sigma upper limit (g) = 18.712
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 40
+
+Zeropoint = 29.047 ± 0.087  (N=33)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.678
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 40
+
+Zeropoint = 29.043 ± 0.035  (N=26)
+Aperture magnitude = nan ± 1.170
+3-sigma upper limit (g) = 18.675
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Processing target=EP260210a RA=169.8297 Dec=45.3929 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 94
+After saturation filtering: 94
+
+Zeropoint = 25.904 ± 0.134  (N=85)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 20.640
+Image and WCS loaded successfully.
+Matched stars before filtering: 94
+After saturation filtering: 94
+
+Zeropoint = 25.904 ± 0.078  (N=67)
+Aperture magnitude = 16.396 ± 0.152
+3-sigma upper limit (i) = 20.640
+Image and WCS loaded successfully.
+Matched stars before filtering: 66
+After saturation filtering: 63
+
+Zeropoint = 29.233 ± 0.218  (N=63)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.992
+Image and WCS loaded successfully.
+Matched stars before filtering: 66
+After saturation filtering: 63
+
+Zeropoint = 29.170 ± 0.054  (N=36)
+Aperture magnitude = 20.304 ± 13.818
+3-sigma upper limit (g) = 18.929
+Processing target=EP260213a RA=167.0083 Dec=3.9451 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 111
+After saturation filtering: 111
+
+Zeropoint = 25.876 ± 0.067  (N=108)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 22.175
+Image and WCS loaded successfully.
+Matched stars before filtering: 111
+After saturation filtering: 111
+
+Zeropoint = 25.893 ± 0.040  (N=83)
+Aperture magnitude = nan ± 0.040
+3-sigma upper limit (i) = 22.191
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 82
+
+Zeropoint = 29.240 ± 0.091  (N=72)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.777
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 82
+
+Zeropoint = 29.246 ± 0.045  (N=55)
+Aperture magnitude = nan ± 0.050
+3-sigma upper limit (g) = 18.783
+Image and WCS loaded successfully.
+Matched stars before filtering: 88
+After saturation filtering: 81
+
+Zeropoint = 29.241 ± 0.177  (N=81)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.759
+Image and WCS loaded successfully.
+Matched stars before filtering: 88
+After saturation filtering: 81
+
+Zeropoint = 29.238 ± 0.031  (N=49)
+Aperture magnitude = nan ± 0.038
+3-sigma upper limit (g) = 18.756
+Processing target=EP260214a RA=201.2305 Dec=-29.0431 (o_pos=False)
+Processing target=EP260214b RA=191.2582 Dec=23.8536 (o_pos=True)
+Processing target=EP260221a RA=178.7551 Dec=-20.9827 (o_pos=True)
+Processing target=EP260223a RA=92.774 Dec=56.577 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 270
+After saturation filtering: 255
+
+Zeropoint = 29.702 ± 0.077  (N=233)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.669
+Image and WCS loaded successfully.
+Matched stars before filtering: 270
+After saturation filtering: 255
+
+Zeropoint = 29.695 ± 0.040  (N=175)
+Aperture magnitude = nan ± 0.256
+3-sigma upper limit (g) = 18.663
+Image and WCS loaded successfully.
+Matched stars before filtering: 86
+After saturation filtering: 81
+
+Zeropoint = 27.928 ± 0.124  (N=79)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.196
+Image and WCS loaded successfully.
+Matched stars before filtering: 86
+After saturation filtering: 81
+
+Zeropoint = 27.907 ± 0.054  (N=54)
+Aperture magnitude = nan ± 1.417
+3-sigma upper limit (g) = 16.174
+Processing target=EP260224a RA=175.2 Dec=-41.415 (o_pos=False)
+Processing target=EP260227a RA=223.08309 Dec=-11.40664 (o_pos=True)
+Processing target=EP260302a RA=132.9739 Dec=-65.9837 (o_pos=True)
+Processing target=EP260306a RA=145.949 Dec=15.6937 (o_pos=True)
+Processing target=EP260314a RA=211.842259 Dec=-23.457728 (o_pos=True)
+Processing target=EP260316a RA=226.98176 Dec=27.4483 (o_pos=True)
+Processing target=EP260308a RA=170.742 Dec=44.283 (o_pos=False)
+Processing target=EP260321a RA=149.928704 Dec=0.418445 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 15
+
+Zeropoint = 27.666 ± 0.116  (N=13)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.087
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 15
+
+Zeropoint = 27.673 ± 0.094  (N=12)
+Aperture magnitude = 17.977 ± 0.362
+3-sigma upper limit (g) = 18.094
+Processing target=EP260322a RA=255.5573 Dec=17.2089 (o_pos=False)
+Aperture magnitude = nan ± 1.478
+3-sigma upper limit (g) = 18.349
+Image and WCS loaded successfully.
+Matched stars before filtering: 177
+After saturation filtering: 162
+
+Zeropoint = 27.965 ± 0.044  (N=149)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.507
+Image and WCS loaded successfully.
+Matched stars before filtering: 177
+After saturation filtering: 162
+
+Zeropoint = 27.964 ± 0.032  (N=130)
+Aperture magnitude = nan ± 1.694
+3-sigma upper limit (g) = 17.506
+Image and WCS loaded successfully.
+Matched stars before filtering: 339
+After saturation filtering: 316
+
+Zeropoint = 29.795 ± 0.066  (N=285)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.378
+Image and WCS loaded successfully.
+Matched stars before filtering: 339
+After saturation filtering: 316
+
+Zeropoint = 29.791 ± 0.040  (N=239)
+Aperture magnitude = nan ± 2.116
+3-sigma upper limit (g) = 18.375
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 361
+After saturation filtering: 332
+
+Zeropoint = 29.828 ± 0.061  (N=302)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.810
+Image and WCS loaded successfully.
+Matched stars before filtering: 361
+After saturation filtering: 332
+
+Zeropoint = 29.820 ± 0.038  (N=246)
+Aperture magnitude = nan ± 1.480
+3-sigma upper limit (g) = 18.802
+Processing target=EP260104a RA=178.531 Dec=16.486 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 225
+
+Zeropoint = 30.687 ± 0.225  (N=219)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.073
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 225
+
+Zeropoint = 30.702 ± 0.137  (N=171)
+Aperture magnitude = nan ± 0.141
+3-sigma upper limit (r) = 23.088
+Image and WCS loaded successfully.
+Matched stars before filtering: 159
+After saturation filtering: 148
+
+Zeropoint = 30.470 ± 0.239  (N=144)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.125
+Image and WCS loaded successfully.
+Matched stars before filtering: 159
+After saturation filtering: 148
+
+Zeropoint = 30.467 ± 0.132  (N=114)
+Aperture magnitude = nan ± 0.216
+3-sigma upper limit (r) = 23.123
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 215
+
+Zeropoint = 30.667 ± 0.234  (N=212)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.259
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 215
+
+Zeropoint = 30.689 ± 0.131  (N=166)
+Aperture magnitude = nan ± 0.155
+3-sigma upper limit (r) = 23.281
+Image and WCS loaded successfully.
+Matched stars before filtering: 130
+After saturation filtering: 121
+
+Zeropoint = 30.531 ± 0.205  (N=119)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.238
+Image and WCS loaded successfully.
+Matched stars before filtering: 130
+After saturation filtering: 121
+
+Zeropoint = 30.543 ± 0.168  (N=111)
+Aperture magnitude = 19.125 ± 0.188
+3-sigma upper limit (r) = 23.250
+Image and WCS loaded successfully.
+Matched stars before filtering: 102
+After saturation filtering: 94
+
+Zeropoint = 30.410 ± 0.215  (N=93)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.120
+Image and WCS loaded successfully.
+Matched stars before filtering: 102
+After saturation filtering: 94
+
+Zeropoint = 30.415 ± 0.161  (N=81)
+Aperture magnitude = 18.234 ± 0.191
+3-sigma upper limit (r) = 22.125
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 4
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 4
+Image and WCS loaded successfully.
+Matched stars before filtering: 24
+After saturation filtering: 20
+
+Zeropoint = 29.390 ± 0.291  (N=19)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.949
+Image and WCS loaded successfully.
+Matched stars before filtering: 24
+After saturation filtering: 20
+
+Zeropoint = 29.377 ± 0.026  (N=13)
+Aperture magnitude = nan ± 32.830
+3-sigma upper limit (g) = 15.935
+Image and WCS loaded successfully.
+Matched stars before filtering: 16
+After saturation filtering: 14
+
+Zeropoint = 30.425 ± 0.634  (N=14)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.692
+Image and WCS loaded successfully.
+Matched stars before filtering: 16
+After saturation filtering: 14
+
+Zeropoint = 30.398 ± 0.196  (N=11)
+Aperture magnitude = nan ± 92.456
+3-sigma upper limit (g) = 16.664
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 39
+
+Zeropoint = 28.963 ± 0.250  (N=37)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.594
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 39
+
+Zeropoint = 28.960 ± 0.120  (N=26)
+Aperture magnitude = nan ± 8.039
+3-sigma upper limit (g) = 18.591
+Processing target=EP260105a RA=181.0158 Dec=22.7089 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 48
+After saturation filtering: 44
+
+Zeropoint = 29.520 ± 2.539  (N=44)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 17.856
+Image and WCS loaded successfully.
+Matched stars before filtering: 48
+After saturation filtering: 44
+
+Zeropoint = 29.563 ± 0.162  (N=21)
+Aperture magnitude = nan ± 1.269
+3-sigma upper limit (r) = 17.899
+Image and WCS loaded successfully.
+Matched stars before filtering: 266
+After saturation filtering: 256
+
+Zeropoint = 30.644 ± 0.184  (N=249)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.842
+Image and WCS loaded successfully.
+Matched stars before filtering: 266
+After saturation filtering: 256
+
+Zeropoint = 30.639 ± 0.123  (N=214)
+Aperture magnitude = nan ± 0.379
+3-sigma upper limit (r) = 22.837
+Image and WCS loaded successfully.
+Matched stars before filtering: 18
+After saturation filtering: 18
+
+Zeropoint = 25.095 ± 0.064  (N=17)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 21.655
+Image and WCS loaded successfully.
+Matched stars before filtering: 18
+After saturation filtering: 18
+
+Zeropoint = 25.116 ± 0.044  (N=14)
+Aperture magnitude = nan ± 0.923
+3-sigma upper limit (i) = 21.676
+Image and WCS loaded successfully.
+Matched stars before filtering: 12
+After saturation filtering: 7
+
+Zeropoint = 30.600 ± 0.951  (N=7)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.846
+Image and WCS loaded successfully.
+Matched stars before filtering: 12
+After saturation filtering: 7
+
+Zeropoint = 30.600 ± 0.951  (N=7)
+Aperture magnitude = 17.563 ± 1.063
+3-sigma upper limit (g) = 19.846
+Image and WCS loaded successfully.
+Matched stars before filtering: 23
+After saturation filtering: 20
+
+Zeropoint = 29.560 ± 0.048  (N=16)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 15.893
+Image and WCS loaded successfully.
+Matched stars before filtering: 23
+After saturation filtering: 20
+
+Zeropoint = 29.560 ± 0.033  (N=14)
+Aperture magnitude = 18.636 ± 48.693
+3-sigma upper limit (g) = 15.893
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 50
+
+Zeropoint = 29.126 ± 0.273  (N=50)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.860
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 50
+
+Zeropoint = 29.070 ± 0.179  (N=35)
+Aperture magnitude = 21.893 ± 66.972
+3-sigma upper limit (g) = 18.804
+Image and WCS loaded successfully.
+Matched stars before filtering: 120
+After saturation filtering: 109
+
+Zeropoint = 29.830 ± 0.196  (N=104)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.446
+Image and WCS loaded successfully.
+Matched stars before filtering: 120
+After saturation filtering: 109
+
+Zeropoint = 29.824 ± 0.118  (N=79)
+Aperture magnitude = 22.019 ± 41.831
+3-sigma upper limit (g) = 19.440
+Processing target=EP260105b RA=158.3695 Dec=17.6123 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 215
+After saturation filtering: 203
+
+Zeropoint = 30.493 ± 0.136  (N=197)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.607
+Image and WCS loaded successfully.
+Matched stars before filtering: 215
+After saturation filtering: 203
+
+Zeropoint = 30.492 ± 0.102  (N=174)
+Aperture magnitude = nan ± 0.102
+3-sigma upper limit (r) = 22.607
+Image and WCS loaded successfully.
+Matched stars before filtering: 205
+After saturation filtering: 196
+
+Zeropoint = 30.503 ± 0.158  (N=188)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.323
+Image and WCS loaded successfully.
+Matched stars before filtering: 205
+After saturation filtering: 196
+
+Zeropoint = 30.503 ± 0.103  (N=154)
+Aperture magnitude = nan ± 0.103
+3-sigma upper limit (r) = 23.324
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 230
+
+Zeropoint = 30.425 ± 0.172  (N=227)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.208
+Image and WCS loaded successfully.
+Matched stars before filtering: 238
+After saturation filtering: 230
+
+Zeropoint = 30.423 ± 0.131  (N=199)
+Aperture magnitude = nan ± 0.131
+3-sigma upper limit (r) = 23.206
+Image and WCS loaded successfully.
+Matched stars before filtering: 7
+After saturation filtering: 7
+
+Zeropoint = 25.094 ± 1.599  (N=7)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 17.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 7
+After saturation filtering: 7
+
+Zeropoint = 25.094 ± 1.599  (N=7)
+Aperture magnitude = nan ± 1.599
+3-sigma upper limit (r) = 17.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 85
+After saturation filtering: 80
+
+Zeropoint = 30.178 ± 0.225  (N=79)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.653
+Image and WCS loaded successfully.
+Matched stars before filtering: 85
+After saturation filtering: 80
+
+Zeropoint = 30.180 ± 0.192  (N=74)
+Aperture magnitude = nan ± 0.192
+3-sigma upper limit (r) = 21.655
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 8
+
+Zeropoint = 28.584 ± 1.101  (N=8)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 14.796
+Image and WCS loaded successfully.
+Matched stars before filtering: 8
+After saturation filtering: 8
+
+Zeropoint = 28.310 ± 0.560  (N=6)
+Aperture magnitude = nan ± 7.927
+3-sigma upper limit (g) = 14.522
+Image and WCS loaded successfully.
+Matched stars before filtering: 62
+After saturation filtering: 58
+
+Zeropoint = 29.858 ± 0.214  (N=52)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.216
+Image and WCS loaded successfully.
+Matched stars before filtering: 62
+After saturation filtering: 58
+
+Zeropoint = 29.883 ± 0.157  (N=45)
+Aperture magnitude = nan ± 0.238
+3-sigma upper limit (g) = 19.241
+Processing target=EP260110a RA=199.4371 Dec=65.8476 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 190
+After saturation filtering: 179
+
+Zeropoint = 30.303 ± 0.167  (N=167)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.564
+Image and WCS loaded successfully.
+Matched stars before filtering: 190
+After saturation filtering: 179
+
+Zeropoint = 30.294 ± 0.106  (N=130)
+Aperture magnitude = nan ± 0.178
+3-sigma upper limit (r) = 22.555
+Image and WCS loaded successfully.
+Matched stars before filtering: 169
+After saturation filtering: 156
+
+Zeropoint = 30.373 ± 0.206  (N=153)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.825
+Image and WCS loaded successfully.
+Matched stars before filtering: 169
+After saturation filtering: 156
+
+Zeropoint = 30.340 ± 0.115  (N=118)
+Aperture magnitude = nan ± 0.160
+3-sigma upper limit (r) = 22.792
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 222
+
+Zeropoint = 30.764 ± 0.244  (N=219)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.463
+Image and WCS loaded successfully.
+Matched stars before filtering: 253
+After saturation filtering: 222
+
+Zeropoint = 30.767 ± 0.078  (N=134)
+Aperture magnitude = nan ± 0.100
+3-sigma upper limit (r) = 23.465
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 124
+
+Zeropoint = 30.425 ± 0.202  (N=115)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.909
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 124
+
+Zeropoint = 30.397 ± 0.106  (N=87)
+Aperture magnitude = nan ± 0.134
+3-sigma upper limit (r) = 21.882
+Image and WCS loaded successfully.
+Matched stars before filtering: 13
+After saturation filtering: 13
+
+Zeropoint = 25.746 ± 0.257  (N=12)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 21.323
+Image and WCS loaded successfully.
+Matched stars before filtering: 13
+After saturation filtering: 13
+
+Zeropoint = 25.786 ± 0.162  (N=10)
+Aperture magnitude = nan ± 12.380
+3-sigma upper limit (i) = 21.364
+Image and WCS loaded successfully.
+Matched stars before filtering: 75
+After saturation filtering: 67
+
+Zeropoint = 29.881 ± 0.081  (N=60)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.580
+Image and WCS loaded successfully.
+Matched stars before filtering: 75
+After saturation filtering: 67
+
+Zeropoint = 29.880 ± 0.029  (N=43)
+Aperture magnitude = nan ± 7.307
+3-sigma upper limit (g) = 18.579
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 77
+
+Zeropoint = 29.413 ± 0.119  (N=74)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.196
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 77
+
+Zeropoint = 29.404 ± 0.051  (N=51)
+Aperture magnitude = 23.026 ± 133.469
+3-sigma upper limit (g) = 19.188
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 17
+
+Zeropoint = 28.752 ± 0.061  (N=16)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 17.687
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 17
+
+Zeropoint = 28.758 ± 0.027  (N=11)
+Aperture magnitude = nan ± 18.235
+3-sigma upper limit (g) = 17.692
+Image and WCS loaded successfully.
+Matched stars before filtering: 114
+After saturation filtering: 102
+
+Zeropoint = 29.945 ± 0.107  (N=93)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.575
+Image and WCS loaded successfully.
+Matched stars before filtering: 114
+After saturation filtering: 102
+
+Zeropoint = 29.942 ± 0.069  (N=73)
+Aperture magnitude = nan ± 5.917
+3-sigma upper limit (g) = 19.572
+Image and WCS loaded successfully.
+Matched stars before filtering: 92
+After saturation filtering: 83
+
+Zeropoint = 29.669 ± 0.132  (N=78)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 19.215
+Image and WCS loaded successfully.
+Matched stars before filtering: 92
+After saturation filtering: 83
+
+Zeropoint = 29.658 ± 0.063  (N=57)
+Aperture magnitude = nan ± 4.539
+3-sigma upper limit (g) = 19.204
+Image and WCS loaded successfully.
+Matched stars before filtering: 63
+After saturation filtering: 58
+
+Zeropoint = 29.221 ± 0.219  (N=57)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.235
+Image and WCS loaded successfully.
+Matched stars before filtering: 63
+After saturation filtering: 58
+
+Zeropoint = 29.198 ± 0.054  (N=39)
+Aperture magnitude = nan ± 178.027
+3-sigma upper limit (g) = 18.213
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 53
+
+Zeropoint = 29.657 ± 0.130  (N=50)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.755
+Image and WCS loaded successfully.
+Matched stars before filtering: 59
+After saturation filtering: 53
+
+Zeropoint = 29.655 ± 0.089  (N=42)
+Aperture magnitude = nan ± 4.106
+3-sigma upper limit (g) = 18.753
+Processing target=EP260116a RA=113.7617 Dec=6.3244 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 644
+After saturation filtering: 502
+
+Zeropoint = 30.751 ± 0.076  (N=407)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 24.828
+Image and WCS loaded successfully.
+Matched stars before filtering: 644
+After saturation filtering: 502
+
+Zeropoint = 30.758 ± 0.028  (N=302)
+Aperture magnitude = nan ± 0.028
+3-sigma upper limit (g) = 24.835
+Image and WCS loaded successfully.
+Matched stars before filtering: 273
+After saturation filtering: 263
+
+Zeropoint = 29.324 ± 0.058  (N=232)
+Target mag = 25.308 ± 1.152
+Image and WCS loaded successfully.
+Matched stars before filtering: 273
+After saturation filtering: 263
+
+Zeropoint = 29.325 ± 0.029  (N=182)
+Aperture magnitude = nan ± 0.029
+3-sigma upper limit (i) = 23.657
+Image and WCS loaded successfully.
+Matched stars before filtering: 554
+After saturation filtering: 460
+
+Zeropoint = 30.559 ± 0.076  (N=403)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 24.468
+Image and WCS loaded successfully.
+Matched stars before filtering: 554
+After saturation filtering: 460
+
+Zeropoint = 30.571 ± 0.032  (N=288)
+Aperture magnitude = nan ± 0.032
+3-sigma upper limit (r) = 24.480
+Image and WCS loaded successfully.
+Matched stars before filtering: 733
+After saturation filtering: 671
+
+Zeropoint = 30.053 ± 0.124  (N=601)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.282
+Image and WCS loaded successfully.
+Matched stars before filtering: 733
+After saturation filtering: 671
+
+Zeropoint = 30.037 ± 0.041  (N=398)
+Aperture magnitude = nan ± 0.041
+3-sigma upper limit (r) = 22.266
+Image and WCS loaded successfully.
+Matched stars before filtering: 704
+After saturation filtering: 650
+
+Zeropoint = 30.440 ± 0.061  (N=571)
+Target not detected → computing upper limit
+3-sigma upper limit (z) = 23.638
+Image and WCS loaded successfully.
+Matched stars before filtering: 704
+After saturation filtering: 650
+
+Zeropoint = 30.447 ± 0.035  (N=456)
+Aperture magnitude = nan ± 0.035
+3-sigma upper limit (z) = 23.645
+Image and WCS loaded successfully.
+Matched stars before filtering: 93
+After saturation filtering: 87
+
+Zeropoint = 29.309 ± 0.215  (N=86)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.453
+Image and WCS loaded successfully.
+Matched stars before filtering: 93
+After saturation filtering: 87
+
+Zeropoint = 29.267 ± 0.111  (N=65)
+Aperture magnitude = nan ± 0.292
+3-sigma upper limit (g) = 18.411
+Image and WCS loaded successfully.
+Matched stars before filtering: 72
+After saturation filtering: 69
+
+Zeropoint = 29.181 ± 0.302  (N=67)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.949
+Image and WCS loaded successfully.
+Matched stars before filtering: 72
+After saturation filtering: 69
+
+Zeropoint = 29.149 ± 0.128  (N=49)
+Aperture magnitude = nan ± 1.313
+3-sigma upper limit (g) = 16.917
+Image and WCS loaded successfully.
+Matched stars before filtering: 335
+After saturation filtering: 325
+
+Zeropoint = 29.048 ± 0.053  (N=287)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.058
+Image and WCS loaded successfully.
+Matched stars before filtering: 335
+After saturation filtering: 325
+
+Zeropoint = 29.044 ± 0.029  (N=228)
+Aperture magnitude = nan ± 0.371
+3-sigma upper limit (g) = 18.053
+Image and WCS loaded successfully.
+Matched stars before filtering: 358
+After saturation filtering: 340
+
+Zeropoint = 29.251 ± 0.053  (N=306)
+Target mag = 23.378 ± 38.279
+Image and WCS loaded successfully.
+Matched stars before filtering: 358
+After saturation filtering: 340
+
+Zeropoint = 29.251 ± 0.040  (N=260)
+Aperture magnitude = nan ± 0.330
+3-sigma upper limit (g) = 18.165
+Processing target=EP260119a RA=158.1018 Dec=65.4956 (o_pos=True)
+Processing target=EP260126a RA=103.7542083 Dec=37.70518889 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 322
+After saturation filtering: 291
+
+Zeropoint = 30.550 ± 2.409  (N=291)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 18.560
+Image and WCS loaded successfully.
+Matched stars before filtering: 322
+After saturation filtering: 291
+
+Zeropoint = 30.564 ± 0.044  (N=162)
+Aperture magnitude = 23.296 ± 28.738
+3-sigma upper limit (r) = 18.574
+Image and WCS loaded successfully.
+Matched stars before filtering: 522
+After saturation filtering: 520
+
+Zeropoint = 26.271 ± 0.067  (N=500)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 22.461
+Image and WCS loaded successfully.
+Matched stars before filtering: 522
+After saturation filtering: 520
+
+Zeropoint = 26.282 ± 0.035  (N=354)
+Aperture magnitude = 23.697 ± 2.018
+3-sigma upper limit (i) = 22.472
+Image and WCS loaded successfully.
+Matched stars before filtering: 292
+After saturation filtering: 277
+
+Zeropoint = 29.355 ± 0.051  (N=250)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.660
+Image and WCS loaded successfully.
+Matched stars before filtering: 292
+After saturation filtering: 277
+
+Zeropoint = 29.354 ± 0.031  (N=209)
+Aperture magnitude = nan ± 180.828
+3-sigma upper limit (g) = 18.658
+Image and WCS loaded successfully.
+Matched stars before filtering: 256
+After saturation filtering: 243
+
+Zeropoint = 29.288 ± 0.053  (N=221)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.516
+Image and WCS loaded successfully.
+Matched stars before filtering: 256
+After saturation filtering: 243
+
+Zeropoint = 29.287 ± 0.034  (N=191)
+Aperture magnitude = nan ± 52.607
+3-sigma upper limit (g) = 18.515
+Image and WCS loaded successfully.
+Matched stars before filtering: 222
+After saturation filtering: 213
+
+Zeropoint = 29.327 ± 0.048  (N=190)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.544
+Image and WCS loaded successfully.
+Matched stars before filtering: 222
+After saturation filtering: 213
+
+Zeropoint = 29.326 ± 0.036  (N=166)
+Aperture magnitude = 26.860 ± 825.770
+3-sigma upper limit (g) = 18.544
+Processing target=EP260128a RA=128.3233 Dec=-10.2767 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 423
+After saturation filtering: 367
+
+Zeropoint = 30.518 ± 0.107  (N=331)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.048
+Image and WCS loaded successfully.
+Matched stars before filtering: 423
+After saturation filtering: 367
+
+Zeropoint = 30.507 ± 0.049  (N=246)
+Aperture magnitude = nan ± 0.049
+3-sigma upper limit (r) = 22.036
+Image and WCS loaded successfully.
+Matched stars before filtering: 206
+After saturation filtering: 181
+
+Zeropoint = 30.158 ± 3.695  (N=181)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 16.807
+Image and WCS loaded successfully.
+Matched stars before filtering: 206
+After saturation filtering: 181
+
+Zeropoint = 30.217 ± 0.048  (N=83)
+Aperture magnitude = nan ± 0.104
+3-sigma upper limit (r) = 16.866
+Processing target=WXT J031644+08316 RA=172.543 Dec=-39.765 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 37
+After saturation filtering: 37
+
+Zeropoint = 26.487 ± 0.062  (N=32)
+Image and WCS loaded successfully.
+Matched stars before filtering: 37
+After saturation filtering: 37
+
+Zeropoint = 26.487 ± 0.015  (N=23)
+Processing target=1RXSJ052540.6+425139 RA=81.419 Dec=42.861 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 555
+After saturation filtering: 551
+
+Zeropoint = 27.218 ± 0.049  (N=503)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 19.628
+Image and WCS loaded successfully.
+Matched stars before filtering: 555
+After saturation filtering: 551
+
+Zeropoint = 27.218 ± 0.021  (N=379)
+Aperture magnitude = 12.647 ± 0.021
+3-sigma upper limit (r) = 19.628
+Processing target=WXT J001838+115903 RA=4.658 Dec=11.984 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 26
+After saturation filtering: 26
+
+Zeropoint = 27.912 ± 0.318  (N=26)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 20.775
+Image and WCS loaded successfully.
+Matched stars before filtering: 26
+After saturation filtering: 26
+
+Zeropoint = 27.849 ± 0.063  (N=14)
+Aperture magnitude = nan ± 0.260
+3-sigma upper limit (r) = 20.712
+Processing target=WXT J030902+581637 RA=47.261 Dec=58.258 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 95
+After saturation filtering: 92
+
+Zeropoint = 28.872 ± 0.097  (N=76)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 22.251
+Image and WCS loaded successfully.
+Matched stars before filtering: 95
+After saturation filtering: 92
+
+Zeropoint = 28.873 ± 0.054  (N=61)
+Aperture magnitude = nan ± 0.059
+3-sigma upper limit (r) = 22.251
+Processing target=EP J0619.5+0602 RA=94.916 Dec=6.028 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 28.484 ± 1.654  (N=10)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.308
+Image and WCS loaded successfully.
+Matched stars before filtering: 11
+After saturation filtering: 10
+
+Zeropoint = 28.822 ± 1.327  (N=9)
+Aperture magnitude = nan ± 1.327
+3-sigma upper limit (r) = 21.646
+Processing target=EP260131a RA=149.9025 Dec=-3.3073 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 58
+After saturation filtering: 58
+
+Zeropoint = 31.647 ± 0.091  (N=52)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 23.782
+Image and WCS loaded successfully.
+Matched stars before filtering: 58
+After saturation filtering: 58
+
+Zeropoint = 31.649 ± 0.068  (N=47)
+Aperture magnitude = 23.673 ± 0.236
+3-sigma upper limit (i) = 23.784
+Image and WCS loaded successfully.
+Matched stars before filtering: 64
+After saturation filtering: 63
+
+Zeropoint = 31.753 ± 0.080  (N=56)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 23.845
+Image and WCS loaded successfully.
+Matched stars before filtering: 64
+After saturation filtering: 63
+
+Zeropoint = 31.755 ± 0.053  (N=47)
+Aperture magnitude = 23.603 ± 0.207
+3-sigma upper limit (i) = 23.847
+Image and WCS loaded successfully.
+Matched stars before filtering: 57
+After saturation filtering: 53
+
+Zeropoint = 31.526 ± 0.135  (N=42)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.864
+Image and WCS loaded successfully.
+Matched stars before filtering: 57
+After saturation filtering: 53
+
+Zeropoint = 31.533 ± 0.109  (N=38)
+Aperture magnitude = 23.682 ± 0.237
+3-sigma upper limit (r) = 23.872
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 1
+Image and WCS loaded successfully.
+Matched stars before filtering: 2
+After saturation filtering: 1
+Processing target=EP260209a RA=159.6858 Dec=28.3113 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 49
+After saturation filtering: 49
+
+Zeropoint = 28.345 ± 0.250  (N=46)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.737
+Image and WCS loaded successfully.
+Matched stars before filtering: 49
+After saturation filtering: 49
+
+Zeropoint = 28.287 ± 0.139  (N=32)
+Aperture magnitude = nan ± 0.185
+3-sigma upper limit (r) = 21.679
+Image and WCS loaded successfully.
+Matched stars before filtering: 76
+After saturation filtering: 68
+
+Zeropoint = 29.578 ± 0.260  (N=68)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.758
+Image and WCS loaded successfully.
+Matched stars before filtering: 76
+After saturation filtering: 68
+
+Zeropoint = 29.531 ± 0.116  (N=50)
+Aperture magnitude = nan ± 2.065
+3-sigma upper limit (g) = 18.712
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 40
+
+Zeropoint = 29.047 ± 0.087  (N=33)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.678
+Image and WCS loaded successfully.
+Matched stars before filtering: 43
+After saturation filtering: 40
+
+Zeropoint = 29.043 ± 0.035  (N=26)
+Aperture magnitude = nan ± 1.170
+3-sigma upper limit (g) = 18.675
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Processing target=EP260210a RA=169.8297 Dec=45.3929 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 94
+After saturation filtering: 94
+
+Zeropoint = 25.904 ± 0.134  (N=85)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 20.640
+Image and WCS loaded successfully.
+Matched stars before filtering: 94
+After saturation filtering: 94
+
+Zeropoint = 25.904 ± 0.078  (N=67)
+Aperture magnitude = 16.396 ± 0.152
+3-sigma upper limit (i) = 20.640
+Image and WCS loaded successfully.
+Matched stars before filtering: 66
+After saturation filtering: 63
+
+Zeropoint = 29.233 ± 0.218  (N=63)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.992
+Image and WCS loaded successfully.
+Matched stars before filtering: 66
+After saturation filtering: 63
+
+Zeropoint = 29.170 ± 0.054  (N=36)
+Aperture magnitude = 20.304 ± 13.818
+3-sigma upper limit (g) = 18.929
+Processing target=EP260213a RA=167.0083 Dec=3.9451 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 111
+After saturation filtering: 111
+
+Zeropoint = 25.876 ± 0.067  (N=108)
+Target not detected → computing upper limit
+3-sigma upper limit (i) = 22.175
+Image and WCS loaded successfully.
+Matched stars before filtering: 111
+After saturation filtering: 111
+
+Zeropoint = 25.893 ± 0.040  (N=83)
+Aperture magnitude = nan ± 0.040
+3-sigma upper limit (i) = 22.191
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 82
+
+Zeropoint = 29.240 ± 0.091  (N=72)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.777
+Image and WCS loaded successfully.
+Matched stars before filtering: 89
+After saturation filtering: 82
+
+Zeropoint = 29.246 ± 0.045  (N=55)
+Aperture magnitude = nan ± 0.050
+3-sigma upper limit (g) = 18.783
+Image and WCS loaded successfully.
+Matched stars before filtering: 88
+After saturation filtering: 81
+
+Zeropoint = 29.241 ± 0.177  (N=81)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.759
+Image and WCS loaded successfully.
+Matched stars before filtering: 88
+After saturation filtering: 81
+
+Zeropoint = 29.238 ± 0.031  (N=49)
+Aperture magnitude = nan ± 0.038
+3-sigma upper limit (g) = 18.756
+Processing target=EP260214a RA=201.2305 Dec=-29.0431 (o_pos=False)
+Processing target=EP260214b RA=191.2582 Dec=23.8536 (o_pos=True)
+Processing target=EP260221a RA=178.7551 Dec=-20.9827 (o_pos=True)
+Processing target=EP260223a RA=92.774 Dec=56.577 (o_pos=False)
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 0
+After saturation filtering: 0
+Image and WCS loaded successfully.
+Matched stars before filtering: 270
+After saturation filtering: 255
+
+Zeropoint = 29.702 ± 0.077  (N=233)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.669
+Image and WCS loaded successfully.
+Matched stars before filtering: 270
+After saturation filtering: 255
+
+Zeropoint = 29.695 ± 0.040  (N=175)
+Aperture magnitude = nan ± 0.256
+3-sigma upper limit (g) = 18.663
+Image and WCS loaded successfully.
+Matched stars before filtering: 86
+After saturation filtering: 81
+
+Zeropoint = 27.928 ± 0.124  (N=79)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 16.196
+Image and WCS loaded successfully.
+Matched stars before filtering: 86
+After saturation filtering: 81
+
+Zeropoint = 27.907 ± 0.054  (N=54)
+Aperture magnitude = nan ± 1.417
+3-sigma upper limit (g) = 16.174
+Processing target=EP260224a RA=175.2 Dec=-41.415 (o_pos=False)
+Processing target=EP260227a RA=223.08309 Dec=-11.40664 (o_pos=True)
+Processing target=EP260302a RA=132.9739 Dec=-65.9837 (o_pos=True)
+Processing target=EP260306a RA=145.949 Dec=15.6937 (o_pos=True)
+Processing target=EP260314a RA=211.842259 Dec=-23.457728 (o_pos=True)
+Processing target=EP260316a RA=226.98176 Dec=27.4483 (o_pos=True)
+Processing target=EP260308a RA=170.742 Dec=44.283 (o_pos=False)
+Processing target=EP260321a RA=149.928704 Dec=0.418445 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 15
+
+Zeropoint = 27.666 ± 0.116  (N=13)
+Target not detected → computing upper limit
+3-sigma upper limit (g) = 18.087
+Image and WCS loaded successfully.
+Matched stars before filtering: 20
+After saturation filtering: 15
+
+Zeropoint = 27.673 ± 0.094  (N=12)
+Aperture magnitude = 17.977 ± 0.362
+3-sigma upper limit (g) = 18.094
+Processing target=EP260322a RA=255.5573 Dec=17.2089 (o_pos=False)

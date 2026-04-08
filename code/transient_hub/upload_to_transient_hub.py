@@ -88,11 +88,11 @@ def upload_event_files(event_id, logger, root=ROOT):
                     photo_res = {'lim_mag':lim_mag}
                     
                     mag, mag_err = None, None
-                    if not photo['magap'].mask:
+                    if isinstance(photo['magap'], float):
                         mag, mag_err = photo['magap'], photo['magap_err']
                         
                         
-                    if not photo['magpsf'].mask:
+                    if isinstance(photo['magpsf'], float):
                         mag, mag_err = photo['magpsf'], photo['magpsf_err']
                         
                     if mag and mag_err:
