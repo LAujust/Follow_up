@@ -127,7 +127,8 @@ if __name__ == "__main__":
     size = 2000
     redo = False
 
-    logger.info(f"Pre-processing\n==*30")
+    logger.info(f"Pre-processing\n")
+    logger.info('=='*30)
     for tel in tels:
         logger.info(f"Cuting out {tel} data...")
         cutout_fits(telescope=tel,redo=redo)

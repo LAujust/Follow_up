@@ -59,7 +59,10 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
     valid_data['dt'] = valid_data['mean_mjd'] - T0.mjd
     # print(valid_data)
     
-    idx_obs = ((~valid_data['magpsf'].mask) & (valid_data['magpsf_err'] < 0.5)) | ((~valid_data['magap'].mask) & (valid_data['magap_err'] < 0.5))
+    try:
+        idx_obs = ((~valid_data['magpsf'].mask) & (valid_data['magpsf_err'] < 0.5)) | ((~valid_data['magap'].mask) & (valid_data['magap_err'] < 0.5))
+    except:
+        idx_obs = ((np.isfinite(valid_data['magpsf'])) & (valid_data['magpsf_err']<0.5)) | ((np.isfinite(valid_data['magap'])) & (valid_data['magap_err']<0.5))
     idx_uplim = ~idx_obs
     
     obs = valid_data[idx_obs]
@@ -126,9 +129,11 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
 
     handles = tel_handles + band_handles
 
-    plt.legend(
+    ax.legend(
         handles=handles,
         ncol=2,
+        fontsize=12,
+        loc='best'
         # bbox_to_anchor=(0.8, 1),
         # loc='lower right'
     )
@@ -151,7 +156,7 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
         return
 
     data = Table.read(data_dir)
-    valid_data = data[data['status'] == 'ok']
+    valid_data = data[data['message'] == 'ok']
 
     if len(valid_data) == 0:
         print(f"No valid photometry data for {target}.")
@@ -159,10 +164,10 @@ def plot_photometry_plotly(data_dir, target, save_dir='./'):
 
     valid_data['dt'] = valid_data['mean_mjd'] - T0.mjd
 
-    idx_obs = (
-        ((~valid_data['magpsf'].mask) & (valid_data['magpsf_err'] < 0.5)) |
-        ((~valid_data['magap'].mask) & (valid_data['magap_err'] < 0.5))
-    )
+    try:
+        idx_obs = ((~valid_data['magpsf'].mask) & (valid_data['magpsf_err'] < 0.5)) | ((~valid_data['magap'].mask) & (valid_data['magap_err'] < 0.5))
+    except:
+        idx_obs = ((np.isfinite(valid_data['magpsf'])) & (valid_data['magpsf_err']<0.5)) | ((np.isfinite(valid_data['magap'])) & (valid_data['magap_err']<0.5))
 
     obs = valid_data[idx_obs]
     uplim = valid_data[~idx_obs]
@@ -343,6 +348,6 @@ def plot_all_lcs():
         plot_photometry_plotly(data_dir, target, SAVE_DIR)
         
 
-# if __name__ == "__main__":
-#     plot_all_lcs()
+if __name__ == "__main__":
+    plot_all_lcs()
     # plot_photometry('/home/liangrd/optical_data/EP260116a/pipeline/photometry.csv','EP260116a', SAVE_DIR)

@@ -367,6 +367,10 @@ def _run_photometry_target(
         "created_utc",
     ]
     photo_df = _read_csv_or_empty(photo_path, photo_cols)
+    
+    pre_results = photo_df['coadd_file'].to_list()
+    pre_results = [r.split('/')[-1] for r in pre_results]
+    logger.info(f"Done fits: {','.join(pre_results)}")
 
     cat_dir = None
     for candidate in [target_dir / "ps.csv", target_dir / "ls.csv"]:
@@ -453,9 +457,16 @@ def _run_photometry_target(
             continue
 
         for coadd_file in coadd_candidates:
+            logger.info(f"Processing {coadd_file.name}\n")
             "skip cutout files"
             if "cutout" in coadd_file.name.lower():
                 logger.info(f"[{target}/{telescope}] skip cutout file: {coadd_file.name}")
+                continue
+            
+            "skip fits preformed photometry"
+            logger.info(f"{coadd_file.name} in done fits? {coadd_file.name in pre_results}")
+            if coadd_file.name in pre_results:
+                logger.info(f"[{target}/{telescope}] skip processed file: {coadd_file.name}")
                 continue
             mean_mjd = mean_mjd_map.get(str(coadd_file), None)
             try:
@@ -623,6 +634,7 @@ def _run_photometry_target(
     #     on=keys,
     #     how='outer'
     # )
+    df_merge = df_merge.drop_duplicates(['coadd_file'])
     df_merge.to_csv(photo_path, index=False)
     return photo_df
 
@@ -662,6 +674,7 @@ def run_pipeline(
         pipeline_dir = target_dir / pipeline_name
         if redo_flag and pipeline_dir.exists():
             shutil.rmtree(pipeline_dir, ignore_errors=True)
+                
         log_dir = pipeline_dir / "logs"
         log_dir.mkdir(parents=True, exist_ok=True)
         log_file = log_dir / f"{_utc_now_str()}.log"

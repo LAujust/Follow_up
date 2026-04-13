@@ -1,4 +1,6 @@
 from astropy.table import Table
+import sys
+sys.path.append('/home/liangrd/Follow_up/code')
 from utils import cutout_fits
 
 tels = ['sitian','WHUT','LCO','TNOT']
