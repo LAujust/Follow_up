@@ -115,7 +115,7 @@ def plot_photometry(data_dir, target, save_dir='./', **mpl_kwargs):
             
     # telescope legend
     tel_handles = [
-            plt.Line2D([], [], marker=MARKER_MAP.get(tel,'grey'), linestyle='',
+            plt.Line2D([], [], marker=MARKER_MAP.get(tel,'*'), linestyle='',
                        color='k', label=tel)
             for tel in np.unique(valid_data['telescope'])
         ]
