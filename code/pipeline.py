@@ -143,7 +143,7 @@ def _fits_meta(path: Path) -> tuple[Time, str]:
         band = 'z'
         
     for b in ["u", "g", "r", "i", "z", "w", "y"]:
-        if f"{b}-" in band:
+        if f"{b}-" in band or f"{b}." in band:
             band = b
             break
     return t, band
@@ -473,6 +473,10 @@ def _run_photometry_target(
                 t, band = _fits_meta(coadd_file)
             except Exception:
                     band = 'r'
+                    t = Time.now()
+
+            if not t:
+                t = Time.now()
                     
             if not band in ['g','r','i','z','y']:
                 band = 'r'

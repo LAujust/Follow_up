@@ -20,7 +20,7 @@ plt.rcParams["font.size"] = 14
 
 CANDIDATES_DIR = '/home/liangrd/Follow_up/Candidates.csv'
 DATA_DIR = '/home/liangrd/optical_data'
-BAND_LIST = ['z','i','r','g','w']
+BAND_LIST = ['z','i','r','g','w','u']
 SAVE_DIR = '/home/liangrd/Follow_up/results/lcs'
 
 

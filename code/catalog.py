@@ -142,7 +142,6 @@ import os
 from astropy.io import fits
 from io import BytesIO
 
-__all__ = ["LS"]
 
 
 class LS:
@@ -191,7 +190,7 @@ class LS:
 
         # 读取内存中的 FITS
         print(response.text[:200])  # 打印前200字符检查响应内容
-        hdul = fits.open(BytesIO(response.content))
+        hdul = fits.open(BytesIO(response.content),ignore_missing_simple=True)
 
         if len(hdul) < 2:
             print("No table extension found.")

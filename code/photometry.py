@@ -124,14 +124,23 @@ class Photometry:
 
         finder = finder(
             fwhm=fwhm,
-            threshold=threshold_sigma * std,
+            threshold=threshold_sigma,
         )
 
         sources = finder(self.data-median, mask=self.mask)
         
         #fit FWHM
         xypos = list(zip(sources['xcentroid'], sources['ycentroid']))
-        fwhm = fit_fwhm(self.data, xypos=xypos, error=self.error, fit_shape=(5, 5), fwhm=3)
+        fwhm = fit_fwhm(self.data, xypos=xypos, error=self.error, fit_shape=(7, 7), fwhm=3)
+         # --- 3. pixel → sky
+        ra, dec = self.wcs.pixel_to_world_values(
+            sources["xcentroid"],
+            sources["ycentroid"]
+        )
+
+        det_coord = SkyCoord(ra=ra * u.deg, dec=dec * u.deg)
+        sources['ra'] = ra
+        sources['dec'] = dec
         self.sources = sources
         return self.sources
     
@@ -232,7 +241,7 @@ class Photometry:
             sigma_clip_val=2.0,
             match_radius=1.0,
             mag_col="r",
-            sat_level=50000,
+            sat_level=500000,
             psf_method=PSFPhotometry,
             finder=IRAFStarFinder,
             psf_model=None,
@@ -334,7 +343,7 @@ class Photometry:
         matched_mag_good = matched_mag[good]
         zp_values = matched_mag[good] + 2.5 * np.log10(matched_flux[good])
 
-        if len(zp_values) < 5:
+        if len(zp_values) < 3:
             raise RuntimeError("Too few stars after saturation filtering")
 
         # ==========================================================
@@ -584,7 +593,7 @@ class Photometry:
         matched_mag_good = matched_mag[good]
         zp_values = matched_mag[good] + 2.5 * np.log10(matched_flux[good])
 
-        if len(zp_values) < 5:
+        if len(zp_values) < 3:
             raise RuntimeError("Too few stars after saturation filtering")
 
         # ==========================================================
