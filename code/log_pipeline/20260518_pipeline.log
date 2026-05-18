@@ -380,3 +380,4 @@ INFO:
                 for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
 
                  [astropy.wcs.wcs]Killed
+Killed
