@@ -265,6 +265,7 @@ class Photometry:
             if fwhm is None:
                 fwhm = self.fhwm if self.fhwm is not None else 3.0
             psf_model = CircularGaussianPRF(flux=1.0, fwhm=fwhm)
+            # psf_model.fwhm.fixed = False
 
         ap_radius = 1.25 * fwhm
         finder = finder(sigma, fwhm)

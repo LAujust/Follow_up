@@ -1,0 +1,273 @@
+Processing target=EP251212a RA=134.049 Dec=-23.2997 (o_pos=False)
+Processing target=EP251214b RA=144.388 Dec=-22.872 (o_pos=False)
+Processing target=EP251220a RA=17.31915 Dec=19.09231 (o_pos=True)
+Processing target=EP251221a RA=104.531 Dec=23.374 (o_pos=False)
+Processing target=EP251222a RA=62.5025 Dec=-1.4792 (o_pos=True)
+Processing target=EP251229a RA=124.1027 Dec=37.2068 (o_pos=False)
+Processing target=EP260101a RA=46.0605 Dec=39.438 (o_pos=False)
+Processing target=EP260104a RA=178.531 Dec=16.486 (o_pos=False)
+Processing target=EP260105a RA=181.0158 Dec=22.7089 (o_pos=False)
+Processing target=EP260105b RA=158.3695 Dec=17.6123 (o_pos=False)
+Processing target=EP260110a RA=199.4371 Dec=65.8476 (o_pos=False)
+Processing target=EP260116a RA=113.7617 Dec=6.3244 (o_pos=False)
+Processing target=EP260119a RA=158.1018 Dec=65.4956 (o_pos=True)
+Processing target=EP260126a RA=103.7542083 Dec=37.70518889 (o_pos=True)
+Processing target=EP260128a RA=128.3233 Dec=-10.2767 (o_pos=False)
+Processing target=WXT J031644+08316 RA=172.543 Dec=-39.765 (o_pos=False)
+Processing target=1RXSJ052540.6+425139 RA=81.419 Dec=42.861 (o_pos=False)
+Processing target=WXT J001838+115903 RA=4.658 Dec=11.984 (o_pos=False)
+Processing target=WXT J030902+581637 RA=47.261 Dec=58.258 (o_pos=False)
+Processing target=EP J0619.5+0602 RA=94.916 Dec=6.028 (o_pos=False)
+Processing target=EP260131a RA=149.9025 Dec=-3.3073 (o_pos=True)
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260219/EP260131a_u_wcs_ultracam_20260219_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260219/EP260131a_u_wcs_ultracam_20260219_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/NTT_REDUCED/coadd_NTT_REDUCED_u_20260220T044838.000.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260222/EP260131a_r_wcs_ultracam_20260222_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260222/EP260131a_r_wcs_ultracam_20260222_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/NTT_REDUCED/coadd_NTT_REDUCED_r_20260223T031039.000.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260222/EP260131a_u_wcs_ultracam_20260222_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260222/EP260131a_u_wcs_ultracam_20260222_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/NTT_REDUCED/coadd_NTT_REDUCED_u_20260223T031055.000.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260215/EP260131a_r_wcs_ultracam_20260215_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260215/EP260131a_r_wcs_ultracam_20260215_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260219/EP260131a_r_wcs_ultracam_20260219_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260219/EP260131a_r_wcs_ultracam_20260219_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260220/EP260131a_r_wcs_ultracam_20260220_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_20260220/EP260131a_r_wcs_ultracam_20260220_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/NTT_REDUCED/coadd_NTT_REDUCED_r_20260319T133325.667.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260215_bkg_sub/EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260215_bkg_sub/EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260220/EP260131a_u_wcs_ultracam_20260220_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260220/EP260131a_u_wcs_ultracam_20260220_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/NTT_REDUCED/coadd_NTT_REDUCED_u_20260319T133705.500.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260222/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260220/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_20260219/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 131
+
+Zeropoint = 27.593 ± 0.234  (N=128)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 24.529
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 131
+
+Zeropoint = 27.626 ± 0.178  (N=116)
+Aperture magnitude = 20.569 ± 0.179
+3-sigma upper limit (r) = 24.562
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 143
+After saturation filtering: 135
+
+Zeropoint = 28.002 ± 0.149  (N=126)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 23.118
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 143
+After saturation filtering: 135
+
+Zeropoint = 28.037 ± 0.097  (N=97)
+Aperture magnitude = 20.275 ± 0.111
+3-sigma upper limit (r) = 23.152
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 21
+After saturation filtering: 21
+
+Zeropoint = 24.389 ± 0.660  (N=21)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.534
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 21
+After saturation filtering: 21
+
+Zeropoint = 24.485 ± 0.496  (N=19)
+Aperture magnitude = 19.827 ± 0.517
+3-sigma upper limit (r) = 21.631
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 22
+
+Zeropoint = 24.584 ± 0.753  (N=22)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.764
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 22
+After saturation filtering: 22
+
+Zeropoint = 24.739 ± 0.506  (N=19)
+Aperture magnitude = 20.501 ± 0.547
+3-sigma upper limit (r) = 21.918
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]
+Image and WCS loaded successfully.
+Matched stars before filtering: 21
+After saturation filtering: 21
+
+Zeropoint = 25.225 ± 0.807  (N=21)
+Target not detected → computing upper limit
+3-sigma upper limit (r) = 21.754
+INFO: 
+                Inconsistent SIP distortion information is present in the FITS header and the WCS object:
+                SIP coefficients were detected, but CTYPE is missing a "-SIP" suffix.
+                astropy.wcs is using the SIP distortion coefficients,
+                therefore the coordinates calculated here might be incorrect.
+
+                If you do not want to apply the SIP distortion coefficients,
+                please remove the SIP coefficients from the FITS header or the
+                WCS object.  As an example, if the image is already distortion-corrected
+                (e.g., drizzled) then distortion components should not apply and the SIP
+                coefficients should be removed.
+
+                While the SIP distortion coefficients are being applied here, if that was indeed the intent,
+                for consistency please append "-SIP" to the CTYPE in the FITS header or the WCS object.
+
+                 [astropy.wcs.wcs]Killed
