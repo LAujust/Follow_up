@@ -265,7 +265,7 @@ class Photometry:
             if fwhm is None:
                 fwhm = self.fhwm if self.fhwm is not None else 3.0
             psf_model = CircularGaussianPRF(flux=1.0, fwhm=fwhm)
-            # psf_model.fwhm.fixed = False
+            psf_model.fwhm.fixed = False
 
         ap_radius = 1.25 * fwhm
         finder = finder(sigma, fwhm)
@@ -469,10 +469,42 @@ class Photometry:
         phot_table['mag_err'] = mag_err
         self.phot = phot_table
         
+        
+         # =========================================================
+        # 4️⃣  Plot Apertures
+        # =========================================================
+        from astropy.nddata import Cutout2D
+        from matplotlib.patches import Circle
+        from astropy.visualization import ZScaleInterval
+        
+        position = SkyCoord(ra,dec,unit='deg')
+        cutout = Cutout2D(self.data, position, 30*u.arcsec, wcs=self.wcs)
+        zscale = ZScaleInterval(contrast=0.25)
+        vmin, vmax = zscale.get_limits(cutout.data)
+        
+        fig = plt.figure(figsize=(6, 5))
+        ax1 = fig.add_subplot(111, projection=cutout.wcs)
+        ax1.imshow(cutout.data, origin='lower', cmap='viridis', vmin=vmin, vmax=vmax)
+        
+        for r, ls, color in zip([r_ap, r_in, r_out], ['-', '--', ':'],['w','k','k']):
+            circ = Circle((ra, dec),
+                        r/3600, 
+                        edgecolor=color, facecolor='none', lw=1.5, ls=ls,
+                        transform=ax1.get_transform('world'))
+            ax1.add_patch(circ)
+        ax1.set_xlabel('RA')
+        ax1.set_ylabel('Dec')
+        ax1.coords.grid(color='white', ls='dotted', alpha=0.6)
+        plt.tight_layout()
+        plt.savefig(f"{path}/ap_circs.png", bbox_inches='tight', dpi=300)
+        if show:
+            plt.show()
+        
         print(f"Aperture magnitude = {mag:.3f} ± {mag_err:.3f}" )
         uplim = self.estimate_upperlimit()
         self.uplim = uplim
         print(f"3-sigma upper limit ({mag_col}) = {uplim:.3f}")
+        
         if  np.isfinite(mag) and phot_bkgsub > 0 and mag_err < 0.3:
             return phot_table       
         else:
@@ -514,6 +546,7 @@ class Photometry:
             if fwhm is None:
                 fwhm = self.fhwm if self.fhwm is not None else 3.0
             psf_model = CircularGaussianPRF(flux=1.0, fwhm=fwhm)
+            psf_model.fwhm.fixed = False
 
         ap_radius = 1.25 * fwhm
         finder = finder(sigma, fwhm)
@@ -724,12 +757,12 @@ class Photometry:
                         psf_model=psf_model,
                         aperture_radius=ap_radius,
                         # finder=finder,
-                        fit_shape=fit_shape,
+                        fit_shape=(5,5),
                         localbkg_estimator=localbkg_estimator,
                     )
                     psf_model.x_0.fixed = True
                     psf_model.y_0.fixed = True
-                    # psf_model.fwhm.fixed = False
+                    psf_model.fwhm.fixed = False
 
                     phot_target = psfphot(self.data, error=self.error,init_params=init_params)
                     

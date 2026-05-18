@@ -618,8 +618,12 @@ def fits_plot(
         row = cat[cat['EP Name'] == target]
         if len(row)==0:
             raise ValueError(f"Target {target} not found in {source_dir}")
-        coord = SkyCoord(ra=float(row.iloc[0]['RA'])*u.deg,
-                         dec=float(row.iloc[0]['Dec'])*u.deg)
+        try:
+            coord = SkyCoord(ra=float(row.iloc[0]['o_RA'])*u.deg,
+                         dec=float(row.iloc[0]['o_Dec'])*u.deg, frame='fk5')
+        except:
+            coord = SkyCoord(ra=float(row.iloc[0]['RA'])*u.deg,
+                         dec=float(row.iloc[0]['Dec'])*u.deg, frame='fk5')
 
     # ---------- 3. Main cutout ----------
     cutout = Cutout2D(data, coord, size, wcs=wcs)
