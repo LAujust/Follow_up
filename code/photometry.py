@@ -734,6 +734,7 @@ class Photometry:
             target_flux = flux[idx_target]
             target_flux_err = flux_err[idx_target]
 
+
             if target_flux > 0:
                 mag = self.zp - 2.5 * np.log10(target_flux)
                 mag_err = np.sqrt(
@@ -776,6 +777,35 @@ class Photometry:
                     
                 target_flux = phot_target['flux_fit'][0]   
                 target_flux_err = phot_target['flux_err'][0]
+
+                # ==========================================================
+                # RESIDUAL OF FORCED PSF PHOTOMETRY
+                # ==========================================================
+                resid_forced = psfphot.make_residual_image(resid)
+                model = psfphot.make_model_image(shape=self.data.shape)
+                
+                cmap = 'viridis'
+                fig, ax = plt.subplots(1,3, figsize=(15,5),sharex=True, sharey=True)
+                im0 = ax[0].imshow(resid, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
+                im1 = ax[1].imshow(model, origin='lower', cmap=cmap, vmin=np.percentile(self.data,5), vmax=np.percentile(self.data,99))
+                im2 = ax[2].imshow(resid_forced, origin='lower', cmap=cmap, vmin=np.percentile(resid,5), vmax=np.percentile(resid,99))
+                ax[0].set_title('Residual Image')
+                ax[1].set_title('PSF Model Image')
+                ax[2].set_title('Residual Image (Forced)')
+                if ra is not None and dec is not None:
+                    #Cutout around target
+                    x, y = self._radec_to_xy(ra, dec)
+                    size = int(plot_scale * fwhm)
+                    ax[0].set_xlim(x - size//2, x + size//2)
+                    ax[0].set_ylim(y - size//2, y + size//2)
+                
+                ax[0].set_xticklabels([])
+                ax[0].set_yticklabels([])
+                plt.tight_layout()
+                plt.savefig(f"{path}/psf_residual_forced.png", bbox_inches='tight', dpi=300)
+                if show:
+                    plt.show()
+                    
                 if target_flux > 0 and target_flux/target_flux_err>sigma:
                     mag = self.zp - 2.5 * np.log10(target_flux)
                     mag_err = np.sqrt(
