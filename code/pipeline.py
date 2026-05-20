@@ -486,9 +486,12 @@ def _run_photometry_target(
                 
             forced = bool(cfg.get("Forced", cfg.get("forced", False)))
             fwhm = float(cfg.get("fwhm", 3.0))
+            fix_fwhm = bool(cfg.get('fix_fwhm',True))
             sigma = float(cfg.get("sigma", 5.0))
             match_radius = float(cfg.get("match_radius", 1.0))
             fit_shape = cfg.get("fit_shape", (5, 5))
+            # print(f"{telescope} config:\n forced={forced}, fwhm={fwhm}, fix_fwhm={fix_fwhm}, fit_shape={fit_shape}")
+
             if isinstance(fit_shape, int):
                 fit_shape = (fit_shape, fit_shape)
             elif isinstance(fit_shape, list):
@@ -557,6 +560,7 @@ def _run_photometry_target(
                             sigma=sigma,
                             match_radius=match_radius,
                             fwhm=fwhm,
+                            fix_fwhm=fix_fwhm,
                             fit_shape=fit_shape,
                             mag_col=band,
                             cat_dir=cat_dir,
@@ -579,6 +583,7 @@ def _run_photometry_target(
                             ra=ra,
                             dec=dec,
                             fwhm=fwhm,
+                            fix_fwhm=fix_fwhm,
                             sigma=sigma,
                             fit_shape=fit_shape,
                             match_radius=match_radius,

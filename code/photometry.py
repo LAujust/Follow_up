@@ -250,6 +250,7 @@ class Photometry:
             cat_dir=None,
             plot_scale=30,
             path="./",
+            fix_fwhm=True,
             show=True,
         ):
         """
@@ -265,7 +266,7 @@ class Photometry:
             if fwhm is None:
                 fwhm = self.fhwm if self.fhwm is not None else 3.0
             psf_model = CircularGaussianPRF(flux=1.0, fwhm=fwhm)
-            psf_model.fwhm.fixed = False
+            psf_model.fwhm.fixed = fix_fwhm
 
         ap_radius = 1.25 * fwhm
         finder = finder(sigma, fwhm)
@@ -531,6 +532,7 @@ class Photometry:
         cat_dir=None,
         plot_scale=30, #*fwhm
         path="./",
+        fix_fwhm=True,
         show=True,
     ):
         """
@@ -546,7 +548,10 @@ class Photometry:
             if fwhm is None:
                 fwhm = self.fhwm if self.fhwm is not None else 3.0
             psf_model = CircularGaussianPRF(flux=1.0, fwhm=fwhm)
-            psf_model.fwhm.fixed = False
+            if fix_fwhm:
+                psf_model.fwhm.fixed = fix_fwhm
+            else:
+                psf_model.fwhm.bounds = (1,8)
 
         ap_radius = 1.25 * fwhm
         finder = finder(sigma, fwhm)
@@ -748,37 +753,43 @@ class Photometry:
             
         else:
             if forced:
-                try:
-                    x,y = self._radec_to_xy(ra, dec)
-                    init_params = QTable()
-                    init_params['x'] = [x]
-                    init_params['y'] = [y]
-                    psfphot = psf_method(
+                print('Doing Forced Photometry')
+                # try:
+                x,y = self._radec_to_xy(ra, dec)
+                init_params = QTable()
+                init_params['x'] = [x]
+                init_params['y'] = [y]
+                psf_model.x_0.fixed = True
+                psf_model.y_0.fixed = True
+                # psf_model.fwhm.fixed = False
+
+                psfphot = psf_method(
                         psf_model=psf_model,
                         aperture_radius=ap_radius,
-                        # finder=finder,
-                        fit_shape=(5,5),
+                        finder=finder,
+                        fit_shape=(7,7),
                         localbkg_estimator=localbkg_estimator,
                     )
-                    psf_model.x_0.fixed = True
-                    psf_model.y_0.fixed = True
-                    psf_model.fwhm.fixed = False
 
-                    phot_target = psfphot(self.data, error=self.error,init_params=init_params)
+                phot_target = psfphot(self.data, error=self.error,init_params=init_params)
+                # phot_target.pprint(max_width=-1)
                     
-                    target_flux = phot_target['flux_fit'][0]   
-                    target_flux_err = phot_target['flux_fit_err'][0]
-                    if target_flux > 0:
-                        mag = self.zp - 2.5 * np.log10(target_flux)
-                        mag_err = np.sqrt(
+                target_flux = phot_target['flux_fit'][0]   
+                target_flux_err = phot_target['flux_err'][0]
+                if target_flux > 0 and target_flux/target_flux_err>sigma:
+                    mag = self.zp - 2.5 * np.log10(target_flux)
+                    mag_err = np.sqrt(
                             (1.0857 * target_flux_err / target_flux)**2 +
                             self.zp_std**2
                         )
 
-                        print(f"Target mag = {mag:.3f} ± {mag_err:.3f}")
-                        return phot_target
-                except:
-                    pass
+                    print(f"Target mag = {mag:.3f} ± {mag_err:.3f}")
+                    phot_target['mag'] = mag
+                    phot_target['mag_err'] = mag_err
+                    return phot_target
+                # except Exception as error:
+                #     print(error)
+                    # pass
 
         print("Target not detected → computing upper limit")
         print(f"3-sigma upper limit ({mag_col}) = {uplim:.3f}")
