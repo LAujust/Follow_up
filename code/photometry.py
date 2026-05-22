@@ -742,6 +742,7 @@ class Photometry:
                     self.zp_std**2
                 )
 
+                print(f"3-sigma upper limit ({mag_col}) = {uplim:.3f}")
                 print(f"Target mag = {mag:.3f} ± {mag_err:.3f}")
 
                 phot_target = QTable()
@@ -813,6 +814,7 @@ class Photometry:
                             self.zp_std**2
                         )
 
+                    print(f"3-sigma upper limit ({mag_col}) = {uplim:.3f}")
                     print(f"Target mag = {mag:.3f} ± {mag_err:.3f}")
                     phot_target['mag'] = mag
                     phot_target['mag_err'] = mag_err
