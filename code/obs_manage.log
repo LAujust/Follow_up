@@ -1,0 +1,50 @@
+2026-05-29 14:47:52,058 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 412, in main
+    tz_bj = timezone(u.timedelta(hours=8))
+                     ^^^^^^^^^^^
+AttributeError: module 'astropy.units' has no attribute 'timedelta'
+2026-05-29 14:48:05,730 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 14:48:05,971 [INFO] Dropped 1 targets (lunar distance < 30.0°)
+2026-05-29 14:48:11,818 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 14:48:11,821 [INFO] Final observable targets: 11
+2026-05-29 14:48:25,027 [INFO] Fetching cloud sheet …
+2026-05-29 14:48:25,578 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-29 14:48:29,171 [INFO] Fetching cloud sheet …
+2026-05-29 14:48:29,693 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-29 14:48:29,694 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 14:48:29,698 [INFO] Dropped 1 targets (lunar distance < 30.0°)
+2026-05-29 14:48:30,306 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 14:48:30,308 [INFO] Final observable targets: 11
+2026-05-29 14:51:17,809 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 14:51:17,813 [INFO] Dropped 1 targets (lunar distance < 30.0°)
+2026-05-29 14:51:18,400 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 14:51:18,401 [INFO] Final observable targets: 11
+2026-05-29 14:55:22,671 [INFO] Fetching cloud sheet …
+2026-05-29 14:55:23,188 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-29 14:55:23,189 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 14:55:23,193 [INFO] Dropped 1 targets (Lunar_Mean_Distance < 30.0°)
+2026-05-29 14:55:23,855 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 14:55:23,857 [INFO] Final observable targets: 11
+2026-05-29 14:55:54,185 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 14:55:54,189 [INFO] Dropped 1 targets (Lunar_Mean_Distance < 30.0°)
+2026-05-29 14:55:54,768 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 14:55:54,769 [INFO] Final observable targets: 11
+2026-05-29 14:58:32,680 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 14:58:32,684 [INFO] Dropped 1 targets (Lunar_Mean_Distance < 30.0°)
+2026-05-29 14:58:33,249 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 14:58:33,250 [INFO] Final observable targets: 11
+2026-05-29 14:58:33,717 [INFO] Report pushed to group chat oc_34de0318721ab375e02e2afd4ccd495b
+2026-05-29 15:03:58,503 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 15:03:58,507 [INFO] Dropped 1 targets (Lunar_Mean_Distance < 30.0°)
+2026-05-29 15:03:59,098 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 15:03:59,100 [INFO] Final observable targets: 11
+2026-05-29 15:06:12,730 [INFO] Fetching cloud sheet …
+2026-05-29 15:06:13,290 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-29 15:06:13,916 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 15:06:13,921 [INFO] Dropped 1 targets (Lunar_Mean_Distance < 30.0°)
+2026-05-29 15:06:14,498 [INFO] Dropped 29 targets (max elevation < 50.0° across all sites)
+2026-05-29 15:06:14,499 [INFO] Final observable targets: 11
+2026-05-29 15:07:23,653 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
+2026-05-29 15:07:24,052 [INFO] Dropped 5 targets (max elevation < 50.0° across all sites)
+2026-05-29 15:07:24,054 [INFO] Final observable targets: 1
