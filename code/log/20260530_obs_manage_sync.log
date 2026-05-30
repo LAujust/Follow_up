@@ -1,0 +1,14 @@
+=== Sat May 30 08:30:53 AM UTC 2026 === obs_manage sync run ===
+2026-05-30 08:30:54,118 [INFO] Fetching cloud sheet …
+2026-05-30 08:30:54,666 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+filter exit: 0
+report written to: /tmp/obs_report_20260530.md
+=== Sat May 30 08:30:56 AM UTC 2026 done ===
+=== Sat May 30 08:42:28 AM UTC 2026 === obs_manage sync run ===
+2026-05-30 08:42:28,908 [INFO] Fetching cloud sheet …
+2026-05-30 08:42:29,471 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+filter exit: 0
+report written to: /tmp/obs_report_20260530.md
+=== Sat May 30 08:42:31 AM UTC 2026 done ===

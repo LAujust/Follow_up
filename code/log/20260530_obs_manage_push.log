@@ -1,0 +1,97 @@
+=== Sat May 30 08:31:06 AM UTC 2026 === obs_manage push run ===
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/home/liangrd/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/index.ts)
+飞书消息通道未配置。让我用 lark-cli 直接发送。
+Now I have the file content and know the send command. Let me send it to the group chat:
+当前用户身份缺少 `im:message.send_as_user` 权限，切换到 bot 身份发送：
+Bot 不在群聊中。需要给用户身份补充权限。让我添加 scope：
+需要你完成飞书授权才能继续发送消息。
+
+**请在浏览器中打开以下链接完成授权：**
+
+```
+https://accounts.feishu.cn/oauth/v1/device/verify?flow_id=OzyIRPLKFFLlOOOOOOOOOOOuWzO35jk-H-4ZIHb_xHMl&user_code=DKT2-FY87
+```
+
+授权完成后回复我，我会继续发送消息。
+⚠️ ✉️ Message failed
+push exit: 0
+=== Sat May 30 08:32:39 AM UTC 2026 done ===
+++ date
++ echo '=== Sat May 30 08:40:43 AM UTC 2026 === obs_manage push run ==='
+=== Sat May 30 08:40:43 AM UTC 2026 === obs_manage push run ===
++ '[' '!' -f /tmp/obs_report_20260530.md ']'
++ openclaw agent --agent obs_assistant --channel feishu --reply-to chat:oc_34de0318721ab375e02e2afd4ccd495b --deliver --message '请读取文件 /tmp/obs_report_20260530.md 的内容，原样输出。不要添加任何前缀或后缀文字，直接输出文件内容。' --timeout 120000
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/home/liangrd/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/index.ts)
+🔭 **Observable Targets Report**
+
+📅 2026-05-30 15:30 (北京时间)
+
+🌙 月相: 98.8%  |  月距阈值: 30.0°  |  夜间最大高度角阈值: 50.0°  (18:00→06:00 BJT)
+
+共 **4** 个可观测目标：
+
+| EP Name | Obs Time | Sx | Priority | Lunar_Dist | TNOT_max | Sitian_max | WHUT_max |
+|---|---|---|---|---|---|---|---|
+| EP260417b 🔗 | 04-17 01:21 | 7.0 | 3 | 104.9° | 82° | 78° | 76° |
+| EP260512a 🔗 | 05-12 08:31 | 7.0 | 3 | 53.8° | 75° | 78° | 80° |
+| EP260321a 🔗 | 03-21 12:30 | 7.6 | 3 | 84.8° | 47° | 50° | 52° |
+| EP260324a 🔗 | 03-24 07:04 | 7.0 | 2 | 116.0° | 52° | 48° | 46° |
+
+---
+🤖 Powered by obs_assistant · obs_manage.py
++ echo 'push exit: 0'
+push exit: 0
+++ date
++ echo '=== Sat May 30 08:40:51 AM UTC 2026 done ==='
+=== Sat May 30 08:40:51 AM UTC 2026 done ===
+=== Sat May 30 08:42:33 AM UTC 2026 === obs_manage push run ===
+Config warnings:\n- plugins.entries.feishu: plugin feishu: duplicate plugin id detected; later plugin may be overridden (/home/liangrd/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/index.ts)
+🔭 **Observable Targets Report**
+
+📅 2026-05-30 15:30 (北京时间)
+
+🌙 月相: 98.8%  |  月距阈值: 30.0°  |  夜间最大高度角阈值: 50.0°  (18:00→06:00 BJT)
+
+共 **4** 个可观测目标：
+
+| EP Name | Obs Time | Sx | Priority | Lunar_Dist | TNOT_max | Sitian_max | WHUT_max |
+|---|---|---|---|---|---|---|---|
+| EP260417b 🔗 | 04-17 01:21 | 7.0 | 3 | 104.9° | 82° | 78° | 76° |
+| EP260512a 🔗 | 05-12 08:31 | 7.0 | 3 | 53.8° | 75° | 78° | 80° |
+| EP260321a 🔗 | 03-21 12:30 | 7.6 | 3 | 84.8° | 47° | 50° | 52° |
+| EP260324a 🔗 | 03-24 07:04 | 7.0 | 2 | 116.0° | 52° | 48° | 46° |
+
+---
+🤖 Powered by obs_assistant · obs_manage.py
+push exit: 0
+=== Sat May 30 08:42:41 AM UTC 2026 done ===
+=== Sat May 30 08:51:02 AM UTC 2026 === obs_manage push run ===
+Push success: message_id=om_x100b6e9e01a170a0b3cd1e1060bbf74
+push exit: 0
+=== Sat May 30 08:51:03 AM UTC 2026 done ===
+=== Sat May 30 08:53:38 AM UTC 2026 === obs_manage push run ===
+Push success: message_id=om_x100b6e9e1790c8a4b3b37806b865167
+push exit: 0
+=== Sat May 30 08:53:42 AM UTC 2026 done ===
+=== Sat May 30 08:55:51 AM UTC 2026 === obs_manage push run ===
+Push failed: code=230099, msg=Failed to create card content, ext=ErrCode: 200621; ErrMsg: parse card json err, please check whether the card json is correct; ErrorValue: with value number at index 4369: mismatched type with value
+
+	lumn", "width": 8, "elements": [
+	................^...............
+; 
+Response: {"code":230099,"msg":"Failed to create card content, ext=ErrCode: 200621; ErrMsg: parse card json err, please check whether the card json is correct; ErrorValue: with value number at index 4369: mismatched type with value\n\n\tlumn\", \"width\": 8, \"elements\": [\n\t................^...............\n; ","error":{"log_id":"2026053016555158F68624F569E50DEA9B","troubleshooter":"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026053016555158F68624F569E50DEA9B
+push exit: 1
+=== Sat May 30 08:55:51 AM UTC 2026 done ===
+=== Sat May 30 08:56:19 AM UTC 2026 === obs_manage push run ===
+Push failed: code=230099, msg=Failed to create card content, ext=ErrCode: 11310; ErrMsg: unsupported type of block; ErrorValue: lark_md; 
+Response: {"code":230099,"msg":"Failed to create card content, ext=ErrCode: 11310; ErrMsg: unsupported type of block; ErrorValue: lark_md; ","error":{"log_id":"20260530165619D2F18016B0B7E20B3C39","troubleshooter":"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20260530165619D2F18016B0B7E20B3C39&code=230099&method_id=6936075528891154460"}}
+push exit: 1
+=== Sat May 30 08:56:19 AM UTC 2026 done ===
+=== Sat May 30 08:56:58 AM UTC 2026 === obs_manage push run ===
+Push success: message_id=om_x100b6e9e2b770cb0b37272265783110
+push exit: 0
+=== Sat May 30 08:56:59 AM UTC 2026 done ===
+=== Sat May 30 08:59:46 AM UTC 2026 === obs_manage push run ===
+Push success: message_id=om_x100b6e9e3eea6c84b21a159f1fb1043
+push exit: 0
+=== Sat May 30 08:59:46 AM UTC 2026 done ===
