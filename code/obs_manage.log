@@ -48,3 +48,39 @@ AttributeError: module 'astropy.units' has no attribute 'timedelta'
 2026-05-29 15:07:23,653 [INFO] Filtering for observation time: 2026-05-29 07:30:00.000
 2026-05-29 15:07:24,052 [INFO] Dropped 5 targets (max elevation < 50.0° across all sites)
 2026-05-29 15:07:24,054 [INFO] Final observable targets: 1
+2026-05-30 03:02:27,607 [INFO] Filtering for observation time: 2026-05-30 07:30:00.000
+2026-05-30 03:02:28,144 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-30 03:02:28,146 [INFO] Final observable targets: 4
+2026-05-30 03:06:24,363 [INFO] Fetching cloud sheet …
+2026-05-30 03:06:25,402 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-30 03:06:25,403 [INFO] Filtering for observation time: 2026-05-30 07:30:00.000
+2026-05-30 03:06:25,949 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-30 03:06:25,952 [INFO] Final observable targets: 4
+2026-05-30 03:22:20,959 [INFO] Fetching cloud sheet …
+2026-05-30 03:22:21,782 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-30 03:22:21,783 [INFO] Filtering for observation time: 2026-05-30 07:30:00.000
+2026-05-30 03:22:22,312 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-30 03:22:22,315 [INFO] Final observable targets: 4
+2026-05-30 03:25:49,522 [INFO] Fetching cloud sheet …
+2026-05-30 03:25:50,117 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-30 03:25:50,118 [INFO] Filtering for observation time: 2026-05-30 07:30:00.000
+2026-05-30 03:25:50,642 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-30 03:25:50,646 [INFO] Final observable targets: 4
+2026-05-30 03:32:51,521 [INFO] Fetching cloud sheet …
+2026-05-30 03:32:52,157 [INFO] Synced 51 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-30 03:32:52,157 [INFO] Filtering for observation time: 2026-05-30 07:30:00.000
+2026-05-30 03:32:52,173 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-05-30 03:32:52.159298, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-30 03:32:52,175 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 5, 30, 3, 32, 52, 159298)
+ datetime.datetime(2026, 5, 30, 9, 32, 52, 159298)
+ datetime.datetime(2026, 5, 30, 15, 32, 52, 159298)
+ datetime.datetime(2026, 5, 30, 21, 32, 52, 159298)
+ datetime.datetime(2026, 5, 31, 3, 32, 52, 159298)
+ datetime.datetime(2026, 5, 31, 9, 32, 52, 159298)
+ datetime.datetime(2026, 5, 31, 15, 32, 52, 159298)
+ datetime.datetime(2026, 5, 31, 21, 32, 52, 159298)
+ datetime.datetime(2026, 6, 1, 3, 32, 52, 159298)
+ datetime.datetime(2026, 6, 1, 9, 32, 52, 159298)
+ datetime.datetime(2026, 6, 1, 15, 32, 52, 159298)
+ datetime.datetime(2026, 6, 1, 21, 32, 52, 159298)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-30 03:32:52,698 [INFO] Dropped 2 targets (Lunar_Min_Distance < 30.0°)
+2026-05-30 03:32:53,134 [INFO] Final observable targets: 4

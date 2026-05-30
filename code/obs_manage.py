@@ -194,19 +194,74 @@ def sync_cloud_to_csv() -> None:
 #  filter: elevation + lunar distance
 # ═══════════════════════════════════════════════════════════════════════
 
-def compute_elevations(
+def _build_night_times(obs_date_str: str) -> Time:
+    """Build time grid for the night window (18:00→06:00+1 BJT, 10-min steps)."""
+    tz_bj = timezone(timedelta(hours=8))
+    date = datetime.strptime(obs_date_str, "%Y-%m-%d").replace(tzinfo=tz_bj)
+    start = Time(date.replace(hour=18, minute=0, second=0, microsecond=0))
+    end = Time((date + timedelta(days=1)).replace(hour=6, minute=0, second=0, microsecond=0))
+    n_steps = 12 * 6 + 1  # 12h window, 10-min steps (73 time points)
+    return Time(np.linspace(start.jd, end.jd, n_steps), format="jd")
+
+
+def compute_max_elevation(
     ra_deg: float,
     dec_deg: float,
-    obs_time: Time,
+    times: Time,
 ) -> dict[str, float]:
-    """Compute target elevation angle at each observatory."""
+    """Compute max elevation during night window for a target.
+
+    Uses pre-computed night time grid (via _build_night_times).
+    Returns max elevation at each observatory.
+    """
     target = SkyCoord(ra=ra_deg * u.deg, dec=dec_deg * u.deg)
-    elevations = {}
+    max_elev: dict[str, float] = {}
+
     for name, loc in OBSERVATORIES.items():
-        altaz = AltAz(location=loc, obstime=obs_time)
-        alt = target.transform_to(altaz).alt.deg
-        elevations[name] = round(float(alt), 1)
-    return elevations
+        altaz = AltAz(location=loc, obstime=times)
+        alts = target.transform_to(altaz).alt.deg
+        max_elev[name] = round(float(np.max(alts)), 1)
+
+    return max_elev
+
+
+def compute_lunar_distances(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute per-target lunar distance via astropy.
+
+    Computes current moon separation (Lunar_Min_Distance) and mean
+    separation over a 3-day window (Lunar_Mean_Distance) with 6-hour steps.
+
+    The function works in-place on a copy and returns it.
+    """
+    df = df.copy()
+    now = Time.now()
+    times_3d = now + np.arange(0, 3 * 24, 6) * u.hour
+
+    lunar_min = []
+    lunar_mean = []
+
+    for _, row in df.iterrows():
+        try:
+            ra = float(row["RA"])
+            dec = float(row["Dec"])
+        except (ValueError, TypeError):
+            lunar_min.append(np.nan)
+            lunar_mean.append(np.nan)
+            continue
+
+        target = SkyCoord(ra=ra * u.deg, dec=dec * u.deg)
+        moon_now = get_body("moon", now)
+        moon_series = get_body("moon", times_3d)
+
+        sep_now = float(moon_now.separation(target).deg)
+        sep_mean = float(np.mean(moon_series.separation(target).deg))
+
+        lunar_min.append(round(sep_now, 2))
+        lunar_mean.append(round(sep_mean, 2))
+
+    df["Lunar_Min_Distance"] = lunar_min
+    df["Lunar_Mean_Distance"] = lunar_mean
+    return df
 
 
 def filter_observable_targets(obs_time: Optional[Time] = None) -> pd.DataFrame:
@@ -214,11 +269,10 @@ def filter_observable_targets(obs_time: Optional[Time] = None) -> pd.DataFrame:
 
     Steps:
       1. Load Candidates.csv
-      2. Load lunar distance data
-      3. Merge
-      4. Drop Priority == 0
-      5. Drop lunar distance < threshold
-      6. Drop targets below elevation threshold at ALL sites
+      2. Compute lunar distances
+      3. Drop Priority == 0
+      4. Drop lunar distance < threshold
+      5. Drop targets below night max elevation threshold at ALL sites
     """
     if obs_time is None:
         # default to 15:30 Beijing time today
@@ -236,34 +290,11 @@ def filter_observable_targets(obs_time: Optional[Time] = None) -> pd.DataFrame:
 
     cand = pd.read_csv(CANDIDATES_CSV)
 
-    # load lunar
-    lunar_cols = ["EP Name"]
-    _lunar_dist_col = None  # actual column used for filtering
-    if LUNAR_CSV.exists():
-        lunar = pd.read_csv(LUNAR_CSV)
-        # prefer Lunar_Min_Distance, fall back to Lunar_Mean_Distance
-        for col in LUNAR_COLUMN_PREFERENCE:
-            if col in lunar.columns:
-                lunar_cols.append(col)
-                _lunar_dist_col = col
-                break
-        # also load the other distance column for report display
-        for col in ["Lunar_Min_Distance", "Lunar_Mean_Distance"]:
-            if col in lunar.columns and col not in lunar_cols:
-                lunar_cols.append(col)
-        # also load Lunar_Phase if present
-        if "Lunar_Phase" in lunar.columns:
-            lunar_cols.append("Lunar_Phase")
-        lunar = lunar[lunar_cols]
-    else:
-        log.warning("Lunar CSV not found at %s", LUNAR_CSV)
-        lunar = pd.DataFrame(columns=["EP Name"])
-
-    # merge
-    merged = cand.merge(lunar, on="EP Name", how="left")
+    # compute lunar distances on-the-fly (replaces CSV dependency)
+    cand = compute_lunar_distances(cand)
 
     # rename for clarity
-    merged = merged.rename(columns={"EP Name": "EP_Name"})
+    merged = cand.rename(columns={"EP Name": "EP_Name"})
 
     # drop Priority <= 1
     merged = merged[merged["Priority"] > 1].copy()
@@ -271,8 +302,9 @@ def filter_observable_targets(obs_time: Optional[Time] = None) -> pd.DataFrame:
         log.info("No targets with Priority > 0")
         return merged
 
-    # drop by lunar distance (prefer min, fallback to mean)
-    if _lunar_dist_col and _lunar_dist_col in merged.columns:
+    # drop by lunar distance (prefer min, computed on-the-fly)
+    _lunar_dist_col = "Lunar_Min_Distance"  # always available after compute_lunar_distances
+    if _lunar_dist_col in merged.columns:
         lunar_mask = (
             merged[_lunar_dist_col].isna()
             | (merged[_lunar_dist_col] > LUNAR_DISTANCE_THRESHOLD)
@@ -289,7 +321,11 @@ def filter_observable_targets(obs_time: Optional[Time] = None) -> pd.DataFrame:
         log.info("No targets pass lunar distance filter")
         return merged
 
-    # compute elevations
+    # compute max elevations during night window (18:00 → 06:00 BJT)
+    tz_bj = timezone(timedelta(hours=8))
+    obs_date_str = obs_time.to_datetime(timezone=tz_bj).strftime("%Y-%m-%d")
+    night_times = _build_night_times(obs_date_str)
+
     elevation_rows = []
     for _, row in merged.iterrows():
         try:
@@ -297,22 +333,24 @@ def filter_observable_targets(obs_time: Optional[Time] = None) -> pd.DataFrame:
             dec = float(row["Dec"])
         except (ValueError, TypeError):
             continue
-        elevs = compute_elevations(ra, dec, obs_time)
+        elevs = compute_max_elevation(ra, dec, night_times)
         elevation_rows.append(elevs)
 
     if elevation_rows:
         elev_df = pd.DataFrame(elevation_rows)
+        # rename columns to indicate max values
+        elev_df = elev_df.rename(columns=lambda c: f"{c}_max")
         merged = pd.concat([merged.reset_index(drop=True), elev_df], axis=1)
 
-    # elevation filter: must be above threshold at AT LEAST ONE site
-    elev_cols = list(OBSERVATORIES.keys())
+    # elevation filter: must be above threshold at AT LEAST ONE site (max during night window)
+    elev_cols = [f"{c}_max" for c in OBSERVATORIES.keys()]
     present_elev_cols = [c for c in elev_cols if c in merged.columns]
     if present_elev_cols:
         elev_mask = merged[present_elev_cols].max(axis=1) >= ELEVATION_THRESHOLD
         n_dropped_elev = (~elev_mask).sum()
         if n_dropped_elev:
             log.info(
-                "Dropped %d targets (max elevation < %s° across all sites)",
+                "Dropped %d targets (night max elevation < %s° across all sites)",
                 int(n_dropped_elev), ELEVATION_THRESHOLD,
             )
         merged = merged[elev_mask].copy()
@@ -354,7 +392,7 @@ def format_report(df: pd.DataFrame, obs_time: Time) -> str:
     except Exception:
         phase_str = ""
 
-    filter_info = f"{phase_str}  |  月距阈值: {LUNAR_DISTANCE_THRESHOLD}°  |  高度角阈值: {ELEVATION_THRESHOLD}°"
+    filter_info = f"{phase_str}  |  月距阈值: {LUNAR_DISTANCE_THRESHOLD}°  |  夜间最大高度角阈值: {ELEVATION_THRESHOLD}°  (18:00→06:00 BJT)"
 
     lines = [
         f"🔭 **Observable Targets Report**",
@@ -366,15 +404,15 @@ def format_report(df: pd.DataFrame, obs_time: Time) -> str:
     ]
 
     if df.empty:
-        lines.append(f"⚠️ 当前无可观测目标（lunar > {LUNAR_DISTANCE_THRESHOLD}° & elevation > {ELEVATION_THRESHOLD}°）")
+        lines.append(f"⚠️ 当前无可观测目标（lunar > {LUNAR_DISTANCE_THRESHOLD}° & night max elevation > {ELEVATION_THRESHOLD}°）")
         return "\n".join(lines)
 
     lines.append(f"共 **{len(df)}** 个可观测目标：")
     lines.append("")
 
     # table header with additional columns
-    elev_cols = [c for c in OBSERVATORIES.keys() if c in df.columns]
-    header_cols = ["EP Name", "Obs Time", "Sx", "Priority"] + elev_cols
+    elev_cols = [f"{c}_max" for c in OBSERVATORIES.keys() if f"{c}_max" in df.columns]
+    header_cols = ["EP Name", "Obs Time", "Sx", "Priority", "Lunar_Dist"] + elev_cols
     header = "| " + " | ".join(header_cols) + " |"
     sep = "|" + "|".join(["---"] * len(header_cols)) + "|"
     lines.append(header)
@@ -404,7 +442,13 @@ def format_report(df: pd.DataFrame, obs_time: Time) -> str:
         # Priority
         priority_str = str(int(row["Priority"]))
 
-        cols = [ep_name, obs_time_short, sx_str, priority_str]
+        # Lunar distance (prefer min, fallback to mean)
+        lunar_dist = row.get("Lunar_Min_Distance")
+        if pd.isna(lunar_dist) or lunar_dist == "":
+            lunar_dist = row.get("Lunar_Mean_Distance")
+        lunar_str = f"{float(lunar_dist):.1f}°" if not pd.isna(lunar_dist) and lunar_dist != "" else "—"
+
+        cols = [ep_name, obs_time_short, sx_str, priority_str, lunar_str]
 
         for c in elev_cols:
             val = row.get(c)
@@ -416,7 +460,7 @@ def format_report(df: pd.DataFrame, obs_time: Time) -> str:
 
     lines.append("")
     lines.append("---")
-    lines.append("🤖 Powered by Turing · obs_manage.py")
+    lines.append("🤖 Powered by obs_assistant · obs_manage.py")
 
     return "\n".join(lines)
 
