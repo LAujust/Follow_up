@@ -1,0 +1,88 @@
+=== Tue Jun  2 12:00:01 AM UTC 2026 UTC ===
+2026-06-02 00:00:03,259 [INFO] Fetching cloud sheet …
+2026-06-02 00:00:03,261 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+sync exit: 1
+=== Tue Jun  2 12:00:03 AM UTC 2026 UTC done ===
+=== Tue Jun  2 01:00:01 AM UTC 2026 UTC ===
+2026-06-02 01:00:02,090 [INFO] Fetching cloud sheet …
+2026-06-02 01:00:02,091 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+sync exit: 1
+=== Tue Jun  2 01:00:02 AM UTC 2026 UTC done ===
+=== Tue Jun  2 02:00:01 AM UTC 2026 UTC ===
+2026-06-02 02:00:02,108 [INFO] Fetching cloud sheet …
+2026-06-02 02:00:02,109 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+sync exit: 1
+=== Tue Jun  2 02:00:02 AM UTC 2026 UTC done ===
+=== Tue Jun  2 03:00:01 AM UTC 2026 UTC ===
+2026-06-02 03:00:01,907 [INFO] Fetching cloud sheet …
+2026-06-02 03:00:01,908 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+sync exit: 1
+=== Tue Jun  2 03:00:02 AM UTC 2026 UTC done ===

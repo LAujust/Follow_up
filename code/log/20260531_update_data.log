@@ -421,4 +421,206 @@ Plotting photometry for EP260329a...
 No valid photometry data for EP260329a.
 No valid photometry data for EP260329a.
 ========================================
-Plotting photometry for EP260329b...
+Plotting photometry for EP260329b...[master ee57b1b] Auto update data at 2026-05-31 04:01:25.563
+ 31 files changed, 550 insertions(+), 79 deletions(-)
+ create mode 100644 code/log/20260531_update_data.log
+To github.com:LAujust/Follow_up.git
+   0bd8239..ee57b1b  master -> master
+
+No valid photometry data for EP260329b.
+No valid photometry data for EP260329b.
+========================================
+Plotting photometry for EP260402a...
+No valid photometry data for EP260402a.
+No valid photometry data for EP260402a.
+========================================
+Plotting photometry for EP260403a...
+No valid photometry data for EP260403a.
+No valid photometry data for EP260403a.
+========================================
+Plotting photometry for EP260405a...
+No valid photometry data for EP260405a.
+No valid photometry data for EP260405a.
+========================================
+Plotting photometry for EP260409a...
+No valid photometry data for EP260409a.
+No valid photometry data for EP260409a.
+========================================
+Plotting photometry for EP260416a...
+Data file /home/liangrd/optical_data/EP260416a/pipeline/photometry.csv not found.
+Data file /home/liangrd/optical_data/EP260416a/pipeline/photometry.csv not found.
+========================================
+Plotting photometry for EP260417a...
+Data file /home/liangrd/optical_data/EP260417a/pipeline/photometry.csv not found.
+Data file /home/liangrd/optical_data/EP260417a/pipeline/photometry.csv not found.
+========================================
+Plotting photometry for EP260417b...
+Data file /home/liangrd/optical_data/EP260417b/pipeline/photometry.csv not found.
+Data file /home/liangrd/optical_data/EP260417b/pipeline/photometry.csv not found.
+========================================
+Plotting photometry for EP260507a...
+Data file /home/liangrd/optical_data/EP260507a/pipeline/photometry.csv not found.
+Data file /home/liangrd/optical_data/EP260507a/pipeline/photometry.csv not found.
+========================================
+Plotting photometry for EP260509a...
+Data file /home/liangrd/optical_data/EP260509a/pipeline/photometry.csv not found.
+Data file /home/liangrd/optical_data/EP260509a/pipeline/photometry.csv not found.
+========================================
+Plotting photometry for EP260512a...
+No valid photometry data for EP260512a.
+No valid photometry data for EP260512a.
+Created missing directory: /home/liangrd/optical_data/EP250514a
+Saved PS catalog to /home/liangrd/optical_data/EP250514a/ps.csv
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/utils.py", line 521, in check_source_dirs
+    client.get_catalog(ra, dec, save_path=source_dir)
+  File "/home/liangrd/Follow_up/code/catalog.py", line 64, in get_catalog
+    df = pd.read_csv(StringIO(response.text))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 18, in <module>
+    check_source_dirs()
+  File "/home/liangrd/Follow_up/code/utils.py", line 526, in check_source_dirs
+    client.get_catalog(ra, dec, save_path=source_dir)
+  File "/home/liangrd/Follow_up/code/catalog.py", line 64, in get_catalog
+    df = pd.read_csv(StringIO(response.text))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/utils.py", line 521, in check_source_dirs
+    client.get_catalog(ra, dec, save_path=source_dir)
+  File "/home/liangrd/Follow_up/code/catalog.py", line 64, in get_catalog
+    df = pd.read_csv(StringIO(response.text))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 18, in <module>
+    check_source_dirs()
+  File "/home/liangrd/Follow_up/code/utils.py", line 526, in check_source_dirs
+    client.get_catalog(ra, dec, save_path=source_dir)
+  File "/home/liangrd/Follow_up/code/catalog.py", line 64, in get_catalog
+    df = pd.read_csv(StringIO(response.text))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/utils.py", line 521, in check_source_dirs
+    client.get_catalog(ra, dec, save_path=source_dir)
+  File "/home/liangrd/Follow_up/code/catalog.py", line 64, in get_catalog
+    df = pd.read_csv(StringIO(response.text))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 18, in <module>
+    check_source_dirs()
+  File "/home/liangrd/Follow_up/code/utils.py", line 526, in check_source_dirs
+    client.get_catalog(ra, dec, save_path=source_dir)
+  File "/home/liangrd/Follow_up/code/catalog.py", line 64, in get_catalog
+    df = pd.read_csv(StringIO(response.text))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file

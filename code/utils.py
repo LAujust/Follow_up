@@ -513,17 +513,23 @@ def check_source_dirs(root_dir=str(DEFAULT_OPTICAL_ROOT), meta_file=str(DEFAULT_
             print("Created missing directory:", source_dir)
             
         if not (source_dir / "ps.csv").exists():
-            from catalog import PS, LS
+            from catalog import PS, LS, SkyMapper
             try:
                 client = PS()
                 ra = df[df['EP Name'] == name]['RA'].values[0]
                 dec = df[df['EP Name'] == name]['Dec'].values[0]
                 client.get_catalog(ra, dec, save_path=source_dir)
             except:
-                client = PS()
-                ra = df[df['EP Name'] == name]['RA'].values[0]
-                dec = df[df['EP Name'] == name]['Dec'].values[0]
-                client.get_catalog(ra, dec, save_path=source_dir)
+                try:
+                    client = LS()
+                    ra = df[df['EP Name'] == name]['RA'].values[0]
+                    dec = df[df['EP Name'] == name]['Dec'].values[0]
+                    client.get_catalog(ra, dec, save_path=source_dir)
+                except:
+                    client = SkyMapper()
+                    ra = df[df['EP Name'] == name]['RA'].values[0]
+                    dec = df[df['EP Name'] == name]['Dec'].values[0]
+                    client.get_catalog(ra, dec, save_path=source_dir)
                 
             
             

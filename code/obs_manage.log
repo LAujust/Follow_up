@@ -157,3 +157,936 @@ FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
  datetime.datetime(2026, 6, 2, 2, 42, 30, 96197)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
 2026-05-30 08:42:30,626 [INFO] Dropped 2 targets (Lunar_Min_Distance < 30.0°)
 2026-05-30 08:42:31,073 [INFO] Final observable targets: 4
+2026-05-31 07:20:03,149 [INFO] Fetching cloud sheet …
+2026-05-31 07:20:04,000 [INFO] Synced 52 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-31 07:20:04,657 [INFO] Filtering for observation time: 2026-05-31 07:30:00.000
+2026-05-31 07:20:04,673 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-05-31 07:20:04.659570, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:20:04,675 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 5, 31, 7, 20, 4, 659570)
+ datetime.datetime(2026, 5, 31, 13, 20, 4, 659570)
+ datetime.datetime(2026, 5, 31, 19, 20, 4, 659570)
+ datetime.datetime(2026, 6, 1, 1, 20, 4, 659570)
+ datetime.datetime(2026, 6, 1, 7, 20, 4, 659570)
+ datetime.datetime(2026, 6, 1, 13, 20, 4, 659570)
+ datetime.datetime(2026, 6, 1, 19, 20, 4, 659570)
+ datetime.datetime(2026, 6, 2, 1, 20, 4, 659570)
+ datetime.datetime(2026, 6, 2, 7, 20, 4, 659570)
+ datetime.datetime(2026, 6, 2, 13, 20, 4, 659570)
+ datetime.datetime(2026, 6, 2, 19, 20, 4, 659570)
+ datetime.datetime(2026, 6, 3, 1, 20, 4, 659570)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:20:05,204 [INFO] Dropped 1 targets (Lunar_Min_Distance < 30.0°)
+2026-05-31 07:20:05,712 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-31 07:20:05,713 [INFO] Final observable targets: 4
+2026-05-31 07:56:29,029 [INFO] Fetching cloud sheet …
+2026-05-31 07:56:30,510 [INFO] Synced 55 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-31 07:58:27,198 [INFO] Fetching cloud sheet …
+2026-05-31 07:58:27,744 [INFO] Synced 55 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-05-31 07:58:27,744 [INFO] Filtering for observation time: 2026-05-31 07:30:00.000
+2026-05-31 07:58:27,760 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-05-31 07:58:27.745964, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:58:27,763 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 5, 31, 7, 58, 27, 745964)
+ datetime.datetime(2026, 5, 31, 13, 58, 27, 745964)
+ datetime.datetime(2026, 5, 31, 19, 58, 27, 745964)
+ datetime.datetime(2026, 6, 1, 1, 58, 27, 745964)
+ datetime.datetime(2026, 6, 1, 7, 58, 27, 745964)
+ datetime.datetime(2026, 6, 1, 13, 58, 27, 745964)
+ datetime.datetime(2026, 6, 1, 19, 58, 27, 745964)
+ datetime.datetime(2026, 6, 2, 1, 58, 27, 745964)
+ datetime.datetime(2026, 6, 2, 7, 58, 27, 745964)
+ datetime.datetime(2026, 6, 2, 13, 58, 27, 745964)
+ datetime.datetime(2026, 6, 2, 19, 58, 27, 745964)
+ datetime.datetime(2026, 6, 3, 1, 58, 27, 745964)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:58:28,346 [INFO] Dropped 2 targets (Lunar_Min_Distance < 30.0°)
+2026-05-31 07:58:28,960 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-31 07:58:28,962 [INFO] Final observable targets: 6
+2026-05-31 07:58:29,465 [INFO] Report pushed to group chat oc_34de0318721ab375e02e2afd4ccd495b
+2026-05-31 07:59:08,217 [INFO] Filtering for observation time: 2026-05-31 07:30:00.000
+2026-05-31 07:59:08,235 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-05-31 07:59:08.220071, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:59:08,237 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 5, 31, 7, 59, 8, 220071)
+ datetime.datetime(2026, 5, 31, 13, 59, 8, 220071)
+ datetime.datetime(2026, 5, 31, 19, 59, 8, 220071)
+ datetime.datetime(2026, 6, 1, 1, 59, 8, 220071)
+ datetime.datetime(2026, 6, 1, 7, 59, 8, 220071)
+ datetime.datetime(2026, 6, 1, 13, 59, 8, 220071)
+ datetime.datetime(2026, 6, 1, 19, 59, 8, 220071)
+ datetime.datetime(2026, 6, 2, 1, 59, 8, 220071)
+ datetime.datetime(2026, 6, 2, 7, 59, 8, 220071)
+ datetime.datetime(2026, 6, 2, 13, 59, 8, 220071)
+ datetime.datetime(2026, 6, 2, 19, 59, 8, 220071)
+ datetime.datetime(2026, 6, 3, 1, 59, 8, 220071)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:59:08,805 [INFO] Dropped 2 targets (Lunar_Min_Distance < 30.0°)
+2026-05-31 07:59:09,389 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-31 07:59:09,391 [INFO] Final observable targets: 6
+2026-05-31 07:59:09,838 [INFO] Report pushed to group chat oc_34de0318721ab375e02e2afd4ccd495b
+2026-05-31 07:59:41,356 [INFO] Filtering for observation time: 2026-05-31 07:30:00.000
+2026-05-31 07:59:41,371 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-05-31 07:59:41.358000, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:59:41,373 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 5, 31, 7, 59, 41, 358000)
+ datetime.datetime(2026, 5, 31, 13, 59, 41, 358000)
+ datetime.datetime(2026, 5, 31, 19, 59, 41, 358000)
+ datetime.datetime(2026, 6, 1, 1, 59, 41, 358000)
+ datetime.datetime(2026, 6, 1, 7, 59, 41, 358000)
+ datetime.datetime(2026, 6, 1, 13, 59, 41, 358000)
+ datetime.datetime(2026, 6, 1, 19, 59, 41, 358000)
+ datetime.datetime(2026, 6, 2, 1, 59, 41, 358000)
+ datetime.datetime(2026, 6, 2, 7, 59, 41, 358000)
+ datetime.datetime(2026, 6, 2, 13, 59, 41, 358000)
+ datetime.datetime(2026, 6, 2, 19, 59, 41, 358000)
+ datetime.datetime(2026, 6, 3, 1, 59, 41, 358000)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-05-31 07:59:41,931 [INFO] Dropped 2 targets (Lunar_Min_Distance < 30.0°)
+2026-05-31 07:59:42,461 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-05-31 07:59:42,462 [INFO] Final observable targets: 6
+2026-05-31 08:00:02,389 [INFO] Fetching cloud sheet …
+2026-05-31 08:00:02,390 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 09:00:02,141 [INFO] Fetching cloud sheet …
+2026-05-31 09:00:02,142 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 10:00:01,933 [INFO] Fetching cloud sheet …
+2026-05-31 10:00:01,934 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 11:00:03,536 [INFO] Fetching cloud sheet …
+2026-05-31 11:00:03,543 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 12:00:03,366 [INFO] Fetching cloud sheet …
+2026-05-31 12:00:03,367 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 13:00:02,112 [INFO] Fetching cloud sheet …
+2026-05-31 13:00:02,113 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 14:00:01,882 [INFO] Fetching cloud sheet …
+2026-05-31 14:00:01,882 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 15:00:01,829 [INFO] Fetching cloud sheet …
+2026-05-31 15:00:01,830 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 16:00:01,570 [INFO] Fetching cloud sheet …
+2026-05-31 16:00:01,570 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 17:00:03,812 [INFO] Fetching cloud sheet …
+2026-05-31 17:00:03,814 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 18:00:03,087 [INFO] Fetching cloud sheet …
+2026-05-31 18:00:03,089 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 19:00:01,871 [INFO] Fetching cloud sheet …
+2026-05-31 19:00:01,872 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 20:00:01,608 [INFO] Fetching cloud sheet …
+2026-05-31 20:00:01,608 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 21:00:02,346 [INFO] Fetching cloud sheet …
+2026-05-31 21:00:02,347 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 22:00:02,118 [INFO] Fetching cloud sheet …
+2026-05-31 22:00:02,119 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-05-31 23:00:03,495 [INFO] Fetching cloud sheet …
+2026-05-31 23:00:03,498 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 00:00:02,056 [INFO] Fetching cloud sheet …
+2026-06-01 00:00:02,057 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 01:00:01,865 [INFO] Fetching cloud sheet …
+2026-06-01 01:00:01,866 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 02:00:01,715 [INFO] Fetching cloud sheet …
+2026-06-01 02:00:01,716 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 03:00:02,483 [INFO] Fetching cloud sheet …
+2026-06-01 03:00:02,484 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 04:00:02,242 [INFO] Fetching cloud sheet …
+2026-06-01 04:00:02,243 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 04:11:03,038 [INFO] Fetching cloud sheet …
+2026-06-01 04:11:03,767 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-06-01 05:00:02,271 [INFO] Fetching cloud sheet …
+2026-06-01 05:00:02,272 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 06:00:03,458 [INFO] Fetching cloud sheet …
+2026-06-01 06:00:03,459 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 07:00:03,192 [INFO] Fetching cloud sheet …
+2026-06-01 07:00:03,194 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 07:20:01,605 [INFO] Fetching cloud sheet …
+2026-06-01 07:20:03,393 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+2026-06-01 07:20:04,041 [INFO] Filtering for observation time: 2026-06-01 07:30:00.000
+2026-06-01 07:20:04,057 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-06-01 07:20:04.043072, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-06-01 07:20:04,059 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 6, 1, 7, 20, 4, 43072)
+ datetime.datetime(2026, 6, 1, 13, 20, 4, 43072)
+ datetime.datetime(2026, 6, 1, 19, 20, 4, 43072)
+ datetime.datetime(2026, 6, 2, 1, 20, 4, 43072)
+ datetime.datetime(2026, 6, 2, 7, 20, 4, 43072)
+ datetime.datetime(2026, 6, 2, 13, 20, 4, 43072)
+ datetime.datetime(2026, 6, 2, 19, 20, 4, 43072)
+ datetime.datetime(2026, 6, 3, 1, 20, 4, 43072)
+ datetime.datetime(2026, 6, 3, 7, 20, 4, 43072)
+ datetime.datetime(2026, 6, 3, 13, 20, 4, 43072)
+ datetime.datetime(2026, 6, 3, 19, 20, 4, 43072)
+ datetime.datetime(2026, 6, 4, 1, 20, 4, 43072)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+2026-06-01 07:20:04,626 [INFO] Dropped 2 targets (Lunar_Min_Distance < 30.0°)
+2026-06-01 07:20:05,188 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-06-01 07:20:05,189 [INFO] Final observable targets: 6
+2026-06-01 08:00:02,034 [INFO] Fetching cloud sheet …
+2026-06-01 08:00:02,035 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 09:00:01,768 [INFO] Fetching cloud sheet …
+2026-06-01 09:00:01,768 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 10:00:02,549 [INFO] Fetching cloud sheet …
+2026-06-01 10:00:02,550 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 11:00:03,419 [INFO] Fetching cloud sheet …
+2026-06-01 11:00:03,422 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 12:00:03,080 [INFO] Fetching cloud sheet …
+2026-06-01 12:00:03,082 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 13:00:01,862 [INFO] Fetching cloud sheet …
+2026-06-01 13:00:01,863 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 14:00:02,101 [INFO] Fetching cloud sheet …
+2026-06-01 14:00:02,102 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 15:00:02,060 [INFO] Fetching cloud sheet …
+2026-06-01 15:00:02,061 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 16:00:01,899 [INFO] Fetching cloud sheet …
+2026-06-01 16:00:01,900 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 17:00:03,422 [INFO] Fetching cloud sheet …
+2026-06-01 17:00:03,426 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 18:00:03,739 [INFO] Fetching cloud sheet …
+2026-06-01 18:00:03,742 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 19:00:02,502 [INFO] Fetching cloud sheet …
+2026-06-01 19:00:02,503 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 20:00:02,256 [INFO] Fetching cloud sheet …
+2026-06-01 20:00:02,257 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 21:00:02,040 [INFO] Fetching cloud sheet …
+2026-06-01 21:00:02,041 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 22:00:01,807 [INFO] Fetching cloud sheet …
+2026-06-01 22:00:01,808 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-01 23:00:02,137 [INFO] Fetching cloud sheet …
+2026-06-01 23:00:02,139 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-02 00:00:03,259 [INFO] Fetching cloud sheet …
+2026-06-02 00:00:03,261 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-02 01:00:02,090 [INFO] Fetching cloud sheet …
+2026-06-02 01:00:02,091 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-02 02:00:02,108 [INFO] Fetching cloud sheet …
+2026-06-02 02:00:02,109 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
+2026-06-02 03:00:01,907 [INFO] Fetching cloud sheet …
+2026-06-02 03:00:01,908 [ERROR] Pipeline failed
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 517, in main
+    sync_cloud_to_csv()
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 150, in sync_cloud_to_csv
+    resp = _run_lark_cli(
+           ^^^^^^^^^^^^^^
+  File "/home/liangrd/Follow_up/code/obs_manage.py", line 100, in _run_lark_cli
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/liangrd/anaconda3/envs/autophot/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
