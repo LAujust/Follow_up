@@ -1,7 +1,14 @@
 services:
   - type: web
-    name: follow-up-dashboard
+    name: follow-up-api
     runtime: docker
-    repo: https://github.com/REPLACE_ME/follow_up_dashboard
-    branch: main
+    repo: https://github.com/LAujust/Follow_up
+    branch: master
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
     autoDeploy: true
+    envVars:
+      - key: CORS_ORIGIN
+        value: https://follow-up.vercel.app
+      - key: FOLLOWUP_OPTICAL_DIR
+        value: /root/optical_data

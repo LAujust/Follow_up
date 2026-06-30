@@ -1,0 +1,11 @@
+dashboard-next/
+dashboard/
+.git/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+results/agent_photometry/
+results/generated_plans/
+.venv/
+venv/
+.DS_Store

@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ~/optical_data:/root/optical_data
+      - ./results:/app/results
+      - ./Candidates.csv:/app/Candidates.csv
+    environment:
+      - FOLLOWUP_OPTICAL_DIR=/root/optical_data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./dashboard-next
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped

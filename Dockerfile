@@ -2,11 +2,11 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY requirements-dashboard.txt /app/requirements-dashboard.txt
-RUN pip install --no-cache-dir -r /app/requirements-dashboard.txt
+COPY api/requirements.txt /app/api/requirements.txt
+RUN pip install --no-cache-dir -r /app/api/requirements.txt
 
 COPY . /app
 
-EXPOSE 8501
+EXPOSE 8000
 
-CMD ["streamlit", "run", "dashboard/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
