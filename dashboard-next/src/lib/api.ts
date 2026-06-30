@@ -6,10 +6,19 @@ import type {
   PlanResponse,
 } from "./types";
 
-// In dev: NEXT_PUBLIC_API_URL is empty → relative URLs → next.config.ts rewrites to localhost:8000
-// In production (Vercel): set NEXT_PUBLIC_API_URL to the Cloudflare Tunnel URL (with no trailing slash)
-//   so the browser calls the tunnel directly, bypassing Vercel's serverless DNS restriction.
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
+// Browser calls the Cloudflare Tunnel URL directly to bypass Vercel's DNS restriction.
+// Resolution order:
+//  1. NEXT_PUBLIC_API_URL env var (set via Vercel dashboard, inlined at build time)
+//  2. Hardcoded tunnel URL (used on Vercel when env var is not set)
+//  3. Empty string / relative URL (local dev via next.config.ts rewrites)
+const TUNNEL_URL = "https://soa-excel-experimental-cities.trycloudflare.com";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || (
+  typeof window !== "undefined"
+    && window.location.hostname !== "localhost"
+    && window.location.hostname !== "127.0.0.1"
+    ? TUNNEL_URL
+    : ""
+);
 
 async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${url}`, {
