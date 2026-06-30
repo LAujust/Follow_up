@@ -6,10 +6,10 @@ import type {
   PlanResponse,
 } from "./types";
 
-// Uses relative URLs — Next.js rewrites proxy /api/* to the backend.
-// In dev: next.config.ts proxies to localhost:8000
-// In production (Vercel): set API_URL env var to the Render backend URL
-const API_BASE = "";
+// In dev: NEXT_PUBLIC_API_URL is empty → relative URLs → next.config.ts rewrites to localhost:8000
+// In production (Vercel): set NEXT_PUBLIC_API_URL to the Cloudflare Tunnel URL (with no trailing slash)
+//   so the browser calls the tunnel directly, bypassing Vercel's serverless DNS restriction.
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
 
 async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${url}`, {
