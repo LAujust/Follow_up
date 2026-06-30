@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Proxy API requests to the FastAPI backend.
-  // In dev: defaults to localhost:8000
-  // In production (Vercel): set API_URL env var to the Render backend URL
+  // Rewrites proxy /api/* to the FastAPI backend.
+  // In dev (NEXT_PUBLIC_API_URL is empty): rewrites to localhost:8000
+  // In production (NEXT_PUBLIC_API_URL set): rewrites are disabled;
+  //   the browser calls the Cloudflare Tunnel URL directly.
   async rewrites() {
+    if (process.env.NEXT_PUBLIC_API_URL) return [];
     const apiUrl = process.env.API_URL || "http://localhost:8000";
     return [
       {
