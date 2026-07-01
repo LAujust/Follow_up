@@ -7,7 +7,6 @@ const navItems = [
   { href: "/", label: "Overview" },
   { href: "/targets", label: "Targets" },
   { href: "/plans", label: "Lunar & Plans" },
-  { href: "/lightcurves", label: "Lightcurves" },
 ];
 
 export function Sidebar() {

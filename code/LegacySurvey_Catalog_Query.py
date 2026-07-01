@@ -4,10 +4,10 @@ import pandas as pd
 import pyvo
 
 # Example input parameters
-RA = 149.9025  # degrees
-Dec = -3.3073   # degrees
+RA = 328.2690235  # degrees
+Dec = 12.7918203   # degrees
 err = 250          # arcsec search radius
-PATH = "/home/liangrd/optical_data/EP260131a"        # directory to save CSV
+PATH = "/home/liangrd/optical_data/EP260623a"        # directory to save CSV
 
 # Connect to the NOIRLab TAP service
 tap = pyvo.dal.TAPService("https://datalab.noirlab.edu/tap")

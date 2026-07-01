@@ -92,24 +92,3 @@ export interface PlanResponse {
   };
 }
 
-export interface LightcurveRecord {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-}
-
-export interface LightcurveResponse {
-  target: string;
-  data: LightcurveRecord[];
-  bands: string[];
-  telescopes: string[];
-  status: string;
-}
-
-export interface LightcurveTarget {
-  target: string;
-  source: string;
-}
-
-export interface LightcurveListResponse {
-  targets: LightcurveTarget[];
-}

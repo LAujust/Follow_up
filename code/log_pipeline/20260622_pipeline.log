@@ -1,0 +1,91 @@
+Killed
+Killed
+Processing target=EP251212a RA=134.049 Dec=-23.2997 (o_pos=False)
+Processing target=EP251214b RA=144.388 Dec=-22.872 (o_pos=False)
+Processing target=EP251220a RA=17.31915 Dec=19.09231 (o_pos=True)
+Processing target=EP251221a RA=104.531 Dec=23.374 (o_pos=False)
+Processing target=EP251222a RA=62.5025 Dec=-1.4792 (o_pos=True)
+Processing target=EP251229a RA=124.1027 Dec=37.2068 (o_pos=False)
+Processing target=EP260101a RA=46.0605 Dec=39.438 (o_pos=False)
+Processing target=EP260104a RA=178.531 Dec=16.486 (o_pos=False)
+Processing target=EP260105a RA=181.0158 Dec=22.7089 (o_pos=False)
+Processing target=EP260105b RA=158.3695 Dec=17.6123 (o_pos=False)
+Processing target=EP260110a RA=199.4371 Dec=65.8476 (o_pos=False)
+Processing target=EP260116a RA=113.7617 Dec=6.3244 (o_pos=False)
+Processing target=EP260119a RA=158.1018 Dec=65.4956 (o_pos=True)
+Processing target=EP260126a RA=103.7542083 Dec=37.70518889 (o_pos=True)
+Processing target=EP260128a RA=128.3233 Dec=-10.2767 (o_pos=False)
+Processing target=WXT J031644+08316 RA=172.543 Dec=-39.765 (o_pos=False)
+Processing target=1RXSJ052540.6+425139 RA=81.419 Dec=42.861 (o_pos=False)
+Processing target=WXT J001838+115903 RA=4.658 Dec=11.984 (o_pos=False)
+Processing target=WXT J030902+581637 RA=47.261 Dec=58.258 (o_pos=False)
+Processing target=EP J0619.5+0602 RA=94.916 Dec=6.028 (o_pos=False)
+Processing target=EP260131a RA=149.9025 Dec=-3.3073 (o_pos=True)
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new/0210_r_stack.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0210_r_stack/0210_r_stack_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0210_r_stack/0210_r_stack_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.r-SDSS.61082.29130966435.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.r-SDSS.61082.29492050926.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.r-SDSS.61082.29853071759.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.r-SDSS.61082.30214167824.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris/0210_r_restored.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0210_r_restored/0210_r_restored_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0210_r_restored/0210_r_restored_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.r-SDSS.61082.30575351852.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/SOAR/coadd_SOAR_r_20260211T070953.115.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new/0210_i_stack.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0210_i_stack/0210_i_stack_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0210_i_stack/0210_i_stack_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.i-SDSS.61082.31141592593.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.i-SDSS.61082.315027847224.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris/0210_i_restored.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0210_i_restored/0210_i_restored_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0210_i_restored/0210_i_restored_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.i-SDSS.61082.318640798614.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.i-SDSS.61082.32225287037.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/ep260131a.i-SDSS.61082.32586564815.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/SOAR/coadd_SOAR_i_20260211T073600.314.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new/0216_i_stack.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0216_i_stack/0216_i_stack_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0216_i_stack/0216_i_stack_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris/0216_i_restored.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0216_i_restored/0216_i_restored_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0216_i_restored/0216_i_restored_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/SOAR/coadd_SOAR_i_20260217T040754.637.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new/0216_r_stack.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0216_r_stack/0216_r_stack_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0216_r_stack/0216_r_stack_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris/0216_r_restored.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0216_r_restored/0216_r_restored_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0216_r_restored/0216_r_restored_APT.weight.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/SOAR/coadd_SOAR_r_20260217T045649.208.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new/0227_i_stack.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0227_i_stack/0227_i_stack_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0227_i_stack/0227_i_stack_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0276_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0277_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0278_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0279_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0280_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0281_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0282_ep260131a_Feb27_28-02-2026.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris/0227_i_restored.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0227_i_restored/0227_i_restored_APT.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0227_i_restored/0227_i_restored_APT.weight.fits
+[OK] Loaded /home/liangrd/optical_data/EP260131a/SOAR/r_0283_ep260131a_Feb27_28-02-2026.fits
+Reprojecting and coadding images...
+[DONE] Saved stacked image to /home/liangrd/optical_data/EP260131a/pipeline/SOAR/coadd_SOAR_i_20260228T015703.335.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0227_i_stack/PSF_model_image_0227_i_stack_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0216_i_stack/PSF_model_image_0216_i_stack_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0210_i_stack/PSF_model_image_0210_i_stack_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0227_i_restored/PSF_model_image_0227_i_restored_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0216_i_restored/PSF_model_image_0216_i_restored_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0210_i_restored/PSF_model_image_0210_i_restored_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0216_r_stack/PSF_model_image_0216_r_stack_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/coadd_new_REDUCED/0210_r_stack/PSF_model_image_0210_r_stack_APT.fits
+[SKIP] No valid celestial WCS found in /home/liangrd/optical_data/EP260131a/SOAR/asteris_REDUCED/0216_r_restored/PSF_model_image_0216_r_restored_APT.fitsKilled
+Killed

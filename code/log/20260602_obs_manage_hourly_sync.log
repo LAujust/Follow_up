@@ -86,3 +86,103 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'lark-cli'
 sync exit: 1
 === Tue Jun  2 03:00:02 AM UTC 2026 UTC done ===
+=== Tue Jun  2 04:00:01 AM UTC 2026 UTC ===
+2026-06-02 04:00:01,702 [INFO] Fetching cloud sheet …
+2026-06-02 04:00:02,647 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 04:00:02 AM UTC 2026 UTC done ===
+=== Tue Jun  2 05:00:01 AM UTC 2026 UTC ===
+2026-06-02 05:00:02,523 [INFO] Fetching cloud sheet …
+2026-06-02 05:00:03,262 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 05:00:03 AM UTC 2026 UTC done ===
+=== Tue Jun  2 06:00:01 AM UTC 2026 UTC ===
+2026-06-02 06:00:02,832 [INFO] Fetching cloud sheet …
+2026-06-02 06:00:04,034 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 06:00:04 AM UTC 2026 UTC done ===
+=== Tue Jun  2 07:00:02 AM UTC 2026 UTC ===
+2026-06-02 07:00:02,575 [INFO] Fetching cloud sheet …
+2026-06-02 07:00:03,415 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 07:00:03 AM UTC 2026 UTC done ===
+=== Tue Jun  2 08:00:01 AM UTC 2026 UTC ===
+2026-06-02 08:00:01,906 [INFO] Fetching cloud sheet …
+2026-06-02 08:00:03,572 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 08:00:03 AM UTC 2026 UTC done ===
+=== Tue Jun  2 09:00:01 AM UTC 2026 UTC ===
+2026-06-02 09:00:02,023 [INFO] Fetching cloud sheet …
+2026-06-02 09:00:02,818 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 09:00:02 AM UTC 2026 UTC done ===
+=== Tue Jun  2 10:00:01 AM UTC 2026 UTC ===
+2026-06-02 10:00:02,336 [INFO] Fetching cloud sheet …
+2026-06-02 10:00:03,753 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 10:00:03 AM UTC 2026 UTC done ===
+=== Tue Jun  2 11:00:01 AM UTC 2026 UTC ===
+2026-06-02 11:00:02,265 [INFO] Fetching cloud sheet …
+2026-06-02 11:00:02,974 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 11:00:03 AM UTC 2026 UTC done ===
+=== Tue Jun  2 12:00:01 PM UTC 2026 UTC ===
+2026-06-02 12:00:03,390 [INFO] Fetching cloud sheet …
+2026-06-02 12:00:04,425 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 12:00:04 PM UTC 2026 UTC done ===
+=== Tue Jun  2 01:00:01 PM UTC 2026 UTC ===
+2026-06-02 13:00:01,971 [INFO] Fetching cloud sheet …
+2026-06-02 13:00:02,650 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 01:00:02 PM UTC 2026 UTC done ===
+=== Tue Jun  2 02:00:01 PM UTC 2026 UTC ===
+2026-06-02 14:00:01,781 [INFO] Fetching cloud sheet …
+2026-06-02 14:00:03,146 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 02:00:03 PM UTC 2026 UTC done ===
+=== Tue Jun  2 03:00:01 PM UTC 2026 UTC ===
+2026-06-02 15:00:01,657 [INFO] Fetching cloud sheet …
+2026-06-02 15:00:02,425 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 03:00:02 PM UTC 2026 UTC done ===
+=== Tue Jun  2 04:00:01 PM UTC 2026 UTC ===
+2026-06-02 16:00:02,056 [INFO] Fetching cloud sheet …
+2026-06-02 16:00:02,822 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 04:00:02 PM UTC 2026 UTC done ===
+=== Tue Jun  2 05:00:01 PM UTC 2026 UTC ===
+2026-06-02 17:00:02,297 [INFO] Fetching cloud sheet …
+2026-06-02 17:00:03,051 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 05:00:03 PM UTC 2026 UTC done ===
+=== Tue Jun  2 06:00:01 PM UTC 2026 UTC ===
+2026-06-02 18:00:03,092 [INFO] Fetching cloud sheet …
+2026-06-02 18:00:04,056 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 06:00:04 PM UTC 2026 UTC done ===
+=== Tue Jun  2 07:00:01 PM UTC 2026 UTC ===
+2026-06-02 19:00:01,685 [INFO] Fetching cloud sheet …
+2026-06-02 19:00:02,401 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 07:00:02 PM UTC 2026 UTC done ===
+=== Tue Jun  2 08:00:01 PM UTC 2026 UTC ===
+2026-06-02 20:00:02,057 [INFO] Fetching cloud sheet …
+2026-06-02 20:00:02,969 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 08:00:03 PM UTC 2026 UTC done ===
+=== Tue Jun  2 09:00:01 PM UTC 2026 UTC ===
+2026-06-02 21:00:02,514 [INFO] Fetching cloud sheet …
+2026-06-02 21:00:03,159 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 09:00:03 PM UTC 2026 UTC done ===
+=== Tue Jun  2 10:00:01 PM UTC 2026 UTC ===
+2026-06-02 22:00:01,725 [INFO] Fetching cloud sheet …
+2026-06-02 22:00:02,495 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 10:00:02 PM UTC 2026 UTC done ===
+=== Tue Jun  2 11:00:01 PM UTC 2026 UTC ===
+2026-06-02 23:00:03,118 [INFO] Fetching cloud sheet …
+2026-06-02 23:00:04,035 [INFO] Synced 56 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Tue Jun  2 11:00:04 PM UTC 2026 UTC done ===

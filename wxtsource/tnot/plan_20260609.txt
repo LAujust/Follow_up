@@ -1,0 +1,7 @@
+#dir EP2025
+#Filter rp
+#Binning 1
+#Count 6
+#Interval 300
+
+EP260321a	09:59:42.89	+00:25:03.72

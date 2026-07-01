@@ -31,6 +31,8 @@ import numpy as np
 import pandas as pd
 from astropy.coordinates import AltAz, EarthLocation, SkyCoord, get_body
 from astropy.time import Time
+from astropy.utils.iers import conf as iers_conf
+iers_conf.auto_max_age = None  # Allow IERS data older than 30 days
 
 # ── paths ────────────────────────────────────────────────────────────
 FOLLOWUP_ROOT = Path("/home/liangrd/Follow_up")
@@ -467,12 +469,11 @@ def format_report(df: pd.DataFrame, obs_time: Time) -> str:
 
 def push_report(text: str) -> None:
     """Send a message to the Feishu group chat via lark-cli."""
-    # We use --as bot for reliable group-chat sending
+    # Use --markdown for rich post formatting (better than plain --text)
     _run_lark_cli(
         "im", "+messages-send",
-        "--as", "bot",
         "--chat-id", FEISHU_GROUP_CHAT_ID,
-        "--text", text,
+        "--markdown", text,
     )
     log.info("Report pushed to group chat %s", FEISHU_GROUP_CHAT_ID)
 
@@ -527,11 +528,11 @@ def main() -> None:
             df = filter_observable_targets(obs_time)
             report = format_report(df, obs_time)
 
-            if args.dry_run or args.no_push:
-                print(report)
-            else:
+            print(report)
+            if not (args.dry_run or args.no_push):
+                # Legacy push via lark-cli (no longer used in cron;
+                # card push is handled by obs_manage_push.sh / obs_assistant agent)
                 push_report(report)
-                print(report)
 
     except Exception:
         log.exception("Pipeline failed")

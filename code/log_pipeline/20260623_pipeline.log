@@ -1,0 +1,233 @@
+Killed
+Killed
+Processing target=EP251212a RA=134.049 Dec=-23.2997 (o_pos=False)
+Processing target=EP251214b RA=144.388 Dec=-22.872 (o_pos=False)
+Processing target=EP251220a RA=17.31915 Dec=19.09231 (o_pos=True)
+Processing target=EP251221a RA=104.531 Dec=23.374 (o_pos=False)
+Processing target=EP251222a RA=62.5025 Dec=-1.4792 (o_pos=True)
+Processing target=EP251229a RA=124.1027 Dec=37.2068 (o_pos=False)
+Processing target=EP260101a RA=46.0605 Dec=39.438 (o_pos=False)
+Processing target=EP260104a RA=178.531 Dec=16.486 (o_pos=False)
+Processing target=EP260105a RA=181.0158 Dec=22.7089 (o_pos=False)
+Processing target=EP260105b RA=158.3695 Dec=17.6123 (o_pos=False)
+Processing target=EP260110a RA=199.4371 Dec=65.8476 (o_pos=False)
+Processing target=EP260116a RA=113.7617 Dec=6.3244 (o_pos=False)
+Processing target=EP260119a RA=158.1018 Dec=65.4956 (o_pos=True)
+Processing target=EP260126a RA=103.7542083 Dec=37.70518889 (o_pos=True)
+Processing target=EP260128a RA=128.3233 Dec=-10.2767 (o_pos=False)
+Processing target=WXT J031644+08316 RA=172.543 Dec=-39.765 (o_pos=False)
+Processing target=1RXSJ052540.6+425139 RA=81.419 Dec=42.861 (o_pos=False)
+Processing target=WXT J001838+115903 RA=4.658 Dec=11.984 (o_pos=False)
+Processing target=WXT J030902+581637 RA=47.261 Dec=58.258 (o_pos=False)
+Processing target=EP J0619.5+0602 RA=94.916 Dec=6.028 (o_pos=False)
+Processing target=EP260131a RA=149.9025 Dec=-3.3073 (o_pos=True)
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 99
+
+Zeropoint = 28.638 ± 0.184  (N=87)
+Doing Forced Photometry
+3-sigma upper limit (g) = 25.095
+Target mag = 24.673 ± 0.224
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 100
+
+Zeropoint = 28.664 ± 0.135  (N=77)
+Aperture magnitude = 24.619 ± 0.187
+3-sigma upper limit (g) = 25.120
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 99
+
+Zeropoint = 28.638 ± 0.184  (N=87)
+Doing Forced Photometry
+3-sigma upper limit (g) = 25.095
+Target mag = 24.673 ± 0.224
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 100
+
+Zeropoint = 28.664 ± 0.135  (N=77)
+Aperture magnitude = 24.619 ± 0.187
+3-sigma upper limit (g) = 25.120
+Image and WCS loaded successfully.
+Matched stars before filtering: 153
+After saturation filtering: 138
+
+Zeropoint = 28.336 ± 0.173  (N=128)
+Doing Forced Photometry
+3-sigma upper limit (r) = 24.736
+Target mag = 23.781 ± 0.190
+Image and WCS loaded successfully.
+Matched stars before filtering: 153
+After saturation filtering: 139
+
+Zeropoint = 28.382 ± 0.113  (N=102)
+Aperture magnitude = 23.743 ± 0.137
+3-sigma upper limit (r) = 24.782
+Image and WCS loaded successfully.
+Matched stars before filtering: 156
+After saturation filtering: 139
+
+Zeropoint = 28.372 ± 0.200  (N=131)
+Doing Forced Photometry
+3-sigma upper limit (r) = 24.641
+Target mag = 24.157 ± 0.234
+Image and WCS loaded successfully.
+Matched stars before filtering: 156
+After saturation filtering: 140
+
+Zeropoint = 28.390 ± 0.161  (N=118)
+Aperture magnitude = 24.032 ± 0.197
+3-sigma upper limit (r) = 24.659
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 99
+
+Zeropoint = 28.642 ± 0.174  (N=87)
+Doing Forced Photometry
+3-sigma upper limit (g) = 25.252
+Target mag = 24.681 ± 0.206
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 100
+
+Zeropoint = 28.667 ± 0.133  (N=77)
+Aperture magnitude = 24.618 ± 0.173
+3-sigma upper limit (g) = 25.276
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 99
+
+Zeropoint = 28.642 ± 0.174  (N=87)
+Doing Forced Photometry
+3-sigma upper limit (g) = 25.252
+Target mag = 24.681 ± 0.206
+Image and WCS loaded successfully.
+Matched stars before filtering: 139
+After saturation filtering: 100
+
+Zeropoint = 28.667 ± 0.133  (N=77)
+Aperture magnitude = 24.618 ± 0.173
+3-sigma upper limit (g) = 25.276
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Matched stars before filtering: 153
+After saturation filtering: 138
+
+Zeropoint = 28.335 ± 0.173  (N=128)
+Doing Forced Photometry
+3-sigma upper limit (r) = 24.808
+Target mag = 23.786 ± 0.188
+Image and WCS loaded successfully.
+Matched stars before filtering: 153
+After saturation filtering: 139
+
+Zeropoint = 28.382 ± 0.113  (N=102)
+Aperture magnitude = 23.745 ± 0.134
+3-sigma upper limit (r) = 24.855
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Matched stars before filtering: 156
+After saturation filtering: 139
+
+Zeropoint = 28.367 ± 0.200  (N=131)
+Doing Forced Photometry
+3-sigma upper limit (r) = 24.678
+Target mag = 24.156 ± 0.232
+Image and WCS loaded successfully.
+Matched stars before filtering: 156
+After saturation filtering: 140
+
+Zeropoint = 28.390 ± 0.161  (N=117)
+Aperture magnitude = 24.030 ± 0.195
+3-sigma upper limit (r) = 24.700
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Matched stars before filtering: 79
+After saturation filtering: 68
+
+Zeropoint = 28.313 ± 0.119  (N=59)
+Doing Forced Photometry
+3-sigma upper limit (g) = 26.528
+Target mag = 24.401 ± 0.122
+Image and WCS loaded successfully.
+Matched stars before filtering: 79
+After saturation filtering: 68
+
+Zeropoint = 28.356 ± 0.054  (N=43)
+Aperture magnitude = 24.385 ± 0.061
+3-sigma upper limit (g) = 26.571
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 132
+
+Zeropoint = 28.079 ± 0.186  (N=121)
+Doing Forced Photometry
+3-sigma upper limit (r) = 25.946
+Target mag = 23.799 ± 0.188
+Image and WCS loaded successfully.
+Matched stars before filtering: 138
+After saturation filtering: 133
+
+Zeropoint = 28.135 ± 0.079  (N=85)
+Aperture magnitude = 23.810 ± 0.083
+3-sigma upper limit (r) = 26.002
+Image and WCS loaded successfully.
+Matched stars before filtering: 97
+After saturation filtering: 83
+
+Zeropoint = 28.454 ± 0.113  (N=73)
+Doing Forced Photometry
+3-sigma upper limit (g) = 26.230
+Target mag = 23.685 ± 0.115
+Image and WCS loaded successfully.
+Matched stars before filtering: 97
+After saturation filtering: 84
+
+Zeropoint = 28.472 ± 0.073  (N=63)
+Aperture magnitude = 23.467 ± 0.074
+3-sigma upper limit (g) = 26.247
+Image and WCS loaded successfully.
+Matched stars before filtering: 115
+After saturation filtering: 107
+
+Zeropoint = 28.219 ± 0.151  (N=100)
+Doing Forced Photometry
+3-sigma upper limit (r) = 26.326
+Target mag = 23.241 ± 0.151
+Image and WCS loaded successfully.
+Matched stars before filtering: 115
+After saturation filtering: 108
+
+Zeropoint = 28.287 ± 0.069  (N=68)
+Aperture magnitude = 23.071 ± 0.070
+3-sigma upper limit (r) = 26.395
+Image and WCS loaded successfully.
+Image and WCS loaded successfully.
+Processing target=EP260209a RA=159.6858 Dec=28.3113 (o_pos=False)
+Processing target=EP260210a RA=169.8297 Dec=45.3929 (o_pos=False)
+Processing target=EP260213a RA=167.0083 Dec=3.9451 (o_pos=False)
+Processing target=EP260214a RA=201.2305 Dec=-29.0431 (o_pos=False)
+Processing target=EP260214b RA=191.2582 Dec=23.8536 (o_pos=True)
+Processing target=EP260221a RA=178.7551 Dec=-20.9827 (o_pos=True)
+Processing target=EP260223a RA=92.774 Dec=56.577 (o_pos=False)
+Processing target=EP260224a RA=175.2 Dec=-41.415 (o_pos=False)
+Processing target=EP260227a RA=223.08309 Dec=-11.40664 (o_pos=True)
+Processing target=EP260302a RA=132.9739 Dec=-65.9837 (o_pos=True)
+Processing target=EP260306a RA=145.949 Dec=15.6937 (o_pos=True)
+Processing target=EP260314a RA=211.842259 Dec=-23.457728 (o_pos=True)
+Processing target=EP260316a RA=226.98176 Dec=27.4483 (o_pos=True)
+Processing target=EP260308a RA=170.742 Dec=44.283 (o_pos=False)
+Processing target=EP260321a RA=149.928704 Dec=0.418445 (o_pos=True)
+Processing target=EP260322a RA=255.5573 Dec=17.2089 (o_pos=False)
+Processing target=EP260324a RA=131.0515692 Dec=82.0198219 (o_pos=True)
+Processing target=EP260327a RA=215.3746 Dec=42.1396 (o_pos=False)
+Processing target=EP260329a RA=5.459 Dec=82.513 (o_pos=False)Killed
+Killed

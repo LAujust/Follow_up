@@ -1,0 +1,15 @@
+=== Wed Jul  1 12:00:01 AM UTC 2026 UTC ===
+2026-07-01 00:00:02,947 [INFO] Fetching cloud sheet …
+2026-07-01 00:00:03,672 [INFO] Synced 68 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Wed Jul  1 12:00:03 AM UTC 2026 UTC done ===
+=== Wed Jul  1 01:00:01 AM UTC 2026 UTC ===
+2026-07-01 01:00:02,516 [INFO] Fetching cloud sheet …
+2026-07-01 01:00:03,148 [INFO] Synced 68 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Wed Jul  1 01:00:03 AM UTC 2026 UTC done ===
+=== Wed Jul  1 02:00:01 AM UTC 2026 UTC ===
+2026-07-01 02:00:02,147 [INFO] Fetching cloud sheet …
+2026-07-01 02:00:03,124 [INFO] Synced 68 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+=== Wed Jul  1 02:00:03 AM UTC 2026 UTC done ===

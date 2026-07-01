@@ -165,6 +165,8 @@ def _scan_raw_fits(telescope_dir: Path, pipeline_name: str) -> list[Path]:
             continue
         if low.startswith("._"):
             continue
+        if "APT" in low:
+            continue
         files.append(p)
     return sorted(files)
 

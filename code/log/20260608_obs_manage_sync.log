@@ -1,0 +1,7 @@
+=== Mon Jun  8 07:20:01 AM UTC 2026 === obs_manage sync run ===
+2026-06-08 07:20:01,558 [INFO] Fetching cloud sheet …
+2026-06-08 07:20:02,320 [INFO] Synced 60 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+filter exit: 0
+report written to: /tmp/obs_report_20260608.md
+=== Mon Jun  8 07:20:04 AM UTC 2026 done ===

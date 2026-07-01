@@ -17,11 +17,14 @@ REPORT_FILE="/tmp/obs_report_$(date +%Y%m%d).md"
         /home/liangrd/Follow_up/code/obs_manage.py --sync
     echo "sync exit: $?"
 
-    # Step 2: filter + generate report
+    # Step 2: filter + generate report (suppress noisy astropy warnings)
     /home/liangrd/anaconda3/envs/autophot/bin/python \
-        /home/liangrd/Follow_up/code/obs_manage.py --filter --no-push > "$REPORT_FILE" 2>/dev/null
+        -W ignore::astropy.coordinates.NonRotationTransformationWarning \
+        /home/liangrd/Follow_up/code/obs_manage.py --filter --no-push > "$REPORT_FILE" 2>> "$LOGFILE"
     echo "filter exit: $?"
     echo "report written to: $REPORT_FILE"
+    echo "=== report content ($(wc -l < "$REPORT_FILE") lines) ==="
+    head -5 "$REPORT_FILE"
 
     echo "=== $(date) done ==="
 } >> "$LOGFILE" 2>&1

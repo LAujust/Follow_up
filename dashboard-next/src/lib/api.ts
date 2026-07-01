@@ -1,7 +1,5 @@
 import type {
   DashboardData,
-  LightcurveListResponse,
-  LightcurveResponse,
   LunarCurveResponse,
   PlanResponse,
 } from "./types";
@@ -70,12 +68,4 @@ export async function getPlans(params: {
     method: "POST",
     body: JSON.stringify(params),
   });
-}
-
-export async function getLightcurveList(): Promise<LightcurveListResponse> {
-  return fetchJSON<LightcurveListResponse>("/api/lightcurve");
-}
-
-export async function getLightcurve(target: string): Promise<LightcurveResponse> {
-  return fetchJSON<LightcurveResponse>(`/api/lightcurve/${encodeURIComponent(target)}`);
 }

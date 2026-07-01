@@ -2,6 +2,8 @@
 # obs_manage_hourly_sync.sh — 每小时将云文档 Targets 表格同步到 Candidates.csv
 # Scheduled: 0 * * * * (UTC, 每小时整点)
 
+export PATH="/home/liangrd/.nvm/versions/node/v24.13.1/bin:$PATH"
+
 LOG_DIR="/home/liangrd/Follow_up/code/log"
 mkdir -p "$LOG_DIR"
 LOGFILE="$LOG_DIR/$(date +%Y%m%d)_obs_manage_hourly_sync.log"

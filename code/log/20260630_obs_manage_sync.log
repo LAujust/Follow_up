@@ -1,0 +1,46 @@
+=== Tue Jun 30 07:20:01 AM UTC 2026 === obs_manage sync run ===
+2026-06-30 07:20:02,054 [INFO] Fetching cloud sheet …
+2026-06-30 07:20:02,740 [INFO] Synced 68 rows to /home/liangrd/Follow_up/Candidates.csv
+sync exit: 0
+Invalid -W option ignored: invalid module name: 'astropy.coordinates'
+2026-06-30 07:20:03,345 [INFO] Filtering for observation time: 2026-06-30 07:30:00.000
+WARNING: NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-06-30 07:20:03.350051, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation. [astropy.coordinates.baseframe]
+2026-06-30 07:20:03,370 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=2026-06-30 07:20:03.350051, obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+WARNING: NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 6, 30, 7, 20, 3, 350051)
+ datetime.datetime(2026, 6, 30, 13, 20, 3, 350051)
+ datetime.datetime(2026, 6, 30, 19, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 1, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 7, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 13, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 19, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 1, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 7, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 13, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 19, 20, 3, 350051)
+ datetime.datetime(2026, 7, 3, 1, 20, 3, 350051)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation. [astropy.coordinates.baseframe]
+2026-06-30 07:20:03,376 [WARNING] NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=[datetime.datetime(2026, 6, 30, 7, 20, 3, 350051)
+ datetime.datetime(2026, 6, 30, 13, 20, 3, 350051)
+ datetime.datetime(2026, 6, 30, 19, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 1, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 7, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 13, 20, 3, 350051)
+ datetime.datetime(2026, 7, 1, 19, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 1, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 7, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 13, 20, 3, 350051)
+ datetime.datetime(2026, 7, 2, 19, 20, 3, 350051)
+ datetime.datetime(2026, 7, 3, 1, 20, 3, 350051)], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+/home/liangrd/anaconda3/envs/autophot/lib/python3.11/site-packages/erfa/core.py:4620: RuntimeWarning: invalid value encountered in ld
+  p1 = ufunc.ld(bm, p, q, e, em, dlim)
+2026-06-30 07:20:04,067 [INFO] Dropped 4 targets (Lunar_Min_Distance < 30.0°)
+2026-06-30 07:20:04,699 [INFO] Dropped 2 targets (night max elevation < 50.0° across all sites)
+2026-06-30 07:20:04,726 [INFO] Final observable targets: 9
+filter exit: 0
+report written to: /tmp/obs_report_20260630.md
+=== report content (22 lines) ===
+🔭 **Observable Targets Report**
+
+📅 2026-06-30 15:30 (北京时间)
+
+🌙 月相: 99.8%  |  月距阈值: 30.0°  |  夜间最大高度角阈值: 50.0°  (18:00→06:00 BJT)
+=== Tue Jun 30 07:20:04 AM UTC 2026 done ===

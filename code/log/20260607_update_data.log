@@ -1,0 +1,972 @@
+      raj2000    dej2000   object_id  ...  e_i_psf      z_psf  e_z_psf
+0  298.952588 -48.537177   480799158  ...   0.0081  16.776400   0.0093
+1  298.961893 -48.550652   480799159  ...   0.0053  12.807600   0.0066
+2  298.974132 -48.557398   480799162  ...   0.0126  17.625401   0.0148
+3  298.975618 -48.561971  1584538453  ...   0.0653        NaN      NaN
+4  298.970351 -48.540340  1584538554  ...      NaN        NaN      NaN
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260518a/skymapper.csv
+      raj2000    dej2000  object_id  ...  e_i_psf      z_psf  e_z_psf
+0  134.612952 -75.772272  461342512  ...   0.0194  18.788300   0.0282
+1  134.585731 -75.767256  461342513  ...   0.0217  18.920000   0.0661
+2  134.579224 -75.772678  461342520  ...   0.0191  18.834801   0.0920
+3  134.576523 -75.766859  461342544  ...   0.0889  18.509199   0.0617
+4  134.594338 -75.669000  461342584  ...   0.0211  18.518200   0.0182
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260602c/skymapper.csv
+===============================================
+Updating Data: 2026-06-07 04:04:40.474
+===============================================
+Found 17 remote files.
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251212/stack_WXTJ043559-012325_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ043559-012325/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260131a/TNOT/stack_EP260131a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251219/stack_EPJ0619.5+0606_rp_wcs.fits': 
+/home/liangrd/optical_data/EPJ0619.5+0606/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_RXSJ052540.6+425139_rp_wcs.fits': 
+/home/liangrd/optical_data/RXSJ052540.6+425139/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_WXTJ031644+08d316_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ031644+08d316/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ032216+233553_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ032216+233553/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ110746+454221_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ110746+454221/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251221a/TNOT/stack_EP251221a_rp_wcs.fits
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260209a/TNOT/stack_EP260209a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251211/stack_WXTJ2_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ2/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213_Li/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20260109/stack_WXT_J030902+581637_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251214/stack_EP20251214a_rp_wcs.fits': 
+/home/liangrd/optical_data/EP20251214a/TNOT
+🔍 Querying remote Sitian files...
+❌ Failed to list remote files
+ssh: connect to host www.xinglong-naoc.cn port 20210: Connection timed out
+
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 38, in <module>
+    show_cumulative_observations()
+  File "/home/liangrd/Follow_up/code/utils.py", line 1317, in show_cumulative_observations
+    candidates['Obs Time'] = pd.to_datetime(candidates['Obs Time'])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 1067, in to_datetime
+    values = convert_listlike(arg._values, format)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2026-05-14T16:56:06" doesn't match format "%Y-%m-%d %H:%M:%S", at position 51. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+      raj2000    dej2000   object_id  ...  e_i_psf      z_psf  e_z_psf
+0  298.952588 -48.537177   480799158  ...   0.0081  16.776400   0.0093
+1  298.961893 -48.550652   480799159  ...   0.0053  12.807600   0.0066
+2  298.974132 -48.557398   480799162  ...   0.0126  17.625401   0.0148
+3  298.975618 -48.561971  1584538453  ...   0.0653        NaN      NaN
+4  298.970351 -48.540340  1584538554  ...      NaN        NaN      NaN
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260518a/skymapper.csv
+      raj2000    dej2000  object_id  ...  e_i_psf      z_psf  e_z_psf
+0  134.612952 -75.772272  461342512  ...   0.0194  18.788300   0.0282
+1  134.585731 -75.767256  461342513  ...   0.0217  18.920000   0.0661
+2  134.579224 -75.772678  461342520  ...   0.0191  18.834801   0.0920
+3  134.576523 -75.766859  461342544  ...   0.0889  18.509199   0.0617
+4  134.594338 -75.669000  461342584  ...   0.0211  18.518200   0.0182
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260602c/skymapper.csv
+===============================================
+Updating Data: 2026-06-07 10:04:38.697
+===============================================
+Found 17 remote files.
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251212/stack_WXTJ043559-012325_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ043559-012325/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260131a/TNOT/stack_EP260131a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251219/stack_EPJ0619.5+0606_rp_wcs.fits': 
+/home/liangrd/optical_data/EPJ0619.5+0606/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_RXSJ052540.6+425139_rp_wcs.fits': 
+/home/liangrd/optical_data/RXSJ052540.6+425139/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_WXTJ031644+08d316_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ031644+08d316/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ032216+233553_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ032216+233553/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ110746+454221_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ110746+454221/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251221a/TNOT/stack_EP251221a_rp_wcs.fits
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260209a/TNOT/stack_EP260209a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251211/stack_WXTJ2_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ2/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213_Li/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20260109/stack_WXT_J030902+581637_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251214/stack_EP20251214a_rp_wcs.fits': 
+/home/liangrd/optical_data/EP20251214a/TNOT
+🔍 Querying remote Sitian files...
+❌ Failed to list remote files
+ssh: connect to host www.xinglong-naoc.cn port 20210: Connection timed out
+
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 38, in <module>
+    show_cumulative_observations()
+  File "/home/liangrd/Follow_up/code/utils.py", line 1317, in show_cumulative_observations
+    candidates['Obs Time'] = pd.to_datetime(candidates['Obs Time'])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 1067, in to_datetime
+    values = convert_listlike(arg._values, format)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2026-05-14T16:56:06" doesn't match format "%Y-%m-%d %H:%M:%S", at position 51. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+      raj2000    dej2000   object_id  ...  e_i_psf      z_psf  e_z_psf
+0  298.952588 -48.537177   480799158  ...   0.0081  16.776400   0.0093
+1  298.961893 -48.550652   480799159  ...   0.0053  12.807600   0.0066
+2  298.974132 -48.557398   480799162  ...   0.0126  17.625401   0.0148
+3  298.975618 -48.561971  1584538453  ...   0.0653        NaN      NaN
+4  298.970351 -48.540340  1584538554  ...      NaN        NaN      NaN
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260518a/skymapper.csv
+      raj2000    dej2000  object_id  ...  e_i_psf      z_psf  e_z_psf
+0  134.612952 -75.772272  461342512  ...   0.0194  18.788300   0.0282
+1  134.585731 -75.767256  461342513  ...   0.0217  18.920000   0.0661
+2  134.579224 -75.772678  461342520  ...   0.0191  18.834801   0.0920
+3  134.576523 -75.766859  461342544  ...   0.0889  18.509199   0.0617
+4  134.594338 -75.669000  461342584  ...   0.0211  18.518200   0.0182
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260602c/skymapper.csv
+===============================================
+Updating Data: 2026-06-07 16:04:41.025
+===============================================
+Failed to list remote files: Connection closed by 119.78.162.172 port 5905
+
+🔍 Querying remote Sitian files...
+❌ Failed to list remote files
+ssh: connect to host www.xinglong-naoc.cn port 20210: Connection timed out
+
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 38, in <module>
+    show_cumulative_observations()
+  File "/home/liangrd/Follow_up/code/utils.py", line 1317, in show_cumulative_observations
+    candidates['Obs Time'] = pd.to_datetime(candidates['Obs Time'])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 1067, in to_datetime
+    values = convert_listlike(arg._values, format)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2026-05-14T16:56:06" doesn't match format "%Y-%m-%d %H:%M:%S", at position 51. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+      raj2000    dej2000   object_id  ...  e_i_psf      z_psf  e_z_psf
+0  298.952588 -48.537177   480799158  ...   0.0081  16.776400   0.0093
+1  298.961893 -48.550652   480799159  ...   0.0053  12.807600   0.0066
+2  298.974132 -48.557398   480799162  ...   0.0126  17.625401   0.0148
+3  298.975618 -48.561971  1584538453  ...   0.0653        NaN      NaN
+4  298.970351 -48.540340  1584538554  ...      NaN        NaN      NaN
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260518a/skymapper.csv
+      raj2000    dej2000  object_id  ...  e_i_psf      z_psf  e_z_psf
+0  134.612952 -75.772272  461342512  ...   0.0194  18.788300   0.0282
+1  134.585731 -75.767256  461342513  ...   0.0217  18.920000   0.0661
+2  134.579224 -75.772678  461342520  ...   0.0191  18.834801   0.0920
+3  134.576523 -75.766859  461342544  ...   0.0889  18.509199   0.0617
+4  134.594338 -75.669000  461342584  ...   0.0211  18.518200   0.0182
+
+[5 rows x 15 columns]
+Saved catalog to /home/liangrd/optical_data/EP260602c/skymapper.csv
+===============================================
+Updating Data: 2026-06-07 22:04:39.931
+===============================================
+Found 17 remote files.
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251212/stack_WXTJ043559-012325_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ043559-012325/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260131a/TNOT/stack_EP260131a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251219/stack_EPJ0619.5+0606_rp_wcs.fits': 
+/home/liangrd/optical_data/EPJ0619.5+0606/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_RXSJ052540.6+425139_rp_wcs.fits': 
+/home/liangrd/optical_data/RXSJ052540.6+425139/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251208/stack_WXTJ031644+08d316_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ031644+08d316/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ032216+233553_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ032216+233553/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251209/stack_WXTJ110746+454221_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ110746+454221/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251221a/TNOT/stack_EP251221a_rp_wcs.fits
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP260209a/TNOT/stack_EP260209a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251211/stack_WXTJ2_rp_wcs.fits': 
+/home/liangrd/optical_data/WXTJ2/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251213_Li/stack_WXT_J001838+115903_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20260109/stack_WXT_J030902+581637_rp_wcs.fits': 
+/home/liangrd/optical_data/WXT/TNOT
+[SKIP] File already exists: 
+/home/liangrd/optical_data/EP251222a/TNOT/stack_EP251222a_rp_wcs.fits
+[SKIP] Local directory does not exist for target 
+'/home/tnot/EP/20251214/stack_EP20251214a_rp_wcs.fits': 
+/home/liangrd/optical_data/EP20251214a/TNOT
+🔍 Querying remote Sitian files...
+❌ Failed to list remote files
+ssh: connect to host www.xinglong-naoc.cn port 20210: Connection timed out
+
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.png
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-30_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP251229a/sitian/2025-12-31_EP251229a_g_com_10.wcs.fi
+ts: buffer is too small for requested array
+[ERROR] 
+/home/liangrd/optical_data/EP260105a/WHUT/EP260105a_20260125_0013_i_wcs.fits: 
+'NoneType' object has no attribute 'get'
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_r.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/NOT/EP260131a_stack_z.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_r.fits
+[WARN] Unknown band in /home/liangrd/optical_data/EP260131a/VLT/stack_g.fits
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT/EP260131a_g_wcs_ultracam_20260215.fits
+[WARN] Unknown band in 
+/home/liangrd/optical_data/EP260131a/SOAR/cutout_Liang/SOAR_mode4_restored.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+15_bkg_sub/PSF_model_image_EP260131a_u_wcs_ultracam_20260215_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+20_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260220_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_u_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_u_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[WARN] No DATE-OBS in 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+15/EP260131a_g_wcs_ultracam_20260215_APT.fits
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+15/PSF_model_image_EP260131a_r_wcs_ultracam_20260215_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+19_bkg_sub/PSF_model_image_EP260131a_g_wcs_ultracam_20260219_bkg_sub_APT.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_g_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_g_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+19/PSF_model_image_EP260131a_r_wcs_ultracam_20260219_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+20/PSF_model_image_EP260131a_r_wcs_ultracam_20260220_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_u_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_u_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260131a/NTT_REDUCED/EP260131a_r_wcs_ultracam_202602
+22/PSF_model_image_EP260131a_r_wcs_ultracam_20260222_APT.fits: 'NoneType' object
+has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260324a/WHUT/EP260324a_20260328_0001_i.fits: 
+'NoneType' object has no attribute 'get'
+[ERROR] 
+/home/liangrd/optical_data/EP260329b/sitian/2026-04-20_EP260329b_g_com_10.wcs.fi
+ts: Empty or corrupt FITS file
+[ERROR] 
+/home/liangrd/optical_data/EP260518a/TRT_REDUCED/EP260518a_TRT_20260523_AUS_V_st
+ack_bgsub_reproject_wmean/PSF_model_image_EP260518a_TRT_20260523_AUS_V_stack_bgs
+ub_reproject_wmean_APT.fits: 'NoneType' object has no attribute 'get'
+[OK] Saved interactive figure to 
+/home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved:
+  - /home/liangrd/Follow_up/results/all_targets_timeline.csv
+  - /home/liangrd/Follow_up/results/all_targets_timeline.html
+[OK] Saved results to /home/liangrd/Follow_up/results/all_targets_meta.csv
+Traceback (most recent call last):
+  File "/home/liangrd/Follow_up/code/update_data.py", line 38, in <module>
+    show_cumulative_observations()
+  File "/home/liangrd/Follow_up/code/utils.py", line 1317, in show_cumulative_observations
+    candidates['Obs Time'] = pd.to_datetime(candidates['Obs Time'])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 1067, in to_datetime
+    values = convert_listlike(arg._values, format)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liangrd/epenv/lib/python3.12/site-packages/pandas/core/tools/datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2026-05-14T16:56:06" doesn't match format "%Y-%m-%d %H:%M:%S", at position 51. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.

@@ -20,9 +20,14 @@ from astropy.nddata import Cutout2D
 from astropy.wcs import WCS
 from astropy.visualization import ZScaleInterval, ImageNormalize, LinearStretch, HistEqStretch
 from psimage import *
+from photutils.background import Background2D, MedianBackground
+from photutils.segmentation import detect_threshold, detect_sources
+from photutils.utils import circular_footprint
+from astropy.stats import SigmaClip, sigma_clipped_stats
+from multiprocessing.pool import ThreadPool
 
 __all__ = ['read_image','generate_tnot_plan','generate_tnot_object_json','generate_sitian_plan',
-           'plot_lunar_distance','get_tnot_data','get_sitian_data',
+           'plot_lunar_distance','get_tnot_data','get_sitian_data',"bkg_remove",
            'check_source_dirs','fits_plot','show_shift','calculate_observation_stats',
            'show_obs_pies','show_cumulative_observations',"moon_phase","cutout_fits"]
 
@@ -705,6 +710,248 @@ def fits_plot(
     plt.show()
 
     return fig
+
+
+def bkg_remove(INPUT_DIR, OUTPUT_DIR):
+
+    # ==================================================
+    # 参数
+    # ==================================================
+    BOX_SIZE = 50
+    FILTER_SIZE = (3, 3)
+
+    SIGMA_CLIP = SigmaClip(
+        sigma=3.0,
+        maxiters=10
+    )
+
+    FOOTPRINT_RAD = 5
+    MIN_PIXELS = 10
+
+    N_PROCESSES = min(8, os.cpu_count())
+
+    DIAGNOSTIC = False
+
+    # ==================================================
+    # 输出目录
+    # ==================================================
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    # ==================================================
+    # 自然排序
+    # ==================================================
+    def natural_sort_key(s):
+        return [
+            int(t) if t.isdigit() else t.lower()
+            for t in re.split(r"(\d+)", s)
+        ]
+
+    # ==================================================
+    # 获取 FITS 文件
+    # ==================================================
+    fits_files = sorted(
+        [
+            f for f in os.listdir(INPUT_DIR)
+            if (
+                f.endswith(".fits")
+                and not f.startswith("._")
+                and os.path.isfile(os.path.join(INPUT_DIR, f))
+            )
+        ],
+        key=natural_sort_key
+    )
+
+    print(f"\n共发现 {len(fits_files)} 个 FITS 文件")
+
+    # ==================================================
+    # 单文件处理
+    # ==================================================
+    def process_file(fits_file):
+
+        try:
+
+            input_path = os.path.join(INPUT_DIR, fits_file)
+
+            output_path = os.path.join(
+                OUTPUT_DIR,
+                fits_file.replace(".fits", "_bkgsub.fits")
+            )
+
+            # ------------------------------------------
+            # 已存在则跳过
+            # ------------------------------------------
+            if os.path.exists(output_path):
+                print(f"⏩ 跳过: {fits_file}")
+                return
+
+            # ------------------------------------------
+            # 读取 FITS
+            # ------------------------------------------
+            with fits.open(input_path, memmap=True) as hdul:
+
+                data = None
+                header = None
+
+                for hdu in hdul:
+
+                    if (
+                        hdu.data is not None
+                        and hdu.data.ndim == 2
+                    ):
+                        data = hdu.data.astype(np.float32)
+                        header = hdu.header
+                        break
+
+                if data is None:
+                    print(f"⚠️ 无二维图像: {fits_file}")
+                    return
+
+            # ------------------------------------------
+            # 原始统计
+            # ------------------------------------------
+            mean, median, std = sigma_clipped_stats(
+                data,
+                sigma=3.0
+            )
+
+            print(
+                f"[{fits_file}] "
+                f"mean={mean:.3f} "
+                f"median={median:.3f} "
+                f"std={std:.3f}"
+            )
+
+            # ------------------------------------------
+            # 亮源 mask
+            # ------------------------------------------
+            try:
+
+                threshold = detect_threshold(
+                    data,
+                    nsigma=3.0,
+                    sigma_clip=SIGMA_CLIP
+                )
+
+                segment_img = detect_sources(
+                    data,
+                    threshold,
+                    npixels=MIN_PIXELS
+                )
+
+                if segment_img is not None:
+
+                    footprint = circular_footprint(
+                        radius=FOOTPRINT_RAD
+                    )
+
+                    source_mask = (
+                        segment_img.make_source_mask(
+                            footprint=footprint
+                        )
+                    )
+
+                else:
+
+                    source_mask = None
+
+            except Exception:
+
+                source_mask = None
+
+            # ------------------------------------------
+            # 背景估计
+            # ------------------------------------------
+            bkg = Background2D(
+                data,
+                box_size=(BOX_SIZE, BOX_SIZE),
+                filter_size=FILTER_SIZE,
+                sigma_clip=SIGMA_CLIP,
+                bkg_estimator=MedianBackground(),
+                mask=source_mask,
+                exclude_percentile=10
+            )
+
+            print(
+                f"[{fits_file}] "
+                f"bkg={bkg.background_median:.3f} "
+                f"rms={bkg.background_rms_median:.3f}"
+            )
+
+            # ------------------------------------------
+            # 背景扣除
+            # ------------------------------------------
+            data_bkgsub = data - bkg.background
+
+            # ------------------------------------------
+            # 保存
+            # ------------------------------------------
+            fits.PrimaryHDU(
+                data_bkgsub.astype(np.float32),
+                header=header
+            ).writeto(
+                output_path,
+                overwrite=True,
+                checksum=True
+            )
+
+            print(f"✅ 完成: {fits_file}")
+
+            # ------------------------------------------
+            # 诊断图
+            # ------------------------------------------
+            if DIAGNOSTIC:
+
+                fig, ax = plt.subplots(
+                    1,
+                    3,
+                    figsize=(12, 4)
+                )
+
+                ax[0].imshow(
+                    data,
+                    origin="lower"
+                )
+                ax[0].set_title("Original")
+
+                ax[1].imshow(
+                    bkg.background,
+                    origin="lower"
+                )
+                ax[1].set_title("Background")
+
+                ax[2].imshow(
+                    data_bkgsub,
+                    origin="lower"
+                )
+                ax[2].set_title("Subtracted")
+
+                plt.tight_layout()
+                plt.show()
+
+        except Exception as e:
+
+            print(
+                f"❌ 错误: {fits_file}\n"
+                f"   {repr(e)}"
+            )
+
+    # ==================================================
+    # 多进程
+    # ==================================================
+    print(
+        f"\n开始背景扣除 "
+        f"({N_PROCESSES} processes)"
+    )
+
+    with ThreadPool(N_PROCESSES) as pool:
+
+        for _ in pool.imap_unordered(
+            process_file,
+            fits_files
+        ):
+            pass
+
+    print("\n🎉 所有文件处理完成")
     
     
 def moon_phase(time):
@@ -865,6 +1112,11 @@ def show_shift(root, save_dir='./', source_dir='/home/liangrd/Follow_up/Candidat
         # print(fits_files)
 
         for f in fits_files:
+            #exclude reduced data
+            if 'APT' in f:
+                continue
+            if 'cutout' in f.lower():
+                continue
             try:
                 with fits.open(f) as hdul:
                     valid = False

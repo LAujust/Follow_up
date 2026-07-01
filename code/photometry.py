@@ -530,6 +530,7 @@ class Photometry:
         sigma_clip_val=3.0,
         sat_level=50000,        # ⭐ 新增：饱和阈值（ADU）
         cat_dir=None,
+        zp=None,
         plot_scale=30, #*fwhm
         path="./",
         fix_fwhm=True,
@@ -629,66 +630,71 @@ class Photometry:
         print(f"Matched stars before filtering: {len(matched_flux)}")
         print(f"After saturation filtering: {np.sum(good)}")
 
-        matched_mag_good = matched_mag[good]
-        zp_values = matched_mag[good] + 2.5 * np.log10(matched_flux[good])
+        if zp is None:
 
-        if len(zp_values) < 3:
-            raise RuntimeError("Too few stars after saturation filtering")
+            matched_mag_good = matched_mag[good]
+            zp_values = matched_mag[good] + 2.5 * np.log10(matched_flux[good])
 
-        # ==========================================================
-        # 4️⃣ Sigma clipping
-        # ==========================================================
-        zp_mean, zp_med, zp_std = sigma_clipped_stats(
-            zp_values,
-            sigma=sigma_clip_val
-        )
+            if len(zp_values) < 3:
+                raise RuntimeError("Too few stars after saturation filtering")
 
-        self.zp = zp_med
-        self.zp_std = zp_std
-        
-        zp_idx = np.where((zp_values > zp_med - sigma_clip_val * zp_std) &
-                          (zp_values < zp_med + sigma_clip_val * zp_std))[0]
-        zp_values = zp_values[zp_idx]
-        matched_mag_good = matched_mag_good[zp_idx]
+            # ==========================================================
+            # 4️⃣ Sigma clipping
+            # ==========================================================
+            zp_mean, zp_med, zp_std = sigma_clipped_stats(
+                zp_values,
+                sigma=sigma_clip_val
+            )
 
-        print(f"\nZeropoint = {zp_med:.3f} ± {zp_std:.3f}  (N={len(zp_values)})")
-        
-        # ==========================================================
-        # 3️⃣  DIAGNOSTIC PLOT
-        # ==========================================================
-        fig = plt.figure(figsize=(9,5),dpi=300)
-        axes = fig.add_gridspec(1, 2, wspace=0.05, width_ratios=[2, 1])
-        ax = axes.subplots()
-        # fig, ax = plt.subplots(1, 2, figsize=(8, 4))
+            self.zp = zp_med
+            self.zp_std = zp_std
+            
+            zp_idx = np.where((zp_values > zp_med - sigma_clip_val * zp_std) &
+                            (zp_values < zp_med + sigma_clip_val * zp_std))[0]
+            zp_values = zp_values[zp_idx]
+            matched_mag_good = matched_mag_good[zp_idx]
 
-        # --- mag vs zp ---
-        ax[0].scatter(matched_mag_good, zp_values, s=20, alpha=0.6)
-        ax[0].axhline(zp_med, color="r", ls="--")
-        ax[0].set_xlabel("Catalog mag")
-        ax[0].set_ylabel("ZP per star")
-        ax[0].set_title("mag vs ZP")
+            print(f"\nZeropoint = {zp_med:.3f} ± {zp_std:.3f}  (N={len(zp_values)})")
+            
+            # ==========================================================
+            # 3️⃣  DIAGNOSTIC PLOT
+            # ==========================================================
+            fig = plt.figure(figsize=(9,5),dpi=300)
+            axes = fig.add_gridspec(1, 2, wspace=0.05, width_ratios=[2, 1])
+            ax = axes.subplots()
+            # fig, ax = plt.subplots(1, 2, figsize=(8, 4))
 
-        # --- histogram ---
-        ax[1].hist(zp_values, bins=10, density=True, histtype="step")
-        ax[1].axvline(zp_med, color="r", ls="--")
-        ax[1].set_xlabel("ZP")
-        ax[1].set_title("ZP distribution")
+            # --- mag vs zp ---
+            ax[0].scatter(matched_mag_good, zp_values, s=20, alpha=0.6)
+            ax[0].axhline(zp_med, color="r", ls="--")
+            ax[0].set_xlabel("Catalog mag")
+            ax[0].set_ylabel("ZP per star")
+            ax[0].set_title("mag vs ZP")
 
-        # --- KDE PDF ---
-        kde = stats.gaussian_kde(zp_values)
-        xgrid = np.linspace(zp_med - 3*zp_std, zp_med + 3*zp_std, 200)
-        ax[1].plot(xgrid, kde(xgrid))
-        ax12 = ax[1].twinx()
-        ax12.set_ylabel("PDF")
-        
-        ax[0].tick_params(axis='both', which='both', direction='in')
-        ax[1].tick_params(axis='both', which='both', direction='in')
-        ax12.tick_params(axis='both', which='both', direction='in')
+            # --- histogram ---
+            ax[1].hist(zp_values, bins=10, density=True, histtype="step")
+            ax[1].axvline(zp_med, color="r", ls="--")
+            ax[1].set_xlabel("ZP")
+            ax[1].set_title("ZP distribution")
 
-        plt.tight_layout()
-        plt.savefig(f"{path}/zeropoint_diagnostic.png", bbox_inches='tight', dpi=300)
-        if show:
-            plt.show()
+            # --- KDE PDF ---
+            kde = stats.gaussian_kde(zp_values)
+            xgrid = np.linspace(zp_med - 3*zp_std, zp_med + 3*zp_std, 200)
+            ax[1].plot(xgrid, kde(xgrid))
+            ax12 = ax[1].twinx()
+            ax12.set_ylabel("PDF")
+            
+            ax[0].tick_params(axis='both', which='both', direction='in')
+            ax[1].tick_params(axis='both', which='both', direction='in')
+            ax12.tick_params(axis='both', which='both', direction='in')
+
+            plt.tight_layout()
+            plt.savefig(f"{path}/zeropoint_diagnostic.png", bbox_inches='tight', dpi=300)
+            if show:
+                plt.show()
+        else:
+            self.zp = zp
+            self.zp_std = 0.0
         
         # ==========================================================
         # 3️⃣  PLOT RESIDUAL IMAGE
